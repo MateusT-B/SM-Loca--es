@@ -19,7 +19,7 @@
 hr
 {
   border: 1px solid #000000;
-  width: 90%;
+  width: 100%;
 
 }
 
@@ -191,7 +191,7 @@ body
 }  /* css do carrossel */
 
 
-.produtos-destaque {
+.produtos-destaques {
   margin-left: 590px;
   margin-top: 90px;
 }

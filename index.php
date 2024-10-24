@@ -44,7 +44,9 @@
 
 </div>
 
-
+<div class = "produtos-destaques">
+  <h1> Produtos Destaques
+</div>
 
 <!-- inclusão do rodapé -->
 <?php include ("rodape.php") ?>
