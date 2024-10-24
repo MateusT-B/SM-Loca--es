@@ -101,6 +101,12 @@ body
 
 }
 
+/* css da pagina index */
+
+
+
+/* começo do css da pagina produtos */
+
 .topo-produtos
 {
   margin-top: 10px;
@@ -179,6 +185,21 @@ body
 /* fim do css dos produtos */
 
 
+.carousel-inner{
+  width: 950px;
+  margin-left: 310px;
+}  /* css do carrossel */
+
+
+.produtos-destaque {
+  margin-left: 590px;
+  margin-top: 90px;
+}
+
+
+
+
+
 .fundo-rodape 
 {
     padding-top: 20px;    
@@ -212,4 +233,6 @@ a
   max-width: 400px;
   padding: 1rem;  /* css da página login */
   width: 100%; 
+  background-color: #343a40 ;
 }
+

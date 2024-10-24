@@ -41,9 +41,12 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Inclusão do cabeçalho -->
     <?php include ("cabecalho.php"); ?>
+
+    <br>
 
     <!-- Conteudo da página quem somos -->
     <div class="container text-center">

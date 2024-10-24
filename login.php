@@ -11,15 +11,15 @@
 <body class="d-flex align-items-center justify-content-center py-4 bg-light bg-body-tertiary h-100"> 
     <!-- formulário de login e senha -->
     <main class="w-100 m-auto form-container">
-        <form action="login.php" method="post">
-            <img src="img/logo.png" alt="logo" class="mb-4" height="300" width="400">
+        <form action="#" method="post">
+            <img src="img/logo.png" alt="logo" class="mx-5 mb-0" height="250" width="250">
             <div class="form-floating">
-                <input type="email" class="form-control" id="floatingInput" placeholder="Digite seu e-mail:">
+                <input type="email" class="form-control" id="floatingInput" placeholder="Digite seu e-mail:" required>
                 <label for="floatingInput">E-mail</label>
             </div>
             <br>
             <div class="form-floating">
-                <input type="password" class="form-control" id="floatingInput" placeholder="Digite sua senha:">
+                <input type="password" class="form-control" id="floatingInput" placeholder="Digite sua senha:" required>
                 <label for="floatingInput">Senha</label>
             </div>
             <div class="form-check text-start my-3">
