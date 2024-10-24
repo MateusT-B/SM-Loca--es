@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/estilo.css">
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
     <link rel="shortcut icon" href="img/favicon.png" type="image/png">
 </head>
 <body>
@@ -37,8 +38,6 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-
-
 
 
 <!-- inclusão do rodapé -->
