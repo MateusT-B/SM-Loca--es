@@ -19,7 +19,8 @@
 hr
 {
   border: 1px solid #000000;
-  width: 90%;
+  width: 100%;
+  margin-top: 0;
 
 }
 
@@ -101,6 +102,12 @@ body
 
 }
 
+/* css da pagina index */
+
+
+
+/* começo do css da pagina produtos */
+
 .topo-produtos
 {
   margin-top: 10px;
@@ -177,6 +184,21 @@ body
 
 
 /* fim do css dos produtos */
+
+
+.carousel-inner{
+  width: 950px;
+  margin-left: 310px;
+}  /* css do carrossel */
+
+
+.produtos-destaque {
+  margin-left: 590px;
+  margin-top: 90px;
+}
+
+
+
 
 
 .fundo-rodape 

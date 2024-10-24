@@ -16,19 +16,20 @@
 <!-- inclusão do cabeçalho -->
 <?php include ("cabecalho.php") ?>
 
+<div class ="minhas-imagens">
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="img/fotos da page quem somos/mesa decorada 3.jpg" class="d-block w-100" alt="...">
+      <img src="img/fotos da page quem somos/mesa decorada 3.jpg " class="d-block w-100" alt="foto1">
     </div>
     <div class="carousel-item">
-      <img src="img/fotos da page quem somos/mesa-decorada1.jpg" class="d-block w-100" alt="...">
+      <img src="img/fotos da page quem somos/mesa-decorada1.jpg" class="d-block w-100" alt="foto2">
     </div>
     <div class="carousel-item">
-      <img src="img/fotos da page quem somos/mesa-decorada2.jpeg" class="d-block w-100" alt="...">
+      <img src="img/fotos da page quem somos/mesa-decorada2.jpeg" class="d-block w-100" alt="foto3">
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+  <button class=" carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </button>
@@ -37,7 +38,14 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
+</div>
 
+<div class ="produtos-destaque">
+  <h1> Produtos Destaques </h1>
+
+  
+
+</div>
 
 
 
