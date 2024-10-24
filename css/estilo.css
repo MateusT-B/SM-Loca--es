@@ -105,6 +105,63 @@ body
 
 
 
+/* css para deixar todos os elementos alinhado */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  max-width: 1200px; /* Defina a largura máxima */
+  margin: 0 auto; /* Centraliza o conteúdo */
+  padding: 20px; /* Adicione algum espaço interno */  
+}
+
+.card {
+  margin: 10px; /* Espaço entre os cards */
+  text-align: center; /* Centraliza o texto dentro do card */
+}
+
+h1, h2 {
+  text-align: center; /* Centraliza os títulos */
+  margin-bottom: 20px; /* Espaço abaixo dos títulos */
+}
+
+
+.carousel-inner{
+  width: 1000px;
+  margin-left: 435px;
+}  /* css do carrossel */
+
+
+.produtos-destaques {
+  margin-left: 25px;
+  margin-top: 100px;
+
+}
+
+.destaques {
+  display: flex;
+  justify-content: center; /* Centraliza as imagens */
+  margin: 20px; /* Espaçamento ao redor do container */
+  margin-top: 50px;
+}
+
+.imagens img {
+  margin: 0 10px; /* Espaçamento entre as imagens */
+}
+
+.catalogo{
+ width: 500px;
+ right: 100px;
+ margin-left: 860px;
+ color: #000000;
+ margin-top: 80px;
+}
+
+
+
+
 /* começo do css da pagina produtos */
 
 .topo-produtos
@@ -183,18 +240,6 @@ body
 
 
 /* fim do css dos produtos */
-
-
-.carousel-inner{
-  width: 950px;
-  margin-left: 310px;
-}  /* css do carrossel */
-
-
-.produtos-destaques {
-  margin-left: 590px;
-  margin-top: 90px;
-}
 
 
 

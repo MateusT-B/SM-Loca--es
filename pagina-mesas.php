@@ -48,7 +48,7 @@
   <div class="printable">
     <div class="col-main">
        <div class="topo-produtos">
-          <h2>Mesas</h2>
+          <h1>Mesas</h1>
           <div class="row row-cols-1 row-cols-md-3 g-4">
           
 <div class="card">
@@ -96,7 +96,7 @@
 
 
 
-
+  </div>
 </div> <!-- Fim da div Taças --->
 
 

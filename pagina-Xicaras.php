@@ -48,7 +48,7 @@
   <div class="printable">
     <div class="col-main">
        <div class="topo-produtos">
-          <h2>Xicaras</h2>
+          <h1>Xicaras</h1>
           <div class="row row-cols-1 row-cols-md-3 g-4">
           
 <div class="card">
@@ -85,7 +85,7 @@
 </div>
 
 
-
+</div>
 </div> <!-- //! FIM DA DIV -->
 
 

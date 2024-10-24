@@ -21,13 +21,13 @@
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="img/fotos da page quem somos/mesa decorada 3.jpg" class="d-block w-100" alt="...">
+      <img src="img/produtos/mesas/Mesa decorada (1).jpg" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="img/fotos da page quem somos/mesa-decorada1.jpg" class="d-block w-100" alt="...">
+      <img src="img/produtos/mesas/mesa decorada 5 (1).jpg" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="img/fotos da page quem somos/mesa-decorada2.jpeg" class="d-block w-100" alt="...">
+      <img src="img/produtos/mesas/mesa-decorada .jpg" class="d-block w-100" alt="...">
     </div>
   </div>
   <button class=" carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -45,8 +45,26 @@
 </div>
 
 <div class = "produtos-destaques">
-  <h1> Produtos Destaques
+  <h1> Destaques </h1>
 </div>
+
+<div class ="destaques">
+  <tr>
+    <td>  <img src="img/produtos/taças/taça-champanhe.jpg" width = 8% >
+    <td>  <img src="img/produtos/copos/copo-whisky.jpg" width = 8% >
+    <td>  <img src="img/produtos/copos/copo-long-drink.jpg" width = 8% >
+    <td>  <img src="img/produtos/taças/taça-vinho.png" width = 8% >
+    <td>  <img src="img/produtos/copos/copo-chopp.jpg" width = 8% >
+</tr>
+
+</div>
+
+<div class = "catalogo">
+<button style="border-radius: 10px;">Conheça nosso Catalogo</button>
+
+
+</div>
+
 
 <!-- inclusão do rodapé -->
 <?php include ("rodape.php") ?>
