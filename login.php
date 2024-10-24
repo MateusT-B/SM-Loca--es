@@ -9,26 +9,27 @@
     <title>Login</title>
 </head>
 <body class="d-flex align-items-center justify-content-center py-4 bg-light bg-body-tertiary h-100"> 
-    <!-- formulário de login e senha -->
+    <!-- formulário de login -->
     <main class="w-100 m-auto form-container">
         <form action="#" method="post">
-            <img src="img/logo.png" alt="logo" class="mx-5 mb-0" height="250" width="250">
-            <div class="form-floating">
-                <input type="email" class="form-control" id="floatingInput" placeholder="Digite seu e-mail:" required>
-                <label for="floatingInput">E-mail</label>
+            <img src="img/logo.png" alt="logo" class="d-block mx-auto mb-4" height="150" width="150">
+            <h2 class="text-center mb-4">Login</h2>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingEmail" placeholder="Digite seu e-mail:" required>
+                <label for="floatingEmail">E-mail</label>
             </div>
-            <br>
-            <div class="form-floating">
-                <input type="password" class="form-control" id="floatingInput" placeholder="Digite sua senha:" required>
-                <label for="floatingInput">Senha</label>
+            <div class="form-floating mb-3">
+                <input type="password" class="form-control" id="floatingSenha" placeholder="Digite sua senha:" required>
+                <label for="floatingSenha">Senha</label>
             </div>
-            <div class="form-check text-start my-3">
-                <input type="checkbox" class="form-check-input">
-                <label class="form-check-label" for="flexCheckDefault">Lembrar-me</label>
+            <div class="form-check text-start mb-3">
+                <input type="checkbox" class="form-check-input" id="lembrarMe">
+                <label class="form-check-label" for="lembrarMe">Lembrar-me</label>
             </div>
-            <input type="submit" value="Entrar" class="btn btn-primary w-100 py-2">
+            <button type="submit" class="btn btn-primary w-100 py-2">Entrar</button>
+            <p class="mt-3 text-center">Ainda não tem uma conta? <a href="registro.php">Crie uma aqui</a></p>
         </form>    
     </main>
-    <!-- fim do formulário de login e senha -->
+    <!-- fim do formulário de login -->
 </body>
 </html>
