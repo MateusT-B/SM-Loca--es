@@ -12,7 +12,7 @@
     <!-- formulário de login e senha -->
     <main class="w-100 m-auto form-container">
         <form action="login.php" method="post">
-            <img src="img/logo.png" alt="logo" class="mb-4" height="300" width="400">
+            <img src="img/logo.png" alt="logo" class="mx-5 mb-0" height="250" width="250">
             <div class="form-floating">
                 <input type="email" class="form-control" id="floatingInput" placeholder="Digite seu e-mail:">
                 <label for="floatingInput">E-mail</label>
