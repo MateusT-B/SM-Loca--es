@@ -21,13 +21,13 @@
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="img/fotos da page quem somos/mesa decorada3.jpg" class="d-block w-100" alt="...">
+      <img src="img/produtos/mesas/Mesa decorada (1).jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="img/produtos/mesas/mesa decorada 4 (1).jpg" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
       <img src="img/produtos/mesas/mesa decorada 5 (1).jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="img/produtos/mesas/mesa-decorada .jpg" class="d-block w-100" alt="...">
     </div>
   </div>
   <button class=" carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -60,7 +60,7 @@
 </div>
 
 <div class = "catalogo">
-<button style="border-radius: 10px;">Conheça nosso Catalogo</button>
+<a href="produtos.php" class="btn btn-primary ">Veja nosso Catalogo</a>
 
 
 </div>
