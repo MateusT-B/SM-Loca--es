@@ -21,7 +21,7 @@
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="img/produtos/mesas/Mesa decorada (1).jpg" class="d-block w-100" alt="...">
+      <img src="img/fotos da page quem somos/mesa decorada3.jpg" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
       <img src="img/produtos/mesas/mesa decorada 5 (1).jpg" class="d-block w-100" alt="...">

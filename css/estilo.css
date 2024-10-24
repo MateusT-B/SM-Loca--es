@@ -244,7 +244,7 @@ h1, h2 {
 
 
 
-
+/* rodape.php */
 .fundo-rodape 
 {
     padding-top: 20px;    
@@ -278,6 +278,5 @@ a
   max-width: 400px;
   padding: 1rem;  /* css da página login */
   width: 100%; 
-  background-color: #343a40 ;
 }
 
