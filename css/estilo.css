@@ -279,3 +279,25 @@ a
   width: 100%; 
 }
 
+h4
+{
+  text-align: center;
+}
+
+.nav-item
+{
+  text-align: center;
+}
+.imagens_redes_sociais
+{
+  flex-direction: column;
+}
+
+.redes_sociais
+{
+  padding: 5px;
+  
+}
+
+
+
