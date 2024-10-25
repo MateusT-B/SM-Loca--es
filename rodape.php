@@ -34,18 +34,18 @@
                     <h4>Links</h4>
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a href="index.php" class="text-danger nav-link">
-                                <span class="glyphicon glyphicon-home"></span> Página Inicial
+                            <a href="index.php" class="text-danger nav-link" >
+                                      Página Inicial
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="quemsomos.php" class="text-danger nav-link">
-                                <span class="glyphicon glyphicon-ok-sign"></span> Quem Somos
+                                     Quem Somos
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="produtos.php" class="text-danger nav-link">
-                                <span class="glyphicon glyphicon-cutlery"></span> Produtos
+                                Produtos
                             </a>
                         </li>
                     </ul>
