@@ -103,8 +103,6 @@ body
 
 /* css da pagina index */
 
-
-
 /* css para deixar todos os elementos alinhado */
 body {
   margin: 0;
@@ -130,7 +128,7 @@ h1, h2 {
 
 .carousel-inner{
   width: 1000px;
-  margin-left: 435px;
+  margin-left: 20%;
 }  /* css do carrossel */
 
 
