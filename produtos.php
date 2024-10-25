@@ -41,113 +41,24 @@
         </div>
         
         <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
-            <div class="printable">
-                <div class="col-main">
-                    <div class="topo-produtos">
-                        <h1>Taças</h1>
-                        <div class="row row-cols-1 row-cols-md-3 g-4">
-                            <div class="card">
-                                <img src="img/produtos/taças/taça diamante.png">
-                                <div>
-                                    <h1>Taça Diamante</h1>
-                                    <span>R$ 5,50</span>
-                                    <button>Saiba mais</button>
-                                </div>
-                            </div>
-
-                           
-			<div class="card">
-  <img src="img/produtos/taças/taça bico de jaca.jpg">
-    <div>
-      <h1>Taça Bico de J.</h1>
-      <span>R$ 5,50</span>
-      <button>Saiba mais</button>
-    </div>
-  </div>
- 
-<div class="card">
-  <img src="img/produtos/taças/taça vinho.png">
-    <div>
-      <h1>Taça Vinho</h1>
-      <span>R$ 5,50</span>
-      <button>Saiba mais</button>
-    </div>
-  </div>
- 
-<div class="card">
-  <img src="img/produtos/taças/taça champanhe.jpg">
-    <div>
-      <h1>Taça Champanhe</h1>
-      <span>R$ 5,50</span>
-      <button>Saiba mais</button>
-    </div>
-  </div>
- 
-  <div class="card">
-  <img src="img/produtos/taças/taça rosa1.jpg">
-    <div>
-      <h1>Taça Rosa</h1>
-      <span>R$ 5,50</span>
-      <button>Saiba mais</button>
-    </div>
-  </div>
- 
-
-  <div class="card">
-  <img src="img/produtos/taças/taça-bico-de-jacaverde.png">
-    <div>
-      <h1>Taça Verde</h1>
-      <span>R$ 5,50</span>
-      <button>Saiba mais</button>
-    </div>
-  </div>
- 
-  <div class="card">
-  <img src="img/produtos/taças/taça-bico-de-jacadourada.png">
-    <div>
-      <h1>Taça Dourada</h1>
-      <span>R$ 5,50</span>
-      <button>Saiba mais</button>
-    </div>
-  </div>
- 
-  <div class="card">
-  <img src="img/produtos/taças/taça vermelha.jpg">
-    <div>
-      <h1>Taça Vermelha</h1>
-      <span>R$ 5,50</span>
-      <button>Saiba mais</button>
-    </div>
-  </div>
- 
-  <div class="card">
-  <img src="img/produtos/taças/taça azul.png">
-    <div>
-      <h1>Taça Azul</h1>
-      <span>R$ 5,50</span>
-      <button>Saiba mais</button>
-    </div>
-  </div>
-			
-</div> <!-- Fim da div Taças -->
-    <div class="copos">
+        <div class="copos">
       <h1>Copos</h1>
     <div class="row row-cols-1 row-cols-md-3 g-4">
       <div class="card">
-        <img src="img/produtos/copos/5524221293_1.jpg">
+        <img src="img/produtos/copos/copo-paulista.jpg">
       <div>
         <h1>Copo Paulista</h1>
-          <span>R$ 5,50</span>
+          <span>R$ 0,40</span>
             <button>Saiba mais</button>
               </div>
                 </div>
               
 
 			<div class="card">
-  <img src="img/produtos/copos/copo-sytlo.jpg">
+  <img src="img/produtos/copos/copo-stylo.jpg">
     <div>
       <h1>Copo Stylo</h1>
-      <span>R$ 5,50</span>
+      <span>R$ 0,40</span>
       <button>Saiba mais</button>
     </div>
   </div>
@@ -156,29 +67,121 @@
   <img src="img/produtos/copos/copo-whisky.jpg">
     <div>
       <h1>Copo Whisky</h1>
-      <span>R$ 5,50</span>
+      <span>R$ 0,40</span>
       <button>Saiba mais</button>
     </div>
   </div>
  
   <div class="card">
-  <img src="img/produtos/copos/copo-choop.jpg">
+  <img src="img/produtos/copos/copo-chopp.jpg">
     <div>
       <h1>Copo Chopp</h1>
-      <span>R$ 5,50</span>
+      <span>R$ 0,40</span>
       <button>Saiba mais</button>
     </div>
   </div>
  
   <div class="card">
-  <img src="img/produtos/copos/copo-longe-drink.jpg">
+  <img src="img/produtos/copos/copo-long-drink.jpg">
     <div>
-      <h1>Copo Long</h1>
-      <span>R$ 5,50</span>
+      <h1>Copo Long drink</h1>
+      <span>R$ 0,40</span>
       <button>Saiba mais</button>
     </div>
   </div>
 </div>
+
+
+    <div class="printable">
+      <div class="col-main">
+        <div class="topo-produtos">
+          <h1>Taças</h1>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="card">
+                <img src="img/produtos/taças/taça-diamante.png">
+              <div>
+                          <h1>Taça Diamante</h1>
+                              <span>R$ 0,70</span>
+                              <button>Saiba mais</button>
+          </div>
+      </div>
+
+  <div class="card">
+  <img src="img/produtos/taças/taça-champanhe.jpg">
+    <div>
+      <h1>Taça Champanhe</h1>
+      <span>R$ 0,50</span>
+      <button>Saiba mais</button>
+    </div>
+  </div>         
+
+ 
+<div class="card">
+  <img src="img/produtos/taças/taça-vinho.png">
+    <div>
+      <h1>Taça Vinho</h1>
+      <span>R$ 0,80</span>
+      <button>Saiba mais</button>
+    </div>
+  </div>
+ 
+  <div class="card">
+  <img src="img/produtos/taças/taça-bico-de-jaca.jpg">
+    <div>
+      <h1>Taça Bico de Jaca</h1>
+      <span>R$ 0,70</span>
+      <button>Saiba mais</button>
+    </div>
+  </div>
+ 
+  <div class="card">
+  <img src="img/produtos/taças/taça-bico-de-jaca-rosa.jpg">
+    <div>
+      <h1>Taça bico de jaca rosa</h1>
+      <span>R$ 0,50</span>
+      <button>Saiba mais</button>
+    </div>
+  </div>
+ 
+
+  <div class="card">
+  <img src="img/produtos/taças/taça-bico-de-jaca-verde.png">
+    <div>
+      <h1>Taça bico de jaca verde</h1>
+      <span>R$ 5,50</span>
+      <button>Saiba mais</button>
+    </div>
+  </div>
+ 
+  <div class="card">
+  <img src="img/produtos/taças/taça-bico-de-jaca-dourada.png">
+    <div>
+      <h1>Taça bico de jaca dourado</h1>
+      <span>R$ 5,50</span>
+      <button>Saiba mais</button>
+    </div>
+  </div>
+ 
+  <div class="card">
+  <img src="img/produtos/taças/taça-bico-de-jaca-vermelha.jpg">
+    <div>
+      <h1>Taça bico de jaca vermelha</h1>
+      <span>R$ 5,50</span>
+      <button>Saiba mais</button>
+    </div>
+  </div>
+ 
+  <div class="card">
+  <img src="img/produtos/taças/taça-bico-de-jaca-azul.png">
+    <div>
+      <h1>Taça bico de jaca azul</h1>
+      <span>R$ 5,50</span>
+      <button>Saiba mais</button>
+    </div>
+  </div>
+			
+</div> <!-- Fim da div Taças -->
+   
 	
                             </div>
                         </div>

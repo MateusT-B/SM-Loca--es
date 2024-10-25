@@ -61,17 +61,35 @@
   </div>
 
 <div class="card">
-    <img src="img/produtos/cristais/saladeira-vidro.temperado.jpg">
+    <img src="img/produtos/cristais/saladeira2.jpg">
     <div>
-      <h1>Saladeira Vidro T.</h1>
-      <span>R$ 5,50</span>
+      <h1>Saladeira 2.</h1>
+      <span>R$ 5,00</span>
       <button>Saiba mais</button>
     </div>
   </div>
 
 
   <div class="card">
-    <img src="img/produtos/cristais/centro-de-mesa-pluma-vitazza_744947.jpg">
+    <img src="img/produtos/cristais/saladeira3.jpg">
+    <div>
+      <h1>Saladeira 3</h1>
+      <span>R$ 5,00</span>
+      <button>Saiba mais</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="img/produtos/cristais/saladeira-hawai4.jpg">
+    <div>
+      <h1>Saladeira hawai</h1>
+      <span>R$ 5,50</span>
+      <button>Saiba mais</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="img/produtos/cristais/saladeira5.jpg">
     <div>
       <h1>Saladeira</h1>
       <span>R$ 5,50</span>
@@ -80,36 +98,18 @@
   </div>
 
   <div class="card">
-    <img src="img/produtos/cristais/saladeira 2.jpg">
+    <img src="img/produtos/cristais/kedaung.jpg">
     <div>
-      <h1>Saladeira</h1>
+      <h1>Saladeira kedaung</h1>
       <span>R$ 5,50</span>
       <button>Saiba mais</button>
     </div>
   </div>
 
   <div class="card">
-    <img src="img/produtos/cristais/saladeira hawai.jpg">
+    <img src="img/produtos/cristais/prato-para-bolo.jpg">
     <div>
-      <h1>Saladeira</h1>
-      <span>R$ 5,50</span>
-      <button>Saiba mais</button>
-    </div>
-  </div>
-
-  <div class="card">
-    <img src="img/produtos/cristais/prato_de_vidro_kedaung_tul_30cm_1571111361_7776_600x600.jpg">
-    <div>
-      <h1>Saladeira</h1>
-      <span>R$ 5,50</span>
-      <button>Saiba mais</button>
-    </div>
-  </div>
-
-  <div class="card">
-    <img src="img/produtos/cristais/saldeira 1.jpg">
-    <div>
-      <h1>Saladeira</h1>
+      <h1>Prato para bolo</h1>
       <span>R$ 5,50</span>
       <button>Saiba mais</button>
     </div>

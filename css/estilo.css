@@ -112,7 +112,7 @@ body {
 .main {
   max-width: 1200px; /* Defina a largura máxima */
   margin: 0 auto; /* Centraliza o conteúdo */
-  padding: 20px; /* Adicione algum espaço interno */  
+  padding: 20px; /* serve para Adicionar espaço interno */  
 }
 
 .card {
@@ -169,8 +169,8 @@ h1, h2 {
   .card 
   {
     background-color: #fff;
-    width: 180px;
-    height: 230px;
+    width: 20%;
+    height: 250px;
     border-radius: 12px;
     box-shadow: 4px 4px 12px #aaaa;
     margin-right: 15px;
