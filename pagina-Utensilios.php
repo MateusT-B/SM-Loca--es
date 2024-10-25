@@ -52,7 +52,7 @@
           <div class="row row-cols-1 row-cols-md-3 g-4">
           
 <div class="card">
-    <img src="img/produtos/utensilios cozinha/bandeja garçom.jfif">
+    <img src="img/produtos/utensilios cozinha/bandeja-garçom.jfif">
     <div>
       <h1>Bandeja garçom</h1>
       <span>R$ 5,50</span>
@@ -61,7 +61,7 @@
   </div>
 
 <div class="card">
-    <img src="img/produtos/utensilios cozinha/garrafa termica cafe.png">
+    <img src="img/produtos/utensilios cozinha/garrafa-termica-cafe.png">
     <div>
       <h1>Garrafa Termica</h1>
       <span>R$ 5,50</span>
@@ -70,7 +70,7 @@
   </div>
 
   <div class="card">
-    <img src="img/produtos/utensilios cozinha/garrafa termica inox.png">
+    <img src="img/produtos/utensilios cozinha/garrafa-termica-inox.png">
     <div>
       <h1>Garrafa inox</h1>
       <span>R$ 5,50</span>

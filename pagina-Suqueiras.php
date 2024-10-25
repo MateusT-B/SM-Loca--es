@@ -52,7 +52,7 @@
           <div class="row row-cols-1 row-cols-md-3 g-4">
           
 <div class="card">
-    <img src="img/produtos/suqueira/suqueira lisa.jpg">
+    <img src="img/produtos/suqueira/suqueira-lisa.jpg">
     <div>
       <h1>Suqueira Lisa</h1>
       <span>R$ 5,50</span>

@@ -52,7 +52,7 @@
           <div class="row row-cols-1 row-cols-md-3 g-4">
           
 <div class="card">
-    <img src="img/produtos/sousplat/sousplat aluminio.jpg">
+    <img src="img/produtos/sousplat/sousplat-aluminio.jpg">
     <div>
       <h1>Sousplat aluminio</h1>
       <span>R$ 5,50</span>
@@ -61,7 +61,7 @@
   </div>
 
 <div class="card">
-    <img src="img/produtos/sousplat/sousplat mdf.jpeg">
+    <img src="img/produtos/sousplat/sousplat-mdf.jpeg">
     <div>
       <h1>Sousplat mdf</h1>
       <span>R$ 5,50</span>

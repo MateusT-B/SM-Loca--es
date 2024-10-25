@@ -52,7 +52,7 @@
           <div class="row row-cols-1 row-cols-md-3 g-4">
           
 <div class="card">
-    <img src="img/produtos/rechaud/rechaud 1 cuba retangular.jpg">
+    <img src="img/produtos/rechaud/rechaud-cuba-retangular.jpg">
     <div>
       <h1>Rechaud 1 Cuba</h1>
       <span>R$ 35,00</span>
@@ -61,7 +61,7 @@
   </div>
 
 <div class="card">
-    <img src="img/produtos/rechaud/rechaud 2 cuba.jpg">
+    <img src="img/produtos/rechaud/rechaud-cuba.jpg">
     <div>
       <h1>Rechaud 2 Cuba</h1>
       <span>R$ 38,00</span>
@@ -70,16 +70,16 @@
   </div>
 
   <div class="card">
-    <img src="img/produtos/rechaud/rechaud redondo.jpg">
+    <img src="img/produtos/rechaud/rechaud-redondo.jpg">
     <div>
-      <h1>Rech. Redondo</h1>
+      <h1>Rechaud </h1>
       <span>R$ 30,00</span>
       <button>Saiba mais</button>
     </div>
   </div>
 
   <div class="card">
-    <img src="img/produtos/rechaud/balde de gelo.jpg">
+    <img src="img/produtos/rechaud/balde-de-gelo.jpg">
     <div>
       <h1>Balde de Gelo</h1>
       <span>R$ 5,50</span>
@@ -88,18 +88,18 @@
   </div>
 
   <div class="card">
-    <img src="img/produtos/rechaud/bandeija inox 2.jpg">
+    <img src="img/produtos/rechaud/bandeja-inox.jpg">
     <div>
-      <h1>Bandeija Lisa</h1>
+      <h1>Bandeja Lisa</h1>
       <span>R$ 5,50</span>
       <button>Saiba mais</button>
     </div>
   </div>
 
   <div class="card">
-    <img src="img/produtos/rechaud/bandeja inox.jpg">
+    <img src="img/produtos/rechaud/bandeja2-inox.jpg">
     <div>
-      <h1>Bandeija inox</h1>
+      <h1>Bandeja inox</h1>
       <span>R$ 5,50</span>
       <button>Saiba mais</button>
     </div>

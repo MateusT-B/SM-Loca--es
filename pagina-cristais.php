@@ -55,7 +55,7 @@
     <img src="img/produtos/cristais/saladeira.jpg">
     <div>
       <h1>Saladeira</h1>
-      <span>R$ 5,50</span>
+      <span>R$ 5,00</span>
       <button>Saiba mais</button>
     </div>
   </div>
@@ -83,7 +83,7 @@
     <img src="img/produtos/cristais/saladeira-hawai4.jpg">
     <div>
       <h1>Saladeira hawai</h1>
-      <span>R$ 5,50</span>
+      <span>R$ 5,00</span>
       <button>Saiba mais</button>
     </div>
   </div>
@@ -92,16 +92,16 @@
     <img src="img/produtos/cristais/saladeira5.jpg">
     <div>
       <h1>Saladeira</h1>
-      <span>R$ 5,50</span>
+      <span>R$ 5,00</span>
       <button>Saiba mais</button>
     </div>
   </div>
 
   <div class="card">
-    <img src="img/produtos/cristais/kedaung.jpg">
+    <img src="img/produtos/cristais/saladeira-kedaung.jpg">
     <div>
       <h1>Saladeira kedaung</h1>
-      <span>R$ 5,50</span>
+      <span>R$ 5,00</span>
       <button>Saiba mais</button>
     </div>
   </div>
@@ -110,7 +110,7 @@
     <img src="img/produtos/cristais/prato-para-bolo.jpg">
     <div>
       <h1>Prato para bolo</h1>
-      <span>R$ 5,50</span>
+      <span>R$ 5,00</span>
       <button>Saiba mais</button>
     </div>
   </div>

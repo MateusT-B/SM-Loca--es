@@ -59,14 +59,7 @@
     </div>
   </div>
 
-  <div class="card">
-    <img src="img/produtos/cristais/pprato pra bolo.jpg">
-    <div>
-      <h1>Prato para Bolo</h1>
-      <span>R$ 5,50</span>
-      <button>Saiba mais</button>
-    </div>
-  </div>
+ 
 
 
 

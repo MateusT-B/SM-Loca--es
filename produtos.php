@@ -148,7 +148,7 @@
   <img src="img/produtos/taças/taça-bico-de-jaca-verde.png">
     <div>
       <h1>Taça bico de jaca verde</h1>
-      <span>R$ 5,50</span>
+      <span>R$ 0,50</span>
       <button>Saiba mais</button>
     </div>
   </div>
@@ -157,7 +157,7 @@
   <img src="img/produtos/taças/taça-bico-de-jaca-dourada.png">
     <div>
       <h1>Taça bico de jaca dourado</h1>
-      <span>R$ 5,50</span>
+      <span>R$ 0,50</span>
       <button>Saiba mais</button>
     </div>
   </div>
@@ -166,7 +166,7 @@
   <img src="img/produtos/taças/taça-bico-de-jaca-vermelha.jpg">
     <div>
       <h1>Taça bico de jaca vermelha</h1>
-      <span>R$ 5,50</span>
+      <span>R$ 0,50</span>
       <button>Saiba mais</button>
     </div>
   </div>
@@ -175,7 +175,7 @@
   <img src="img/produtos/taças/taça-bico-de-jaca-azul.png">
     <div>
       <h1>Taça bico de jaca azul</h1>
-      <span>R$ 5,50</span>
+      <span>R$ 0,50</span>
       <button>Saiba mais</button>
     </div>
   </div>

@@ -52,7 +52,7 @@
           <div class="row row-cols-1 row-cols-md-3 g-4">
           
 <div class="card">
-    <img src="img/produtos/talheres/kit talheres inox.png">
+    <img src="img/produtos/talheres/kit-talheres-inox.png">
     <div>
       <h1>Kit Talher Inox</h1>
       <span>R$ 5,50</span>
@@ -61,7 +61,7 @@
   </div>
 
 <div class="card">
-    <img src="img/produtos/talheres/talher garfo dourado.png">
+    <img src="img/produtos/talheres/garfo-sobremesa-dourado.png">
     <div>
       <h1>Garfo Dourado</h1>
       <span>R$ 5,50</span>
@@ -70,16 +70,16 @@
   </div>
 
   <div class="card">
-    <img src="img/produtos/talheres/talher faca dourado.png">
+    <img src="img/produtos/talheres/faca-dourado.png">
     <div>
-      <h1>Faca Dourada</h1>
+      <h1>Faca Dourado</h1>
       <span>R$ 5,50</span>
       <button>Saiba mais</button>
     </div>
   </div>
 
   <div class="card">
-    <img src="img/produtos/talheres/colher cafe dourado.png">
+    <img src="img/produtos/talheres/colher-cafe-dourado.png">
     <div>
       <h1>Colher Cafe</h1>
       <span>R$ 5,50</span>
@@ -88,7 +88,7 @@
   </div>
 
   <div class="card">
-    <img src="img/produtos/talheres/garfo sobremesa dourado.png">
+    <img src="img/produtos/talheres/garfo-sobremesa-dourado.png">
     <div>
       <h1>Garfo Sobremesa</h1>
       <span>R$ 5,50</span>
@@ -97,7 +97,7 @@
   </div>
 
   <div class="card">
-    <img src="img/produtos/talheres/colher sobremesa dourado.png">
+    <img src="img/produtos/talheres/colher-sobremesa-dourado.png">
     <div>
       <h1>Colher Sobreme.</h1>
       <span>R$ 5,50</span>

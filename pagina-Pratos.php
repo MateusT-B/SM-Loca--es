@@ -52,7 +52,7 @@
           <div class="row row-cols-1 row-cols-md-3 g-4">
           
 <div class="card">
-    <img src="img/produtos/pratos/prato_petala_.jpg">
+    <img src="img/produtos/pratos/prato-petala.jpg">
     <div>
       <h1>Prato Petala</h1>
       <span>R$ 0,40</span>
@@ -61,7 +61,7 @@
   </div>
 
 <div class="card">
-    <img src="img/produtos/pratos/prato-filletado-prata.jpg">
+    <img src="img/produtos/pratos/prato-filetado-porcelana.jpg">
     <div>
       <h1>Prato Filetado</h1>
       <span>R$ 0,60</span>
@@ -79,7 +79,7 @@
   </div>
 
   <div class="card">
-    <img src="img/produtos/pratos/prato-pomerode-30cm-schmidt.jpg">
+    <img src="img/produtos/pratos/prato-pomerode.jpg">
     <div>
       <h1>Prato Pomerode</h1>
       <span>R$ 0,50</span>

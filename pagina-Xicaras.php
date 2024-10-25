@@ -52,7 +52,7 @@
           <div class="row row-cols-1 row-cols-md-3 g-4">
           
 <div class="card">
-    <img src="img/produtos/xicaras/xicara 60ml.jpg">
+    <img src="img/produtos/xicaras/xicara-60ml.jpg">
     <div>
       <h1>Xicara 60ml</h1>
       <span>R$ 5,50</span>
@@ -61,7 +61,7 @@
   </div>
 
 <div class="card">
-    <img src="img/produtos/xicaras/xicara 80 ml sofia.jpg">
+    <img src="img/produtos/xicaras/xicara-80ml.jpg">
     <div>
       <h1>Xicara 80ml Sofia</h1>
       <span>R$ 5,50</span>
@@ -69,14 +69,7 @@
     </div>
   </div>
 
-<div class="card">
-    <img src="img/produtos/xicaras/xicara 80ml.jpg">
-    <div>
-      <h1>Xicara 80ml</h1>
-      <span>R$ 5,50</span>
-      <button>Saiba mais</button>
-    </div>
-  </div>
+
 
 </div> <!-- Fim da div suqueira --->
 </div>       

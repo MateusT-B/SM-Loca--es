@@ -44,18 +44,81 @@
 
 </div>
 
-<div class = "produtos-destaques">
-  <h1> Destaques </h1>
-</div>
+    <div class = "produtos-destaques">
+      <h1> Destaques </h1>
+    </div>
 
-<div class ="destaques">
-  <tr>
-    <td>  <img src="img/produtos/taças/taça-champanhe.jpg" width = 8% >
-    <td>  <img src="img/produtos/copos/copo-whisky.jpg" width = 8% >
-    <td>  <img src="img/produtos/copos/copo-long-drink.jpg" width = 8% >
-    <td>  <img src="img/produtos/taças/taça-vinho.png" width = 8% >
-    <td>  <img src="img/produtos/copos/copo-chopp.jpg" width = 8% >
-</tr>
+  <div class ="destaques">
+      <div class="card">
+        <img class="img_destaques" src="img/produtos/copos/copo-long-drink.jpg">
+      <div>
+        <h1>Copo long drink</h1>
+            <button>Saiba mais</button>
+              </div>
+                </div>
+                <div class="card">
+        <img class="img_destaques" src="img/produtos/taças/taça-diamante.png">
+      <div>
+        <h1>Taça Diamante</h1>
+            <button>Saiba mais</button>
+              </div>
+                </div>
+                <div class="card">
+        <img class="img_destaques" src="img/produtos/cristais/prato-para-bolo.jpg">
+      <div>
+        <h1>Prato para bolo</h1>
+            <button>Saiba mais</button>
+              </div>
+                </div>
+                
+              <div class="card">
+        <img class="img_destaques" src="img/produtos/prata/samovar.jpg">
+      <div>
+        <h1>Samovar</h1>
+            <button>Saiba mais</button>
+              </div>
+                </div>
+                
+                <div class="card">
+        <img class="img_destaques" src="img/produtos/pratos/prato-wave.jpg">
+      <div>
+        <h1>Prato Wave</h1>
+            <button>Saiba mais</button>
+              </div>
+                </div>
+
+                <div class="card">
+        <img class="img_destaques" src="img/produtos/rechaud/rechaud-cuba.jpg">
+      <div>
+        <h1>Rechaud Cuba</h1>
+            <button>Saiba mais</button>
+              </div>
+                </div>
+
+                <div class="card">
+        <img class="img_destaques" src="img/produtos/sousplat/sousplat-aluminio.jpg">
+      <div>
+        <h1>Sousplat de Aluminio</h1>
+            <button>Saiba mais</button>
+              </div>
+                </div>
+
+                <div class="card">
+        <img class="img_destaques" src="img/produtos/suqueira/suqueira.jpg">
+      <div>
+        <h1>Suqueira</h1>
+            <button>Saiba mais</button>
+              </div>
+                </div>
+                
+                <div class="card">
+        <img class="img_destaques" src="img/produtos/talheres/colher-cafe-dourado.png">
+      <div>
+        <h1>Colher Dourada</h1>
+            <button>Saiba mais</button>
+              </div>
+                </div>
+
 
 </div>
 
