@@ -66,7 +66,7 @@
                 <img class="imagens_redes_sociais" src="img/rede-social/instagram.png" width="50" height="50" alt="Instagram">
                 <p class="redes_sociais">@sm_locacao</p>
               </a>
-                <a href="https://wa.me/55119954211439" target="_blank" class="social-link text-center mx-2">
+                <a href="https://wa.me/5511995421439" target="_blank" class="social-link text-center mx-2">
                     <img class="imagens_redes_sociais" src="img/rede-social/whatsapp.png" width="50" height="50" alt="WhatsApp">
                     <p class="redes_sociais">(11)99542-1439</p>
                 </a>
