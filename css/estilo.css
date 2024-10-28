@@ -141,16 +141,22 @@ h1, h2 {
 
 }
 
-.destaques {
-  display: flex;
-  justify-content: center; /* Centraliza as imagens */
-  margin: 20px; /* Espaçamento ao redor do container */
-  margin-top: 50px;
-}
+  .destaques 
+  {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espaço entre os cards */
+    justify-content: center; /* Centraliza os elementos na linha */
+    box-sizing: border-box;
+    max-width: 70%; /* Limite para que as divs não fiquem muito grandes */
+    margin-left: 15%;
+  }
+  
+  
 
 .img_destaques
 {
-  margin-left: 10%;
+  margin-left: 20%;
 }
 
 .catalogo{
