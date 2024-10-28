@@ -150,9 +150,9 @@
 <div class = "catalogo">
 <a href="produtos.php" class="btn btn-primary ">Veja nosso Catalogo</a>
 
-
 </div>
 
+<br>
 
 <!-- inclusão do rodapé -->
 <?php include ("rodape.php") ?>
