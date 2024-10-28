@@ -79,6 +79,15 @@
   </div>
 
   <div class="card">
+    <img src="img/produtos/rechaud/rechaud basculante.jpeg">
+    <div>
+      <h1>Rechaud Bascu.</h1>
+      <span>R$ 50,00</span>
+      <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
+    </div>
+  </div>
+
+  <div class="card">
     <img src="img/produtos/rechaud/balde-de-gelo.jpg">
     <div>
       <h1>Balde de Gelo</h1>

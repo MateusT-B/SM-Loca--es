@@ -140,7 +140,7 @@
   <img src="img/produtos/taças/taça-bico-de-jaca-rosa.jpg">
     <div>
       <h1>Taça rosa</h1>
-      <span>R$ 0,50</span>
+      <span>R$ 0,70</span>
       <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
     </div>
   </div>
@@ -150,7 +150,7 @@
   <img src="img/produtos/taças/taça-bico-de-jaca-verde.png">
     <div>
       <h1>Taça verde</h1>
-      <span>R$ 0,50</span>
+      <span>R$ 0,70</span>
       <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
     </div>
   </div>
@@ -159,7 +159,7 @@
   <img src="img/produtos/taças/taça-bico-de-jaca-dourada.png">
     <div>
       <h1>Taça dourado</h1>
-      <span>R$ 0,50</span>
+      <span>R$ 0,70</span>
       <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
     </div>
   </div>
@@ -168,7 +168,7 @@
   <img src="img/produtos/taças/taça-bico-de-jaca-vermelha.jpg">
     <div>
       <h1>Taça vermelha</h1>
-      <span>R$ 0,50</span>
+      <span>R$ 0,70</span>
       <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
     </div>
   </div>
@@ -177,7 +177,7 @@
   <img src="img/produtos/taças/taça-bico-de-jaca-azul.png">
     <div>
       <h1>Taça azul</h1>
-      <span>R$ 0,50</span>
+      <span>R$ 0,70</span>
       <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
     </div>
   </div>

@@ -54,7 +54,7 @@
     <img src="img/produtos/prata/Samovar.jpg">
     <div>
       <h1>Samovar</h1>
-      <span>R$ 5,50</span>
+      <span>R$ 30,00</span>
       <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
     </div>
   </div>

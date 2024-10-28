@@ -55,7 +55,7 @@
     <img src="img/produtos/talheres/kit-talheres-inox.png">
     <div>
       <h1>Kit Talher Inox</h1>
-      <span>R$ 5,50</span>
+      <span>R$ 0,40</span>
       <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
     </div>
   </div>
@@ -64,7 +64,7 @@
     <img src="img/produtos/talheres/garfo-sobremesa-dourado.png">
     <div>
       <h1>Garfo Dourado</h1>
-      <span>R$ 5,50</span>
+      <span>R$ 1,00</span>
       <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
     </div>
   </div>
@@ -73,7 +73,7 @@
     <img src="img/produtos/talheres/faca-dourado.png">
     <div>
       <h1>Faca Dourado</h1>
-      <span>R$ 5,50</span>
+      <span>R$ 1,00</span>
       <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
     </div>
   </div>
@@ -82,7 +82,7 @@
     <img src="img/produtos/talheres/colher-cafe-dourado.png">
     <div>
       <h1>Colher Cafe</h1>
-      <span>R$ 5,50</span>
+      <span>R$ 1,00</span>
       <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
     </div>
   </div>
@@ -91,7 +91,7 @@
     <img src="img/produtos/talheres/garfo-sobremesa-dourado.png">
     <div>
       <h1>Garfo Sobremesa</h1>
-      <span>R$ 5,50</span>
+      <span>R$ 1,00</span>
       <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
     </div>
   </div>
@@ -100,7 +100,7 @@
     <img src="img/produtos/talheres/colher-sobremesa-dourado.png">
     <div>
       <h1>Colher Sobreme.</h1>
-      <span>R$ 5,50</span>
+      <span>R$ 1,00</span>
       <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
     </div>
   </div>

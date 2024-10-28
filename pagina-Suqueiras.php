@@ -55,7 +55,7 @@
     <img src="img/produtos/suqueira/suqueira-lisa.jpg">
     <div>
       <h1>Suqueira Lisa</h1>
-      <span>R$ 5,50</span>
+      <span>R$ 25,00</span>
       <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
     </div>
   </div>
@@ -64,7 +64,7 @@
     <img src="img/produtos/suqueira/suqueira.jpg">
     <div>
       <h1>Suqueira</h1>
-      <span>R$ 5,50</span>
+      <span>R$ 25,00</span>
       <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
     </div>
   </div>

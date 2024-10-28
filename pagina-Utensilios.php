@@ -64,7 +64,7 @@
     <img src="img/produtos/utensilios cozinha/garrafa-termica-cafe.png">
     <div>
       <h1>Garrafa Termica</h1>
-      <span>R$ 5,50</span>
+      <span>R$ 15,00</span>
       <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
     </div>
   </div>
@@ -73,7 +73,7 @@
     <img src="img/produtos/utensilios cozinha/garrafa-termica-inox.png">
     <div>
       <h1>Garrafa inox</h1>
-      <span>R$ 5,50</span>
+      <span>R$ 15,00</span>
       <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
     </div>
   </div>
@@ -82,7 +82,16 @@
     <img src="img/produtos/utensilios cozinha/fritadeira.jpg">
     <div>
       <h1>Fritadeira</h1>
-      <span>R$ 5,50</span>
+      <span>R$ 50,00</span>
+      <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="img/produtos/utensilios cozinha/jarra de vidro.jpg">
+    <div>
+      <h1>Jarra de Suco</h1>
+      <span>R$ 10,00</span>
       <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
     </div>
   </div>

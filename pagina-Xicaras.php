@@ -55,7 +55,7 @@
     <img src="img/produtos/xicaras/xicara-60ml.jpg">
     <div>
       <h1>Xicara 60ml</h1>
-      <span>R$ 5,50</span>
+      <span>R$ 1,50</span>
       <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
     </div>
   </div>
@@ -64,7 +64,7 @@
     <img src="img/produtos/xicaras/xicara-80ml.jpg">
     <div>
       <h1>Xicara 80ml Sofia</h1>
-      <span>R$ 5,50</span>
+      <span>R$ 1,50</span>
       <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
     </div>
   </div>

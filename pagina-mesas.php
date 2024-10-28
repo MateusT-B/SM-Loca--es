@@ -55,7 +55,7 @@
     <img src="img/produtos/mesas/pranchao.jpg">
     <div>
       <h1>Pranchao</h1>
-      <span>R$ 5,50</span>
+      <span>R$ 25,00</span>
       <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
     </div>
   </div>
@@ -64,7 +64,7 @@
     <img src="img/produtos/mesas/tampao.jpg">
     <div>
       <h1>Tampão</h1>
-      <span>R$ 5,50</span>
+      <span>R$ 10,00</span>
       <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
     </div>
   </div>
@@ -73,7 +73,7 @@
     <img src="img/produtos/mesas/mesa plastica.jpg">
     <div>
       <h1>Mesa Plastico</h1>
-      <span>R$ 5,50</span>
+      <span>R$ 12,00</span>
       <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
     </div>
   </div>

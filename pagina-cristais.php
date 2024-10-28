@@ -55,7 +55,7 @@
     <img src="img/produtos/cristais/saladeira.jpg">
     <div>
       <h1>Saladeira</h1>
-      <span>R$ 5,00</span>
+      <span>R$ 10,00</span>
       <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
     </div>
   </div>
@@ -64,7 +64,7 @@
     <img src="img/produtos/cristais/saladeira2.jpg">
     <div>
       <h1>Saladeira 2.</h1>
-      <span>R$ 5,00</span>
+      <span>R$ 10,00</span>
       <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
     </div>
   </div>
@@ -74,7 +74,7 @@
     <img src="img/produtos/cristais/saladeira3.jpg">
     <div>
       <h1>Saladeira 3</h1>
-      <span>R$ 5,00</span>
+      <span>R$ 10,00</span>
       <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
     </div>
   </div>
@@ -83,7 +83,7 @@
     <img src="img/produtos/cristais/saladeira-hawai4.jpg">
     <div>
       <h1>Saladeira hawai</h1>
-      <span>R$ 5,00</span>
+      <span>R$ 10,00</span>
       <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
     </div>
   </div>
@@ -92,7 +92,7 @@
     <img src="img/produtos/cristais/saladeira5.jpg">
     <div>
       <h1>Saladeira</h1>
-      <span>R$ 5,00</span>
+      <span>R$ 10,00</span>
       <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
     </div>
   </div>
@@ -101,7 +101,7 @@
     <img src="img/produtos/cristais/saladeira-kedaung.jpg">
     <div>
       <h1>Saladeira kedaung</h1>
-      <span>R$ 5,00</span>
+      <span>R$ 10,00</span>
       <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
     </div>
   </div>
@@ -110,7 +110,7 @@
     <img src="img/produtos/cristais/prato-para-bolo.jpg">
     <div>
       <h1>Prato para bolo</h1>
-      <span>R$ 5,00</span>
+      <span>R$ 10,00</span>
       <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
     </div>
   </div>
