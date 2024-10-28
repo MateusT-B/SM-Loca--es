@@ -100,7 +100,7 @@
   <div class="card">
     <img src="img/produtos/cristais/saladeira-kedaung.jpg">
     <div>
-      <h1>Saladeira kedaung</h1>
+      <h1>Saladeira</h1>
       <span>R$ 10,00</span>
       <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
     </div>

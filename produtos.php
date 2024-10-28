@@ -130,7 +130,7 @@
   <div class="card">
   <img src="img/produtos/taças/taça-bico-de-jaca.jpg">
     <div>
-      <h1>Taça Bico de J.c</h1>
+      <h1>Taça Bico de J</h1>
       <span>R$ 0,70</span>
       <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
     </div>
