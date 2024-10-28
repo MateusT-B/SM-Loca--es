@@ -184,8 +184,6 @@ h1, h2 {
     border-radius: 12px;
     box-shadow: 4px 4px 12px #aaaa;
     margin-right: 15px;
-    
-    
   }
 
   .card img 
@@ -218,9 +216,10 @@ h1, h2 {
     color: #aaaa;
   }
 
-  .card button 
+
+  .btn-comprar
   {
-    background-color: #000000;
+    background-color: #01a317;
     height: 30px;
     border: none;
     padding: 4px;
@@ -233,7 +232,7 @@ h1, h2 {
 
   .card button:hover 
   {
-    background-color: #000000;
+    background-color: #7c7c7c;
     cursor: pointer;
   }
 
@@ -244,6 +243,7 @@ h1, h2 {
   margin-top: 30px;
  
 }
+
 
 
 /* fim do css dos produtos */

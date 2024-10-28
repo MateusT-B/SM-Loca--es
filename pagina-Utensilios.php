@@ -56,7 +56,7 @@
     <div>
       <h1>Bandeja garçom</h1>
       <span>R$ 5,50</span>
-      <button>Saiba mais</button>
+      <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
     </div>
   </div>
 
@@ -65,7 +65,7 @@
     <div>
       <h1>Garrafa Termica</h1>
       <span>R$ 5,50</span>
-      <button>Saiba mais</button>
+      <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
     </div>
   </div>
 
@@ -74,7 +74,7 @@
     <div>
       <h1>Garrafa inox</h1>
       <span>R$ 5,50</span>
-      <button>Saiba mais</button>
+      <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
     </div>
   </div>
 
@@ -83,7 +83,7 @@
     <div>
       <h1>Fritadeira</h1>
       <span>R$ 5,50</span>
-      <button>Saiba mais</button>
+      <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
     </div>
   </div>
 
