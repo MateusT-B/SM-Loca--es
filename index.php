@@ -53,7 +53,7 @@
           <img class="img_destaques" src="img/produtos/copos/copo-long-drink.jpg">
           <div>
             <h1>Copo long drink</h1>
-            <button a href="" class="btn-comprar">Alugar</a></button>
+            <button a href="produtos.php" class="btn-comprar">Alugar</a></button>
           </div>
       </div>
                 

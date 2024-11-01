@@ -18,7 +18,7 @@
 
 hr
 {
-  border: 1px solid #6d351a;
+  border: 1px solid #252525;
   width: 100%;
 
 }
@@ -167,10 +167,11 @@ h1, h2 {
 }
 
 .catalogo{
- width: 500px;
- right: 100px;
+ width: 260px;
+ left: 100px;
  margin-left: 860px;
  margin-top: 80px;
+ 
 }
 
 
@@ -191,6 +192,7 @@ h1, h2 {
     border-radius: 12px;
     box-shadow: 4px 4px 12px #aaaa;
     margin-right: 15px;
+    margin-top: 50px;
   }
 
   .card img 
@@ -209,6 +211,7 @@ h1, h2 {
     align-items: center;          
     gap: 4px;
     height: 50%;
+    
  
   }
 
@@ -247,8 +250,17 @@ h1, h2 {
 
 .copos
 {
-  margin-top: 30px;
- 
+  margin-top: 10px;
+  
+
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .card {
+    width: 150%;
+  }
 }
 
 
