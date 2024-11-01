@@ -56,7 +56,7 @@
     <div>
       <h1>Saladeira</h1>
       <span>R$ 10,00</span>
-      <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
+      <button a href="produtos.php" class="btn-comprar">Alugar</a></button>
     </div>
   </div>
 
@@ -65,7 +65,7 @@
     <div>
       <h1>Saladeira 2.</h1>
       <span>R$ 10,00</span>
-      <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
+      <button a href="produtos.php" class="btn-comprar">Alugar</a></button>
     </div>
   </div>
 
@@ -75,7 +75,7 @@
     <div>
       <h1>Saladeira 3</h1>
       <span>R$ 10,00</span>
-      <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
+      <button a href="produtos.php" class="btn-comprar">Alugar</a></button>
     </div>
   </div>
 
@@ -84,7 +84,7 @@
     <div>
       <h1>Saladeira hawai</h1>
       <span>R$ 10,00</span>
-      <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
+      <button a href="produtos.php" class="btn-comprar">alugar</a></button>
     </div>
   </div>
 
@@ -93,7 +93,7 @@
     <div>
       <h1>Saladeira</h1>
       <span>R$ 10,00</span>
-      <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
+      <button a href="produtos.php" class="btn-comprar">Alugar</a></button>
     </div>
   </div>
 
@@ -102,7 +102,7 @@
     <div>
       <h1>Saladeira</h1>
       <span>R$ 10,00</span>
-      <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
+      <button a href="produtos.php" class="btn-comprar">Alugar</a></button>
     </div>
   </div>
 
@@ -111,7 +111,7 @@
     <div>
       <h1>Prato para bolo</h1>
       <span>R$ 10,00</span>
-      <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
+      <button a href="produtos.php" class="btn-comprar">Alugar</a></button>
     </div>
   </div>
 

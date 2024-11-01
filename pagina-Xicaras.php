@@ -56,7 +56,7 @@
     <div>
       <h1>Xicara 60ml</h1>
       <span>R$ 1,50</span>
-      <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
+      <button a href="produtos.php" class="btn-comprar">Alugar</a></button>
     </div>
   </div>
 
@@ -65,7 +65,7 @@
     <div>
       <h1>Xicara 80ml Sofia</h1>
       <span>R$ 1,50</span>
-      <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
+      <button a href="produtos.php" class="btn-comprar">Alugar</a></button>
     </div>
   </div>
 
