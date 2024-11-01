@@ -125,6 +125,13 @@ h1, h2 {
   margin-bottom: 20px; /* Espaço abaixo dos títulos */
 }
 
+.carousel-control-prev{
+  left: 25%;
+}
+
+.carousel-control-next{
+  left: 60%;
+}
 
 .carousel-inner
 {
