@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/estilo.css">
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
-    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="img/favicon1.png" type="image/png">
 </head>
 <body>
 

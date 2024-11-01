@@ -6,6 +6,7 @@
     <title>Quem Somos - SM Locações</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="shortcut icon" href="img/favicon1.png" type="image/png">
 </head>
 
 <body>
