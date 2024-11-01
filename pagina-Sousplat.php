@@ -57,7 +57,7 @@
     <div>
       <h1>Sousplat aluminio</h1>
       <span>R$ 4,00</span>
-      <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
+      <button a href="produtos.php" class="btn-comprar">Alugar</a></button>
     </div>
   </div>
 
@@ -66,7 +66,7 @@
     <div>
       <h1>Sousplat mdf</h1>
       <span>R$ 2,00</span>
-      <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
+      <button a href="produtos.php" class="btn-comprar">Alugar</a></button>
     </div>
   </div>
 

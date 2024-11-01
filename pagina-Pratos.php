@@ -57,7 +57,7 @@
     <div>
       <h1>Prato Petala</h1>
       <span>R$ 0,40</span>
-      <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
+      <button a href="produtos.php" class="btn-comprar">Alugar</a></button>
     </div>
   </div>
 
@@ -66,7 +66,7 @@
     <div>
       <h1>Prato Filetado</h1>
       <span>R$ 0,60</span>
-      <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
+      <button a href="produtos.php" class="btn-comprar">Alugar</a></button>
     </div>
   </div>
 
@@ -75,7 +75,7 @@
     <div>
       <h1>Prato Germer</h1>
       <span>R$ 0,40</span>
-      <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
+      <button a href="produtos.php" class="btn-comprar">Alugar</a></button>
     </div>
   </div>
 
@@ -84,7 +84,7 @@
     <div>
       <h1>Prato Pomerode</h1>
       <span>R$ 0,50</span>
-      <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
+      <button a href="produtos.php" class="btn-comprar">Alugar</a></button>
     </div>
   </div>
   
@@ -93,7 +93,7 @@
     <div>
       <h1>Prato Wave</h1>
       <span>R$ 0,70</span>
-      <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
+      <button a href="produtos.php" class="btn-comprar">Alugar</a></button>
     </div>
   </div>
  

@@ -57,7 +57,7 @@
     <div>
       <h1>Kit Talher Inox</h1>
       <span>R$ 0,40</span>
-      <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
+      <button a href="produtos.php" class="btn-comprar">Alugar</a></button>
     </div>
   </div>
 
@@ -66,7 +66,7 @@
     <div>
       <h1>Garfo Dourado</h1>
       <span>R$ 1,00</span>
-      <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
+      <button a href="produtos.php" class="btn-comprar">Alugar</a></button>
     </div>
   </div>
 
@@ -75,7 +75,7 @@
     <div>
       <h1>Faca Dourado</h1>
       <span>R$ 1,00</span>
-      <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
+      <button a href="produtos.php" class="btn-comprar">Alugar</a></button>
     </div>
   </div>
 
@@ -84,7 +84,7 @@
     <div>
       <h1>Colher Cafe</h1>
       <span>R$ 1,00</span>
-      <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
+      <button a href="produtos.php" class="btn-comprar">Alugar</a></button>
     </div>
   </div>
 
@@ -93,7 +93,7 @@
     <div>
       <h1>Garfo Sobremesa</h1>
       <span>R$ 1,00</span>
-      <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
+      <button a href="produtos.php" class="btn-comprar">Alugar</a></button>
     </div>
   </div>
 
@@ -102,7 +102,7 @@
     <div>
       <h1>Colher Sobreme.</h1>
       <span>R$ 1,00</span>
-      <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
+      <button a href="produtos.php" class="btn-comprar">Alugar</a></button>
     </div>
   </div>
  

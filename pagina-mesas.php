@@ -57,7 +57,7 @@
     <div>
       <h1>Pranchao</h1>
       <span>R$ 25,00</span>
-      <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
+      <button a href="produtos.php" class="btn-comprar">Alugar</a></button>
     </div>
   </div>
 
@@ -66,7 +66,7 @@
     <div>
       <h1>Tampão</h1>
       <span>R$ 10,00</span>
-      <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
+      <button a href="produtos.php" class="btn-comprar">Alugar</a></button>
     </div>
   </div>
 
@@ -75,7 +75,7 @@
     <div>
       <h1>Mesa Plastico</h1>
       <span>R$ 12,00</span>
-      <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
+      <button a href="produtos.php" class="btn-comprar">Alugar</a></button>
     </div>
   </div>
 
@@ -84,7 +84,7 @@
     <div>
       <h1>Cadeira Platico</h1>
       <span>R$ 5,50</span>
-      <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
+      <button a href="produtos.php" class="btn-comprar">Alugar</a></button>
     </div>
   </div>
 

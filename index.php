@@ -21,7 +21,7 @@
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="img/produtos/mesas/Mesa decorada (1).jpg" class="d-block w-100" alt="...">
+      <img src="img/produtos/mesas/mesa-decorada .jpg" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
       <img src="img/produtos/mesas/mesa decorada 4 (1).jpg" class="d-block w-100" alt="...">
@@ -53,7 +53,7 @@
           <img class="img_destaques" src="img/produtos/copos/copo-long-drink.jpg">
           <div>
             <h1>Copo long drink</h1>
-            <button>Saiba mais</button>
+            <button a href="" class="btn-comprar">Alugar</a></button>
           </div>
       </div>
                 
@@ -61,7 +61,7 @@
                     <img class="img_destaques" src="img/produtos/taças/taça-diamante.png">
                   <div>
                     <h1>Taça Diamante</h1>
-                    <button>Saiba mais</button>
+                    <button a href="" class="btn-comprar">Alugar</a></button>
                   </div>
                 </div>
               
@@ -69,7 +69,7 @@
                   <img class="img_destaques" src="img/produtos/cristais/prato-para-bolo.jpg">
                   <div>
                     <h1>Prato para bolo</h1>
-                    <button>Saiba mais</button>
+                    <button a href="" class="btn-comprar">Alugar</a></button>
                   </div>
                 </div>
                 
@@ -77,7 +77,7 @@
                 <img class="img_destaques" src="img/produtos/prata/samovar.jpg">
                 <div>
                   <h1>Samovar</h1>
-                  <button>Saiba mais</button>
+                  <button a href="" class="btn-comprar">Alugar</a></button>
                 </div>
               </div>
                 
@@ -85,7 +85,7 @@
                   <img class="img_destaques" src="img/produtos/pratos/prato-wave.jpg">
                   <div>
                     <h1>Prato Wave</h1>
-                    <button>Saiba mais</button>
+                    <button a href="" class="btn-comprar">Alugar</a></button>
                   </div>
                 </div>
 
@@ -93,7 +93,7 @@
                   <img class="img_destaques" src="img/produtos/rechaud/rechaud-cuba.jpg">
                   <div>
                     <h1>Rechaud Cuba</h1>
-                    <button>Saiba mais</button>
+                  <button a href="" class="btn-comprar">Alugar</a></button>
                   </div>
                 </div>
 
@@ -101,7 +101,7 @@
                   <img class="img_destaques" src="img/produtos/sousplat/sousplat-aluminio.jpg">
                   <div>
                     <h1>Sousplat de Aluminio</h1>
-                    <button>Saiba mais</button>
+                    <button a href="" class="btn-comprar">Alugar</a></button>
                   </div>
                 </div>
 
@@ -109,7 +109,7 @@
                   <img class="img_destaques" src="img/produtos/suqueira/suqueira.jpg">
                   <div>
                     <h1>Suqueira</h1>
-                    <button>Saiba mais</button>
+                    <button a href="" class="btn-comprar">Alugar</a></button>
                   </div>
                 </div>
                 
@@ -117,7 +117,7 @@
                   <img class="img_destaques" src="img/produtos/talheres/colher-cafe-dourado.png">
                   <div>
                     <h1>Colher Dourada</h1>
-                    <button>Saiba mais</button>
+                    <button a href="" class="btn-comprar">Alugar</a></button>
                   </div>
                 </div>
 
@@ -125,7 +125,7 @@
                   <img class="img_destaques" src="img/produtos/utensilios cozinha/garrafa-termica-cafe.png">
                   <div>
                     <h1>Garrafa Termica</h1>
-                    <button>Saiba mais</button>
+                    <button a href="" class="btn-comprar">Alugar</a></button>
                   </div>
                 </div>
                 
@@ -133,7 +133,7 @@
             <img class="img_destaques" src="img/produtos/xicaras/xicara-80ml.jpg">
             <div>
                 <h1>Xicara</h1>
-                <button>Saiba mais</button>
+                <button a href="" class="btn-comprar">Alugar</a></button>
             </div>
           </div>
 
@@ -141,7 +141,7 @@
             <img class="img_destaques" src="img/produtos/talheres/kit-talheres-inox.png">
             <div>
                 <h1>Kit talheres inox</h1>
-                <button>Saiba mais</button>
+                <button a href="" class="btn-comprar">Alugar</a></button>
             </div>
           </div>
 

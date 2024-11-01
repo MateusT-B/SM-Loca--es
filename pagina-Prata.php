@@ -56,7 +56,7 @@
     <div>
       <h1>Samovar</h1>
       <span>R$ 30,00</span>
-      <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
+      <button a href="produtos.php" class="btn-comprar">Alugar</a></button>
     </div>
   </div>
 

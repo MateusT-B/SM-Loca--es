@@ -57,7 +57,7 @@
     <div>
       <h1>Rechaud 1 Cuba</h1>
       <span>R$ 35,00</span>
-      <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
+      <button a href="produtos.php" class="btn-comprar">Alugar</a></button>
     </div>
   </div>
 
@@ -66,7 +66,7 @@
     <div>
       <h1>Rechaud 2 Cuba</h1>
       <span>R$ 38,00</span>
-      <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
+      <button a href="produtos.php" class="btn-comprar">Alugar</a></button>
     </div>
   </div>
 
@@ -75,7 +75,7 @@
     <div>
       <h1>Rechaud </h1>
       <span>R$ 30,00</span>
-      <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
+      <button a href="produtos.php" class="btn-comprar">Alugar</a></button>
     </div>
   </div>
 
@@ -84,7 +84,7 @@
     <div>
       <h1>Rechaud Bascu.</h1>
       <span>R$ 50,00</span>
-      <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
+      <button a href="produtos.php" class="btn-comprar">Alugar</a></button>
     </div>
   </div>
 
@@ -93,7 +93,7 @@
     <div>
       <h1>Balde de Gelo</h1>
       <span>R$ 5,50</span>
-      <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
+      <button a href="produtos.php" class="btn-comprar">Alugar</a></button>
     </div>
   </div>
 
@@ -102,7 +102,7 @@
     <div>
       <h1>Bandeja Lisa</h1>
       <span>R$ 5,50</span>
-      <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
+      <button a href="produtos.php" class="btn-comprar">Alugar</a></button>
     </div>
   </div>
 
@@ -111,7 +111,7 @@
     <div>
       <h1>Bandeja inox</h1>
       <span>R$ 5,50</span>
-      <button a href="produtos.php" class="btn-comprar">Comprar</a></button>
+      <button a href="produtos.php" class="btn-comprar">Alugar</a></button>
     </div>
   </div>
 
