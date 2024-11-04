@@ -19,10 +19,10 @@
        
 <!-- Botões de login e cadastro -->
         <div class="text-end">
-        <a href="#">
+        <a href="../cliente/cliente_config.php">
             <img src="../icons/icon-user.png" alt="icon-user" width="50">
         </a>      
-        <a href="#">
+        <a href="../cliente/cliente_carrinho.php">
             <img src="../icons/market-car.png" alt="market-car" width="50">
         </a>
 
