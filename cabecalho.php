@@ -14,17 +14,15 @@
           <li><a href="produtos.php" class="nav-link px-2 text-dark">Produtos</a></li>
           <form id="pesquisa"  class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
           <input type="search" class="form-control form-control-dark" placeholder="Pesquisa..." aria-label="Search">
-        </form>
-      
-       
-<!-- Botões de login e cadastro -->
+        </form>    
+        <!-- Botões de login e cadastro -->
         <div class="text-end">
-          <a href="admin/login.php">
-            <button type="button" class="btn btn-outline-dark me-2">Login</button>
-          </a>
-          <a href="registro.php">
-            <button type="button" class="btn btn-outline-dark me-2">Cadastro</button>
-          </a>
+            <a href="admin/index.php">
+                <button type="button" class="btn btn-outline-dark me-2">Login</button>
+            </a>
+            <a href="registro.php">
+                <button type="button" class="btn btn-outline-dark me-2">Cadastro</button>
+            </a>
         </div>
       </div>
       <hr>
