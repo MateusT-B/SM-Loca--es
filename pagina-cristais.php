@@ -64,7 +64,7 @@
 <div class="card">
     <img src="img/produtos/cristais/saladeira2.jpg">
     <div>
-      <h1>Saladeira 2.</h1>
+      <h1>Saladeira </h1>
       <span>R$ 10,00</span>
       <button a href="produtos.php" class="btn-comprar">Alugar</a></button>
     </div>
@@ -74,7 +74,7 @@
   <div class="card">
     <img src="img/produtos/cristais/saladeira3.jpg">
     <div>
-      <h1>Saladeira 3</h1>
+      <h1>Saladeira </h1>
       <span>R$ 10,00</span>
       <button a href="produtos.php" class="btn-comprar">Alugar</a></button>
     </div>
