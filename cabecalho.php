@@ -19,7 +19,7 @@
        
 <!-- Botões de login e cadastro -->
         <div class="text-end">
-          <a href="login.php">
+          <a href="admin/login.php">
             <button type="button" class="btn btn-outline-dark me-2">Login</button>
           </a>
           <a href="registro.php">
