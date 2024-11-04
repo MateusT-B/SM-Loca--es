@@ -12,7 +12,8 @@
 <body>
     <!-- Inclusão do cabeçalho -->
     <?php include("cabecalho.php"); ?>
-
+    
+<br>
     <main class="container text-center">
         <div class="row align-items-center">
             <div class="col-md-6">
