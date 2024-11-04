@@ -1,21 +1,15 @@
 <?php
-    session_name('sm');
-    if(!isset($_SESSION)){
-        session_start();
+    $host = "localhost";
+    $database = "smlocacoesdb";//banco
+    $user = "root";
+    $pass = "";//senha
+    $charset = "utf8";//tecla
+    $port = "3306";//porta
+
+    try{
+        $conn = new mysqli($host, $user, $pass, $database, $port);
+        mysqli_set_charset($conn, $charset);
     }
-    // segurança digital
- 
-    // verificar se o usuário esta logado na sessão
-    if(!isset($_SESSION['login_usuario'])){
-        //se não existir, redirecionamos a sessão por segurança
-        header('location: login.php'); //redirecionamento
-        exit;
+    catch (Throwable $th){
+        die("Atenção rolou um ERRO".$th);
     }
- 
-    $nome_da_sessao = session_name();
-    if(!isset($_SESSION['nome_da_sessao'])
-        or ($_SESSION['nome_da_sessao']!=$nome_da_sessao)){
-            session_destroy();
-            header('location: login.php');
-    }
-?>
