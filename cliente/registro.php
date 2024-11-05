@@ -52,7 +52,7 @@
                 <label for="floatingDataNascimento">Data de Nascimento</label>
             </div>
             <button type="submit" class="btn btn-primary w-100 py-2">Registrar</button>
-            <p class="mt-3 text-center">Já tem uma conta? <a href="login.php">Faça login aqui</a></p>
+            <p class="mt-3 text-center">Já tem uma conta? <a href="../admin/login.php">Faça login aqui</a></p>
         </form>    
     </main>
     <!-- fim do formulário de registro -->

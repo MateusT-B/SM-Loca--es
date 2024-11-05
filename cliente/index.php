@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/estilo.css">
     <script src="../js/bootstrap.min.js"></script>
     <link rel="shortcut icon" href="../img/favicon1.png" type="image/png">
-    <title>Teste</title>
+    <title>Página inicial</title>
 </head>
 <body>
 <!--- inclusão do cabeçalho --->

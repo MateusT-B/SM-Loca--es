@@ -320,6 +320,7 @@ h4
 {
   text-align: center;
 }
+
 .imagens_redes_sociais
 {
   flex-direction: column;
@@ -328,7 +329,6 @@ h4
 .redes_sociais
 {
   padding: 5px;
-  
 }
 
 .icons

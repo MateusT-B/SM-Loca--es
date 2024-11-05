@@ -148,7 +148,7 @@
 </div>
 
 <div class = "catalogo">
-<a href="produtos.php" class="btn btn-primary ">Veja nosso Catalogo</a>
+<a href="produtos.php" class="btn btn-secondary ">Veja nosso Catalogo</a>
 
 
 </div>
