@@ -85,7 +85,7 @@ if ($_POST) {
                 <label class="form-check-label" for="lembrarMe">Lembrar-me</label>
             </div>
             <button type="submit" class="btn btn-primary w-100 py-2">Entrar</button>
-            <p class="mt-3 text-center">Ainda não tem uma conta? <a href="registro.php">Crie uma aqui</a></p>
+            <p class="mt-3 text-center">Ainda não tem uma conta? <a href="../cliente/registro.php">Crie uma aqui</a></p>
         </form>    
     </main>
 </body>

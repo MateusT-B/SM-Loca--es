@@ -22,7 +22,7 @@
             <div class="col-md-6">
                 <h1 class="mb-3">Quem somos</h1>
                 <h3 class="mb-4">A SM Locações é uma empresa especializada na locação de materiais para festas, incluindo itens como pratos, talheres, copos, taças e baldes. Atuando há quatro anos no mercado, a empresa é gerida por um casal e busca constantemente melhorar seus negócios e a qualidade do atendimento ao cliente.</h3>
-                <a href="produtos.php" class="btn btn-primary">Ver Produtos</a>
+                <a href="produtos.php" class="btn btn-secondary">Ver Produtos</a>
             </div>
         </div>
     </main>

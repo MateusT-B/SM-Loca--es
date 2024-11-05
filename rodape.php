@@ -36,17 +36,17 @@
                     <ul class="nav flex-column">
                         <li class="nav-item">
                             <a href="index.php" class="text-danger nav-link" >
-                                      Página Inicial
+                            Página Inicial
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="quemsomos.php" class="text-danger nav-link">
-                                     Quem Somos
+                            Quem Somos
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="produtos.php" class="text-danger nav-link">
-                                Produtos
+                            Produtos
                             </a>
                         </li>
                     </ul>
