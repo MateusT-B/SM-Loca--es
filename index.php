@@ -13,7 +13,6 @@
 </head>
 <body>
 
-
 <!-- inclusão do cabeçalho -->
 <?php include ("cabecalho.php") ?>
 
