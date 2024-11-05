@@ -13,7 +13,6 @@
 </head>
 <body>
 
-
 <!-- inclusão do cabeçalho -->
 <?php include ("cabecalho.php") ?>
 
@@ -53,7 +52,7 @@
           <img class="img_destaques" src="img/produtos/copos/copo-long-drink.jpg">
           <div>
             <h1>Copo long drink</h1>
-            <button class="btn btn-secondary" onclick="window.location.href='produtos.php'">saiba mais</button>
+            <button class="btn-comprar" onclick="window.location.href='produtos.php'">saiba mais</button>
           </div>
       </div>
                 
@@ -61,7 +60,7 @@
                     <img class="img_destaques" src="img/produtos/taças/taça-diamante.png">
                   <div>
                     <h1>Taça Diamante</h1>
-                    <button class="btn btn-secondary" onclick="window.location.href='produtos.php'">saiba mais</button>
+                    <button class="btn-comprar" onclick="window.location.href='produtos.php'">saiba mais</button>
                   </div>
                 </div>
               
@@ -69,7 +68,7 @@
                   <img class="img_destaques" src="img/produtos/cristais/prato-para-bolo.jpg">
                   <div>
                     <h1>Prato para bolo</h1>
-                    <button class="btn btn-secondary" onclick="window.location.href='pagina-cristais.php'">saiba mais</button>
+                    <button class="btn-comprar" onclick="window.location.href='pagina-cristais.php'">saiba mais</button>
                   </div>
                 </div>
                 
@@ -77,7 +76,7 @@
                 <img class="img_destaques" src="img/produtos/prata/samovar.jpg">
                 <div>
                   <h1>Samovar</h1>
-                  <button class="btn btn-secondary" onclick="window.location.href='pagina-Prata.php'">saiba mais</button>
+                  <button class="btn-comprar" onclick="window.location.href='pagina-Prata.php'">saiba mais</button>
                 </div>
               </div>
                 
@@ -85,7 +84,7 @@
                   <img class="img_destaques" src="img/produtos/pratos/prato-wave.jpg">
                   <div>
                     <h1>Prato Wave</h1>
-                    <button class="btn btn-secondary" onclick="window.location.href='paginas-Pratos.php'">saiba mais</button>
+                    <button class="btn-comprar" onclick="window.location.href='paginas-Pratos.php'">saiba mais</button>
                   </div>
                 </div>
 
@@ -93,7 +92,7 @@
                   <img class="img_destaques" src="img/produtos/rechaud/rechaud-cuba.jpg">
                   <div>
                     <h1>Rechaud Cuba</h1>
-                    <button class="btn btn-secondary" onclick="window.location.href='pagina-inox.php'">saiba mais</button>
+                    <button class="btn-comprar" onclick="window.location.href='pagina-inox.php'">saiba mais</button>
                   </div>
                 </div>
 
@@ -101,7 +100,7 @@
                   <img class="img_destaques" src="img/produtos/sousplat/sousplat-aluminio.jpg">
                   <div>
                     <h1>Sousplat de Aluminio</h1>
-                    <button class="btn btn-secondary" onclick="window.location.href='pagina-Sousplat.php'">saiba mais</button>
+                    <button class="btn-comprar" onclick="window.location.href='pagina-Sousplat'">saiba mais</button>
                   </div>
                 </div>
 
@@ -109,7 +108,7 @@
                   <img class="img_destaques" src="img/produtos/suqueira/suqueira.jpg">
                   <div>
                     <h1>Suqueira</h1>
-                    <button class="btn btn-secondary" onclick="window.location.href='pagina-Suqueiras.php'">saiba mais</button>
+                    <button class="btn-comprar" onclick="window.location.href='pagina-Suqueiras .php'">saiba mais</button>
                   </div>
                 </div>
                 
@@ -117,7 +116,7 @@
                   <img class="img_destaques" src="img/produtos/talheres/colher-cafe-dourado.png">
                   <div>
                     <h1>Colher Dourada</h1>
-                    <button class="btn btn-secondary" onclick="window.location.href='pagina-Talheres.php'">saiba mais</button>
+                    <button class="btn-comprar" onclick="window.location.href='pagina-Talheres.php'">saiba mais</button>
                   </div>
                 </div>
 
@@ -125,7 +124,7 @@
                   <img class="img_destaques" src="img/produtos/utensilios cozinha/garrafa-termica-cafe.png">
                   <div>
                     <h1>Garrafa Termica</h1>
-                    <button class="btn btn-secondary" onclick="window.location.href='pagina-Utensilios.php'">saiba mais</button>
+                    <button class="btn-comprar" onclick="window.location.href='pagina-Utensilios.php'">saiba mais</button>
                   </div>
                 </div>
                 
@@ -133,7 +132,7 @@
             <img class="img_destaques" src="img/produtos/xicaras/xicara-80ml.jpg">
             <div>
                 <h1>Xicara</h1>
-                <button class="btn btn-secondary" onclick="window.location.href='pagina-Xicaras.php'">saiba mais</button>
+                <button class="btn-comprar" onclick="window.location.href='pagina-Xicaras.php'">saiba mais</button>
             </div>
           </div>
 
@@ -141,14 +140,14 @@
             <img class="img_destaques" src="img/produtos/talheres/kit-talheres-inox.png">
             <div>
                 <h1>Kit talheres inox</h1>
-                <button class="btn btn-secondary" onclick="window.location.href='pagina-Talheres.php'">saiba mais</button>
+                <button class="btn-comprar" onclick="window.location.href='pagina-Talheres.php'">saiba mais</button>
             </div>
           </div>
 
 </div>
 
 <div class = "catalogo">
-<a href="produtos.php" class="btn btn-primary ">Veja nosso Catalogo</a>
+<a href="produtos.php" class="btn btn-secondary ">Veja nosso Catalogo</a>
 
 
 </div>
