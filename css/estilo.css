@@ -20,6 +20,7 @@ hr
 {
   border: 1px solid #252525;
   width: 100%;
+  
 
 }
 
@@ -165,6 +166,11 @@ h1, h2 {
 .img_destaques
 {
   margin-left: 20%;
+ 
+}
+
+@media screen {
+  
 }
 
 .catalogo{
