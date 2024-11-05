@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/estilo.css">
-    <link rel="shortcut icon" href="img/favicon1.png" type="image/png">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="shortcut icon" href="../img/favicon1.png" type="image/png">
     <script src="js/bootstrap.min.js"></script>
     <title>Registro de Usuário</title>
 </head>
@@ -13,7 +13,7 @@
     <!-- formulário de registro -->
     <main class="w-100 m-auto form-container">
         <form action="#" method="post">
-            <img src="img/logo.png" alt="logo" class="d-block mx-auto mb-4" height="150" width="150">
+            <img src="../img/logo.png" alt="logo" class="d-block mx-auto mb-4" height="150" width="150">
             <h2 class="text-center mb-4">Criar Conta</h2>
             <div class="form-floating mb-3">
                 <input type="text" class="form-control" id="floatingNome" placeholder="Digite seu nome completo" required>
