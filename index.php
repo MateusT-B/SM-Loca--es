@@ -84,7 +84,7 @@
                   <img class="img_destaques" src="img/produtos/pratos/prato-wave.jpg">
                   <div>
                     <h1>Prato Wave</h1>
-                    <button class="btn btn-secondary" onclick="window.location.href='paginas-Pratos.php'">saiba mais</button>
+                    <button class="btn btn-secondary" onclick="window.location.href='pagina-Pratos.php'">saiba mais</button>
                   </div>
                 </div>
 
@@ -100,7 +100,7 @@
                   <img class="img_destaques" src="img/produtos/sousplat/sousplat-aluminio.jpg">
                   <div>
                     <h1>Sousplat de Aluminio</h1>
-                    <button class="btn btn-secondary" onclick="window.location.href='pagina-Sousplat'">saiba mais</button>
+                    <button class="btn btn-secondary" onclick="window.location.href='pagina-Sousplat.php'">saiba mais</button>
                   </div>
                 </div>
 
@@ -108,7 +108,7 @@
                   <img class="img_destaques" src="img/produtos/suqueira/suqueira.jpg">
                   <div>
                     <h1>Suqueira</h1>
-                    <button class="btn btn-secondary" onclick="window.location.href='pagina-Suqueiras .php'">saiba mais</button>
+                    <button class="btn btn-secondary" onclick="window.location.href='pagina-Suqueiras.php'">saiba mais</button>
                   </div>
                 </div>
                 
