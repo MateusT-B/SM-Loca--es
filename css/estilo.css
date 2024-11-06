@@ -1,4 +1,8 @@
 /* cabecalho.php */
+#cabecalho
+{
+  background-color: white;
+}
 #logo
 {
   width: 100%;
@@ -15,23 +19,20 @@
   margin-top: 16px;
   margin-left: 1%; 
 }
-
 hr
 {
-  border: 1px solid #252525;
   width: 100%;
- 
-  
+  height: 1px;
+  border:1px solid black;
 
 }
-
 
 
 /* Estilo geral */
 body 
 {
     font-family: Arial, sans-serif;
-    background-color: #fff; /* cor de fundo suave */
+    background-color: rgb(255, 255, 255); /* cor de fundo suave */
     color: #343a40; /* texto padrão */
     margin: 0;
     padding: 0;
@@ -106,6 +107,7 @@ body
 /* css da pagina index */
 
 /* css para deixar todos os elementos alinhado */
+
 body {
   margin: 0;
   padding: 0;
@@ -119,7 +121,7 @@ body {
 
 .card {
   margin: 10px; /* Espaço entre os cards */
-  text-align: center; /* Centraliza o texto dentro do card aa*/
+  text-align: center; /* Centraliza o texto dentro do card*/
 }
 
 h1, h2 {
@@ -360,3 +362,4 @@ h4
   width: 10px;
   height: 50px;
 }
+
