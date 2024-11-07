@@ -13,7 +13,7 @@
   
 
 <!-- Rodapé com link para redes sociais -->
-<footer class="w-100 footer bg-dark d-flex flex-wrap justify-content-center align-items-center py-3 my-0 border-top">
+<footer class="w-100 footer bg-dark  d-flex flex-wrap justify-content-center align-items-center py-3 my-0 border-top">
     <!-- Área de Conteúdo Centralizado -->
     <div class="container">
         <div class="row fundo-rodape justify-content-center">

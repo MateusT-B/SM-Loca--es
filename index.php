@@ -144,10 +144,14 @@
             </div>
           </div>
 
+          <a href="produtos.php" class="btn btn-secondary ">Veja nosso Catalogo</a>
 </div>
 
-<div class = "catalogo">
-<a href="produtos.php" class="btn btn-secondary ">Veja nosso Catalogo</a>
+<div class = "Eventos">
+  <br>
+  <h1> Eventos <h1>
+  <img class ="img_eventos" src="img/produtos/mesas/Mídia.jfif" width = "15%" >
+  <img class ="img_eventos" src="img/produtos/mesas/9 fotos adicionadas.jfif" width = "15%">
 
 
 </div>
