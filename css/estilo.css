@@ -1,4 +1,8 @@
 /* cabecalho.php */
+#cabecalho
+{
+  background-color: white;
+}
 #logo
 {
   width: 100%;
@@ -18,19 +22,18 @@
 
 hr
 {
-  border: 1px solid #252525;
   width: 100%;
-  
+  height: 1px;
+  border:1px solid black;
 
 }
-
 
 
 /* Estilo geral */
 body 
 {
     font-family: Arial, sans-serif;
-    background-color: #fff; /* cor de fundo suave */
+    background-color: rgb(255, 255, 255); /* cor de fundo suave */
     color: #343a40; /* texto padrão */
     margin: 0;
     padding: 0;
@@ -105,6 +108,7 @@ body
 /* css da pagina index */
 
 /* css para deixar todos os elementos alinhado */
+
 body {
   margin: 0;
   padding: 0;
@@ -118,7 +122,7 @@ body {
 
 .card {
   margin: 10px; /* Espaço entre os cards */
-  text-align: center; /* Centraliza o texto dentro do card */
+  text-align: center; /* Centraliza o texto dentro do card*/
 }
 
 h1, h2 {
@@ -344,6 +348,7 @@ h4
 
 
 
+<<<<<<< HEAD
 
 
 
@@ -352,4 +357,11 @@ h4
 
 
 
+=======
+#imagem_teste_compras {
+  position: relative;
+  width: 10px;
+  height: 50px;
+}
+>>>>>>> 2a195b4d3d42677654c516e20e115a78696e3c8f
 

@@ -15,10 +15,19 @@
 <!-- inclusão do cabeçalho -->
 <?php include ("cabecalho.php") ?>
 
-<div class="container my-3">
-    <div class="bg-secondary"><img width="400px"  height="400px" src="img/produtos/suqueira/suqueira-lisa.jpg" alt="suqueira"></div>
-    <div class="bg-secondary"><button type="button" class="btn btn-success btn-lg">Adicionar</button></div>
-    <div class="bg-secondary"></div>
+<div class="container flex border border-warning  p-2 my-2">
+    <div class="bg-dark text-center my-2">
+        <img src="img/produtos/suqueira/suqueira.jpg" alt="" class="img-fluid w-25">
+    </div> 
+    <div class="bg-success w-50">
+        <label for="quantidade" class="form-label">Quantidade</label>
+        <input type="number" class="form-control w-25" id="quantidade" name="Quantidade" min="1" step="1">
+    </div>
+    <div class="bg-danger w-50">
+        <button type="button" class="btn btn-success btn-lg">Adicionar</button>
+    </div>
+   
+
 </div>
     
         
