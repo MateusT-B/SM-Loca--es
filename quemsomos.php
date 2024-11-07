@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quem Somos - SM Locações</title>
+    <title>Quem Somos - SMLocações</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="shortcut icon" href="img/favicon1.png" type="image/png">

@@ -27,7 +27,7 @@
                     
                     <!-- Menu suspenso (Dropdown) -->
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
-                        <li><a class="dropdown-item" href="../cliente/cliente_config.php">Configurações</a></li>
+                        <li><a class="dropdown-item" href="../cliente/cliente_config.php">Dados pessoais</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item text-danger" href="#">Sair</a></li>
                     </ul>
