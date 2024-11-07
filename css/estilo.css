@@ -24,7 +24,7 @@ hr
 {
   width: 100%;
   height: 1px;
-  border:1px solid black;
+  border:1px solid #660000;
 
 }
 
@@ -33,7 +33,7 @@ hr
 body 
 {
     font-family: Arial, sans-serif;
-    background-color: rgb(255, 255, 255); /* cor de fundo suave */
+    background-color: #f1f1e9; /* cor de fundo suave */
     color: #343a40; /* texto padrão */
     margin: 0;
     padding: 0;
@@ -109,6 +109,21 @@ body
 
 /* css para deixar todos os elementos alinhado */
 
+.eventos {
+  margin-top: 50px;
+  font-family: "Parisienne";
+}
+
+.h1-eventos{
+  font-family: "Parisienne";
+  font-size: 80px;
+}
+
+
+.img_eventos{
+  margin-top: 30px;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -150,7 +165,8 @@ h1, h2 {
 .produtos-destaques 
 {
   margin-left: 15px;
-  margin-top: 100px;
+  margin-top: 120px;
+  font-family: "Parisienne";
 
 }
 

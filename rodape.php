@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="shortcut icon" href="img/favicon1.png" type="image/png">
-    <title>SM Locações</title>
+    <title>SMLocações</title>
 </head>
 <body>
   
 
 <!-- Rodapé com link para redes sociais -->
-<footer class="w-100 footer bg-dark d-flex flex-wrap justify-content-center align-items-center py-3 my-0 border-top">
+<footer class="w-100 footer bg-dark  d-flex flex-wrap justify-content-center align-items-center py-3 my-0 border-top">
     <!-- Área de Conteúdo Centralizado -->
     <div class="container">
         <div class="row fundo-rodape justify-content-center">

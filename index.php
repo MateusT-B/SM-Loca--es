@@ -7,6 +7,9 @@
     <title>SMLocações</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kavivanar&family=Parisienne&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
     <link rel="shortcut icon" href="img/favicon1.png" type="image/png">
@@ -16,27 +19,16 @@
 <!-- inclusão do cabeçalho -->
 <?php include ("cabecalho.php") ?>
 
-<div class ="minhas-imagens">
-<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="img/produtos/mesas/mesa-decorada .jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="img/produtos/mesas/mesa decorada 4 (1).jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="img/produtos/mesas/mesa decorada 5 (1).jpg" class="d-block w-100" alt="...">
-    </div>
-  </div>
-  <button class=" carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Próximo</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Anterior</span>
-  </button>
+<div class = "eventos">
+  <br>
+  
+  <h1 class="h1-eventos">Eventos<h1>
+
+  <div class = "img_eventos">
+  <img class ="img_eventos" src="img/produtos/mesas/decorada 1.jfif" width = "22%" >
+  <img class ="img_eventos" src="img/produtos/mesas/decorada 2.jfif" width = "22%">
+  <img class = "img_eventos"src="img/produtos/mesas/decorada 4.jfif" width = "22%">
+
 </div>
 
 
@@ -44,7 +36,7 @@
 </div>
 
     <div class = "produtos-destaques">
-      <h1> Destaques </h1>
+      <h1 class ="h1-eventos"> Destaques </h1>
     </div>
 
       <div class ="destaques">
@@ -143,14 +135,13 @@
                 <button class="btn btn-secondary" onclick="window.location.href='pagina-Talheres.php'">saiba mais</button>
             </div>
           </div>
-
+          <a href="produtos.php" class="btn btn-secondary ">Veja nosso Catalogo</a>
 </div>
 
-<div class = "catalogo">
-<a href="produtos.php" class="btn btn-secondary ">Veja nosso Catalogo</a>
 
 
-</div>
+
+
 
 <br>
 

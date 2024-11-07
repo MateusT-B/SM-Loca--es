@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="css/estilo.css">
     
     <link rel="shortcut icon" href="img/favicon1.png" type="image/png">
-    <title>SM Locações</title>
+    <title>SM-Locações</title>
+    
 </head>
 <body>
 
