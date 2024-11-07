@@ -9,7 +9,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
     <link rel="shortcut icon" href="img/favicon1.png" type="image/png">
-    <title>SM-Locações</title>
+    <title>SMLocações</title>
     
 </head>
 <body>

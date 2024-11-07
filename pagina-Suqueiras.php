@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/estilo.css">
     <script src="../js/bootstrap.min.js"></script>
     <link rel="shortcut icon" href="img/favicon1.png" type="image/png">
-    <title>SM Locações</title>
+    <title>SMLocações</title>
 </head>
 <body>
     
