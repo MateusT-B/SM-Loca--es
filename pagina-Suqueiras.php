@@ -49,7 +49,7 @@
   <div class="printable">
     <div class="col-main">
        <div class="topo-produtos">
-          <h1>Suqueira</h1>
+          <h1 class="h1-eventos">Suqueira</h1>
           <div class="row row-cols-1 row-cols-md-3 g-4">
           
 <div class="card">

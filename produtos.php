@@ -44,7 +44,7 @@
         <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
         
      <div class="copos">
-            <h1>Copos</h1>
+            <h1 class ="h1-eventos">Copos</h1>
               <div class="row row-cols-1 row-cols-md-3 g-4">
               
               <div class="card">
@@ -52,7 +52,7 @@
                 <div>
                   <h1>Copo Paulista</h1>
                   <span>R$ 0,40</span>
-                  <button a href="produtos.php" class="btn-comprar" onclick="window.location.href='pagina-compras.php'">Alugar</a></button>
+                  <button class="btn-comprar" onclick="window.location.href='pagina-compras.php'">Alugar</a></button>
              </div>
                </div>
               
@@ -62,7 +62,7 @@
     <div>
       <h1>Copo Stylo</h1>
       <span>R$ 0,40</span>
-      <button a href="produtos.php" class="btn-comprar"  onclick="window.location.href='pagina-compras.php'">Alugar</a></button>
+      <button class="btn-comprar"  onclick="window.location.href='pagina-compras.php'">Alugar</a></button>
     </div>
   </div>
  
@@ -71,7 +71,7 @@
     <div>
       <h1>Copo Whisky</h1>
       <span>R$ 0,40</span>
-      <button a href="produtos.php" class="btn-comprar"  onclick="window.location.href='pagina-compras.php'">Alugar</a></button>
+      <button class="btn-comprar"  onclick="window.location.href='pagina-compras.php'">Alugar</a></button>
     </div>
   </div>
  
@@ -80,7 +80,7 @@
     <div>
       <h1>Copo Chopp</h1>
       <span>R$ 0,40</span>
-      <button a href="produtos.php" class="btn-comprar"  onclick="window.location.href='pagina-compras.php'">Alugar</a></button>
+      <button class="btn-comprar"  onclick="window.location.href='pagina-compras.php'">Alugar</a></button>
     </div>
   </div>
  
@@ -89,7 +89,7 @@
     <div>
       <h1>Copo Long drink</h1>
       <span>R$ 0,40</span>
-      <button a href="produtos.php" class="btn-comprar"  onclick="window.location.href='pagina-compras.php'">Alugar</a></button>
+      <button class="btn-comprar"  onclick="window.location.href='pagina-compras.php'">Alugar</a></button>
     </div>
   </div>
 </div>
@@ -98,14 +98,14 @@
     <div class="printable">
       <div class="col-main">
         <div class="topo-produtos">
-          <h1>Taças</h1>
+          <h1 class="h1-eventos">Taças</h1>
             <div class="row row-cols-1 row-cols-md-3 g-4">
               <div class="card">
                 <img src="img/produtos/taças/taça-diamante.png">
               <div>
                           <h1>Taça Diamante</h1>
                               <span>R$ 0,70</span>
-                              <button a href="produtos.php" class="btn-comprar"  onclick="window.location.href='pagina-compras.php'">Alugar</a></button>
+                              <button class="btn-comprar"  onclick="window.location.href='pagina-compras.php'">Alugar</a></button>
           </div>
       </div>
 
@@ -114,7 +114,7 @@
     <div>
       <h1>Taça Champanhe</h1>
       <span>R$ 0,50</span>
-      <button a href="produtos.php" class="btn-comprar"  onclick="window.location.href='pagina-compras.php'">Alugar</a></button>
+      <button class="btn-comprar"  onclick="window.location.href='pagina-compras.php'">Alugar</a></button>
     </div>
   </div>         
 
@@ -124,7 +124,7 @@
     <div>
       <h1>Taça Vinho</h1>
       <span>R$ 0,80</span>
-      <button a href="produtos.php" class="btn-comprar"  onclick="window.location.href='pagina-compras.php'">Alugar</a></button>
+      <button class="btn-comprar"  onclick="window.location.href='pagina-compras.php'">Alugar</a></button>
     </div>
   </div>
  
@@ -133,7 +133,7 @@
     <div>
       <h1>Taça Bico de J</h1>
       <span>R$ 0,70</span>
-      <button a href="produtos.php" class="btn-comprar"  onclick="window.location.href='pagina-compras.php'">Alugar</a></button>
+      <button class="btn-comprar"  onclick="window.location.href='pagina-compras.php'">Alugar</a></button>
     </div>
   </div>
  
@@ -142,7 +142,7 @@
     <div>
       <h1>Taça rosa</h1>
       <span>R$ 0,70</span>
-      <button a href="produtos.php" class="btn-comprar"  onclick="window.location.href='pagina-compras.php'">Alugar</a></button>
+      <button class="btn-comprar"  onclick="window.location.href='pagina-compras.php'">Alugar</a></button>
     </div>
   </div>
  
@@ -152,7 +152,7 @@
     <div>
       <h1>Taça verde</h1>
       <span>R$ 0,70</span>
-      <button a href="produtos.php" class="btn-comprar"  onclick="window.location.href='pagina-compras.php'">Alugar</a></button>
+      <button class="btn-comprar"  onclick="window.location.href='pagina-compras.php'">Alugar</a></button>
     </div>
   </div>
  
@@ -161,7 +161,7 @@
     <div>
       <h1>Taça dourado</h1>
       <span>R$ 0,70</span>
-      <button a href="produtos.php" class="btn-comprar"  onclick="window.location.href='pagina-compras.php'">Alugar</a></button>
+      <button class="btn-comprar"  onclick="window.location.href='pagina-compras.php'">Alugar</a></button>
     </div>
   </div>
  
@@ -170,7 +170,7 @@
     <div>
       <h1>Taça vermelha</h1>
       <span>R$ 0,70</span>
-      <button a href="produtos.php" class="btn-comprar"  onclick="window.location.href='pagina-compras.php'">Alugar</a></button>
+      <button class="btn-comprar"  onclick="window.location.href='pagina-compras.php'">Alugar</a></button>
     </div>
   </div>
  
@@ -179,7 +179,7 @@
     <div>
       <h1>Taça azul</h1>
       <span>R$ 0,70</span>
-      <button a href="produtos.php" class="btn-comprar"  onclick="window.location.href='pagina-compras.php'">Alugar</a></button>
+      <button class="btn-comprar"  onclick="window.location.href='pagina-compras.php'">Alugar</a></button>
     </div>
   </div>
 			

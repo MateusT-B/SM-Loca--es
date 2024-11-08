@@ -41,19 +41,7 @@
         <input type="date" class="form-control" id="dataNascimento" >
       </div>
     </div>
-    
-    <!-- Gênero -->
-    <div class="row mb-3">
-      <div class="col-md-6">
-        <label for="genero" class="form-label">Gênero</label>
-        <select class="form-select" id="genero">
-          <option selected>Masculino</option>
-          <option value="1">Feminino</option>
-          <option value="2">Outro</option>
-        </select>
-      </div>
-    </div>
-    
+
     <!-- Telefone -->
     <div class="row mb-3">
       <div class="col-md-6">
