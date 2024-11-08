@@ -81,7 +81,7 @@
                 </div>
 
                 <div class="card">
-                  <img class="img_destaques" src="img/produtos/rechaud/rechaud-cuba.jpg">
+                  <img class="img_destaques" src="img/produtos/rechaud/rechaud-redondo.jpg">
                   <div>
                     <h1>Rechaud Cuba</h1>
                     <button class="btn btn-secondary" onclick="window.location.href='pagina-inox.php'">saiba mais</button>
