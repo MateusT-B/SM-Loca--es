@@ -18,7 +18,7 @@
 
 
 <!-- inclusão do rodapé -->
-<?php include ("../rodape.php") ?>
+<?php include ("../cliente/rodape.php") ?>
 
 </body>
 </html>
