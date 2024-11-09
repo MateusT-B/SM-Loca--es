@@ -115,7 +115,14 @@
       <button a href="produtos.php" class="btn-comprar">Alugar</a></button>
     </div>
   </div>
-
+  <div class="card">
+    <img src="img/produtos/utensilios cozinha/jarra de vidro.jpg">
+    <div>
+      <h1>Jarra de Suco</h1>
+      <span>R$ 10,00</span>
+      <button a href="produtos.php" class="btn-comprar">Alugar</a></button>
+    </div>
+  </div>
 
 
 
