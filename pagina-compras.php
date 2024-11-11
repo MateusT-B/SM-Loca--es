@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/estilo.css">
     
+
     <link rel="shortcut icon" href="img/favicon1.png" type="image/png">
     <title>SM-Locações</title>
     
@@ -17,7 +18,7 @@
 <?php include ("cabecalho.php") ?>
 
 
-<div  class="container bg-white flex  p-2 my-5">
+<div id="container-compras"  class="container bg-white flex  p-2 ">
     <div class="d-flex flex-row">
         <div class="p-2">
             <div class="d-flex justify-content-center"> 
@@ -25,8 +26,8 @@
             </div>
             <div class="d-flex flex-row">
                 <div class="mt-2"><label for="quantidade" class="form-label">Quantidade</label></div>
-                <input type="number" class="form-control w-25 mb-1" id="quantidade" name="Quantidade" min="1" step="1">
-                <button type="button" class="btn btn-success w-25 ms-1 text-center">Alugar</button>
+                <input type="number" class="form-control w-25 mb-1 me-1" id="quantidade" name="Quantidade" min="1" step="1">
+                <button type="button" class="btn btn-success w-25">Alugar</button>
             </div>
         </div>
         <div class="p-2">
@@ -41,6 +42,8 @@
     </div>     
 </div>
 
+<!-- inclusão do rodapé -->
+<?php include ("rodape.php") ?>
     
   
 <script src="js/bootstrap.min.js"></script>
