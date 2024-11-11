@@ -146,7 +146,8 @@
       <div class="col-md-6">
       <label for="tipo" class="form-label">Tipo</label>
         <select class="form-control">
-          <option></option>
+          <option>RES</option>
+          <option>COM</option>
         </select>
       </div>  
     </div>
