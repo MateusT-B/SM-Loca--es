@@ -89,7 +89,7 @@
   </div>
 
   <div class="card">
-    <img src="img/produtos/utensilios cozinha/jarra de vidro.jpg">
+    <img src="img/produtos/utensilios cozinha/jarra-de-vidro.jpg">
     <div>
       <h1>Jarra de Suco</h1>
       <span>R$ 10,00</span>
