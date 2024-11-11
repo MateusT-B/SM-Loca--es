@@ -17,7 +17,7 @@
 <?php include ("cabecalho.php") ?>
 
 
-<div class="container bg-white flex  p-2 my-5">
+<div  class="container bg-white flex  p-2 my-5">
     <div class="d-flex flex-row">
         <div class="p-2">
             <div class="d-flex justify-content-center"> 
@@ -26,36 +26,23 @@
             <div class="d-flex flex-row">
                 <div class="mt-2"><label for="quantidade" class="form-label">Quantidade</label></div>
                 <input type="number" class="form-control w-25 mb-1" id="quantidade" name="Quantidade" min="1" step="1">
-                <button type="button" class="btn btn-success w-25 ms-1">Adicionar</button>
+                <button type="button" class="btn btn-success w-25 ms-1 text-center">Alugar</button>
             </div>
         </div>
         <div class="p-2">
-            <div class="mt-2 mb-5"><h1>Nome do produto</h1></div>                
+            <div class="my-5"><h1>Nome do produto</h1></div>                
             <div class="">
-                <p class="fs-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                <p class=" mb-5 fs-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit
                     Vero, magnam natus accusantium aspernatur,quis quibusdam autem mollitia 
                     fugiat hic ducimus quod. Numquam ex corporis repellat in? Ea earum consequatur 
-                    molestias ipsa culpa minus, nostrum explicabo deserunt, omnis sint vel ut incidunt 
-                    impedit facere facilis cupiditate voluptatum temporibus! Veniam, hic. Molestias!
                 </p> 
             </div>
         </div>
-</div>     
-     
-
-        
-        
-        
-
+    </div>     
 </div>
-    
-     
+
     
   
-        
-
-        
-
 <script src="js/bootstrap.min.js"></script>
 <script src="js/script.js"></script>
 </body>
