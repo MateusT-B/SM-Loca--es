@@ -71,7 +71,7 @@
   </div>
 
   <div class="card">
-    <img src="img/produtos/mesas/mesa plastica.jpg">
+    <img src="img/produtos/mesas/mesa-plastica.jpg">
     <div>
       <h1>Mesa Plastico</h1>
       <span>R$ 12,00</span>

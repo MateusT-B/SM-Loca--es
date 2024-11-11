@@ -81,7 +81,7 @@
   </div>
 
   <div class="card">
-    <img src="img/produtos/cristais/saladeira-hawai4.jpg">
+    <img src="img/produtos/cristais/saladeira-hawai.jpg">
     <div>
       <h1>Saladeira hawai</h1>
       <span>R$ 10,00</span>
@@ -90,7 +90,7 @@
   </div>
 
   <div class="card">
-    <img src="img/produtos/cristais/saladeira5.jpg">
+    <img src="img/produtos/cristais/saladeira4.jpg">
     <div>
       <h1>Saladeira</h1>
       <span>R$ 10,00</span>
@@ -116,7 +116,7 @@
     </div>
   </div>
   <div class="card">
-    <img src="img/produtos/utensilios cozinha/jarra de vidro.jpg">
+    <img src="img/produtos/cristais/jarra-de-vidro.jpg">
     <div>
       <h1>Jarra de Suco</h1>
       <span>R$ 10,00</span>
