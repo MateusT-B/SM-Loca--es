@@ -16,28 +16,33 @@
 <!-- inclusão do cabeçalho -->
 <?php include ("cabecalho.php") ?>
 
-<div class="container flex border border-warning  p-2 my-2">
-    <div class="bg-dark text-center my-2">
-        <img src="img/produtos/suqueira/suqueira.jpg" alt="" class="img-fluid w-25">
-    </div> 
-    <div class="bg-success w-50">
-        <label for="quantidade" class="form-label">Quantidade</label>
-        <input type="number" class="form-control w-25" id="quantidade" name="Quantidade" min="1" step="1">
-    </div>
-    <div class="bg-danger w-50">
-        <button type="button" class="btn btn-success btn-lg">Adicionar</button>
-    </div>
-   
 
+<div  class="container bg-white flex  p-2 my-5">
+    <div class="d-flex flex-row">
+        <div class="p-2">
+            <div class="d-flex justify-content-center"> 
+                <img src="img/produtos/suqueira/suqueira.jpg" alt="" class="img-fluid w-100 mb-3">
+            </div>
+            <div class="d-flex flex-row">
+                <div class="mt-2"><label for="quantidade" class="form-label">Quantidade</label></div>
+                <input type="number" class="form-control w-25 mb-1" id="quantidade" name="Quantidade" min="1" step="1">
+                <button type="button" class="btn btn-success w-25 ms-1 text-center">Alugar</button>
+            </div>
+        </div>
+        <div class="p-2">
+            <div class="my-5"><h1>Nome do produto</h1></div>                
+            <div class="">
+                <p class=" mb-5 fs-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit
+                    Vero, magnam natus accusantium aspernatur,quis quibusdam autem mollitia 
+                    fugiat hic ducimus quod. Numquam ex corporis repellat in? Ea earum consequatur 
+                </p> 
+            </div>
+        </div>
+    </div>     
 </div>
-    
-        
+
     
   
-        
-
-        
-
 <script src="js/bootstrap.min.js"></script>
 <script src="js/script.js"></script>
 </body>
