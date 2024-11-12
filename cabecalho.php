@@ -16,10 +16,10 @@
         </form>    
         <!-- Botões de login e cadastro -->
         <div class="text-end">
-            <a href="../admin/index.php">
+            <a href="admin/index.php">
                 <button type="button" class="btn btn-outline-dark me-2">Login</button>
             </a>
-            <a href="../cliente/registro.php">
+            <a href="cliente/registro.php">
                 <button type="button" class="btn btn-outline-dark me-2">Cadastro</button>
             </a>
         </div>

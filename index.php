@@ -60,7 +60,7 @@
                   <img src="img/produtos/cristais/prato-para-bolo.jpg">
                   <div>
                     <h1>Prato para bolo</h1>
-                    <button class="btn btn-secondary" onclick="window.location.href='pagina-cristais.php'">saiba mais</button>
+                    <button class="btn btn-secondary" onclick="window.location.href='Paginas-Produtos/pagina-cristais.php'">saiba mais</button>
                   </div>
                 </div>
                 
@@ -68,7 +68,7 @@
                 <img src="img/produtos/prata/samovar.jpg">
                 <div>
                   <h1>Samovar</h1>
-                  <button class="btn btn-secondary" onclick="window.location.href='pagina-Prata.php'">saiba mais</button>
+                  <button class="btn btn-secondary" onclick="window.location.href='Paginas-Produtos/pagina-Prata.php'">saiba mais</button>
                 </div>
               </div>
                 
@@ -76,7 +76,7 @@
                   <img src="img/produtos/pratos/prato-wave.jpg">
                   <div>
                     <h1>Prato Wave</h1>
-                    <button class="btn btn-secondary" onclick="window.location.href='pagina-Pratos.php'">saiba mais</button>
+                    <button class="btn btn-secondary" onclick="window.location.href='Paginas-Produtos/pagina-Pratos.php'">saiba mais</button>
                   </div>
                 </div>
 
@@ -84,7 +84,7 @@
                   <img  src="img/produtos/utensilios cozinha/garrafa-termica-cafe.png">
                   <div>
                     <h1>Garrafa Termica</h1>
-                    <button class="btn btn-secondary" onclick="window.location.href='pagina-inox.php'">saiba mais</button>
+                    <button class="btn btn-secondary" onclick="window.location.href='Paginas-Produtos/pagina-inox.php'">saiba mais</button>
                   </div>
                 </div>
 
@@ -92,7 +92,7 @@
                   <img  src="img/produtos/talheres/garfo-sobremesa-dourado.png">
                   <div>
                     <h1>Garfo Dourado</h1>
-                    <button class="btn btn-secondary" onclick="window.location.href='pagina-Talheres.php'">saiba mais</button>
+                    <button class="btn btn-secondary" onclick="window.location.href='Paginas-Produtos/pagina-Talheres.php'">saiba mais</button>
                   </div>
                 </div>
 
