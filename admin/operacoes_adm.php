@@ -1,116 +1,54 @@
-<main class="container">
-<h1 class="breadcrumb">Área Administrativa</h1>
-<div class="row"><!-- manter os elementos na linha -->
+<link rel="stylesheet" href="../css/estilo.css">
+<main class="admin-container-adm">
+  <h1></h1>
+  <h1 class="admin-title-adm">Área Administrativa</h1>
 
-<!-- ADM PRODUTOS -->
-<div class="col-sm-6 col-md-4">
-    <div class="thumbnail alert-danger">
-        <img src="../imagens/icone_produtos.png" alt="">
-        <br>
-        <div class="alert-danger">
+  <div class="caixa-tela-adm">
 
-            <div class="btn-group btn-group-justified" role="group">
-                <div class="btn-group">
-                    <button class="btn btn-default disabled" role="alert" style="cursor: default;">
-                        PRODUTOS
-                    </button>
-                </div><!-- fecha btn-group -->
-            </div><!-- fecha btn-group-justified -->
+    <!-- ADM PRODUTOS -->
+    <div class="caixa-adm">
+      <div class="card-adm">
+        <img src="../img/produto.svg" alt="Imagem de Produtos" class="card-img-adm">
+        <div class="card-body-adm">
+          <h5 class="card-tit-adm">PRODUTOS</h5>
+          <h1></h1>
+          <div class="card-botão-adm">
+            <a href="lista_produtos.php" class="btn-adm btn-produtos">LISTAR</a>
+            <a href="insere_produtos.php" class="btn-adm btn-produtos">INSERIR</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-            <div class="btn-group btn-group-justified" role="group">
-                <div class="btn-group">
-                    <a href="produtos_lista.php">
-                        <button class="btn btn-danger">
-                            LISTAR
-                        </button>
-                    </a>
-                </div><!-- fecha btn-group -->
-                <div class="btn-group">
-                    <a href="produtos_insere.php">
-                        <button class="btn btn-danger">
-                            INSERIR
-                        </button>
-                    </a>
-                </div><!-- fecha btn-group -->
-            </div><!-- fecha btn-group-justified -->
+    <!-- ADM CATEGORIA -->
+    <div class="caixa-adm">
+      <div class="card-adm">
+        <img src="../img/categoria.svg" alt="Imagem de Categoria" class="card-img-adm">
+        <div class="card-body-adm">
+          <h5 class="card-tit-adm">CATEGORIA</h5>
+          <h1></h1>
+          <div class="card-botão-adm">
+            <a href="lista_categorias.php" class="btn-adm btn-categorias">LISTAR</a>
+            <a href="insere_categorias.php" class="btn-adm btn-categorias">INSERIR</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-        </div><!-- fecha alert-danger -->
-    </div><!-- fecha thumbnail -->
-</div><!-- fecha col -->
-<!-- fecha ADM PRODUTOS -->
+    <!-- ADM USUÁRIOS -->
+    <div class="caixa-adm">
+      <div class="card-adm">
+        <img src="../img/user.svg" alt="Imagem de Produtos" class="card-img-adm">
+        <div class="card-body-adm">
+          <h5 class="card-tit-adm">USUÁRIOS</h5>
+          <h1></h1>
+          <div class="card-botão-adm">
+            <a href="lista_usuarios.php" class="btn-adm btn-usuarios">LISTAR</a>
+            <a href="insere_usuarios.php" class="btn-adm btn-usuarios">INSERIR</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<!-- ADM TIPOS -->
-<div class="col-sm-6 col-md-4">
-    <div class="thumbnail alert-warning">
-        <img src="../imagens/icone_tipos.png" alt="">
-        <br>
-        <div class="alert-warning">
-            <div class="btn-group btn-group-justified" role="group">
-                <div class="btn-group">
-                    <button class="btn btn-default disabled" role="alert" style="cursor: default;">
-                        TIPOS
-                    </button>
-                </div><!-- fecha btn-group -->
-            </div><!-- fecha btn-group-justified -->
-
-            <div class="btn-group btn-group-justified" role="group">
-                <div class="btn-group">
-                    <a href="tipos_lista.php">
-                        <button class="btn btn-warning">
-                            LISTAR
-                        </button>
-                    </a>
-                </div><!-- fecha btn-group -->
-                <div class="btn-group">
-                    <a href="tipos_insere.php">
-                        <button class="btn btn-warning">
-                            INSERIR
-                        </button>
-                    </a>
-                </div><!-- fecha btn-group -->
-            </div><!-- fecha btn-group-justified -->
-
-        </div><!-- fecha alert-warning -->
-    </div><!-- fecha thumbnail -->
-</div><!-- fecha col -->
-<!-- fecha ADM TIPOS -->
-
-<!-- ADM USUÁRIOS -->
-<div class="col-sm-6 col-md-4">
-    <div class="thumbnail alert-info">
-        <img src="../imagens/icone_user.png" alt="">
-        <br>
-        <div class="alert-info">
-            <div class="btn-group btn-group-justified" role="group">
-                <div class="btn-group">
-                    <button class="btn btn-default disabled" role="alert" style="cursor: default;">
-                        USUÁRIOS
-                    </button>
-                </div><!-- fecha btn-group -->
-            </div><!-- fecha btn-group-justified -->
-
-            <div class="btn-group btn-group-justified" role="group">
-                <div class="btn-group">
-                    <a href="usuarios_lista.php">
-                        <button class="btn btn-info">
-                            LISTAR
-                        </button>
-                    </a>
-                </div><!-- fecha btn-group -->
-                <div class="btn-group">
-                    <a href="usuarios_insere.php">
-                        <button class="btn btn-info">
-                            INSERIR
-                        </button>
-                    </a>
-                </div><!-- fecha btn-group -->
-            </div><!-- fecha btn-group-justified -->
-
-        </div><!-- fecha alert-warning -->
-    </div><!-- fecha thumbnail -->
-</div><!-- fecha col -->
-<!-- fecha ADM USUÁRIOS -->
-
-</div><!-- fecha row -->
-
-</main> 
+  </div>
+</main>

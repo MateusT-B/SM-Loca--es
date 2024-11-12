@@ -1,44 +1,27 @@
-
-<nav class="nav navbar-inverse">
-    <div class="container-fluid">
-        <!-- Agrupamento para exibição Mobile -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar" aria-expanded="false">
-                <span class="sr-only"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a href="index.php" class="navbar-brand">
-                <img src="../images/logo-chuleta.png" alt="">
-            </a>
-        </div>
-        <!-- Fecha Agrupamento para exibição Mobile -->
-        <!-- nav direita -->
-        <div class="collapse navbar-collapse" id="defaultNavbar">
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <button type="button" class="btn btn-danger navbar-btn disabled" style="cursor: default;">
-                        Olá, <!-- USUÁRIO -->!
-                    </button>
-                </li>
-                <li class="active"><a href="index.php">ADMIN</a></li>
-                <li><a href="produtos_lista.php">PRODUTOS</a></li>
-                <li><a href="tipos_lista.php">TIPOS</a></li>
-                <li><a href="usuarios_lista.php">USUÁRIOS</a></li>
-                <li class="active">
-                    <a href="../index.php">
-                        <span class="glyphicon glyphicon-home"></span>
-                    </a>
-                </li>
-                <li>
-                    <a href="logout.php">
-                        <span class="glyphicon glyphicon-log-out"></span>
-                    </a>
-                </li>
-            </ul>
-        </div><!-- fecha collapse navbar-collapse -->
-        <!-- Fecha nav direita -->
-
-    </div><!-- fecha container-fluid -->
-</nav>
+<!--Cabeçalho -->
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/estilo.css">
+<header id="cabecalho" class="bg-light p-3 text-white">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+<!-- Barra de navegação com Página Inicial etc-->
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+        <a href="index.php" class="navbar-brand " >
+          <img id="logo" src="../img/logo.png" alt="mds">
+        </a>
+        </ul>
+        <li><a href="../index.php" class="nav-link px-2 text-dark">Página Inicial</a></li>
+          <li><a href="../quemsomos.php" class="nav-link px-2 text-dark">Quem Somos</a></li>
+          <li><a href="../produtos.php" class="nav-link px-2 text-dark">Produtos</a></li>  
+        <!-- Botões de login e cadastro -->
+        <div class="text-end">
+          <a href="../index.php">
+            <img src="../img/home.svg" alt="HOME">
+          </a>
+          <a href="logout.php">
+            <img src="../img/logout.svg" alt="LOGOUT">
+          </a>
+      </div>
+      <hr>
+    </div>
+</header>
