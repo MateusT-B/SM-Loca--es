@@ -8,43 +8,65 @@
     <link rel="stylesheet" href="../css/estilo.css">
     <link rel="shortcut icon" href="../img/favicon1.png" type="image/png">
     <script src="../js/bootstrap.min.js"></script>
-    <title>forma de pagamento</title>
+    <title>Forma de Pagamento</title>
 </head>
 <body>
-<?php include ("menu_cliente.php") ?>
-<div class="payment-container">
-    <h2>Forma De Pagamento</h2>
-    
-    <form id="payment-form" action="/processa-pagamento" method="POST">
-        <!-- Nome do Cartão -->
-        <div class="input-group">
-            <label for="card-name">Nome no Cartão</label>
-            <input type="text" id="card-name" name="card-name" placeholder="Nome completo" required>
+    <?php include("menu_cliente.php") ?>
+
+    <!-- Contêiner Flexível para os Formulários -->
+    <div class="form-container">
+        <!-- Formulário de Pagamento -->
+        <div class="payment-container">
+            <h2>Forma De Pagamento</h2>
+            <form id="payment-form" action="/processa-pagamento" method="POST">
+                <div class="input-group">
+                    <label for="card-name">Nome no Cartão</label>
+                    <input type="text" id="card-name" name="card-name" placeholder="Nome completo" required>
+                </div>
+                <div class="input-group">
+                    <label for="card-number">Número do Cartão</label>
+                    <input type="text" id="card-number" name="card-number" placeholder="XXXX XXXX XXXX XXXX" maxlength="19" pattern="\d{4} \d{4} \d{4} \d{4}" required>
+                </div>
+                <div class="input-group">
+                    <label for="expiry-date">Data de Validade</label>
+                    <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/AAAA" pattern="\d{2}/\d{4}" required>
+                </div>
+                <div class="input-group">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="XXX" maxlength="3" pattern="\d{3}" required>
+                </div>
+                <button type="submit" class="payment-button">Pagar Agora</button>
+            </form>
         </div>
 
-        <!-- Número do Cartão -->
-        <div class="input-group">
-            <label for="card-number">Número do Cartão</label>
-            <input type="text" id="card-number" name="card-number" placeholder="XXXX XXXX XXXX XXXX" maxlength="19" pattern="\d{4} \d{4} \d{4} \d{4}" required>
+        <!-- Formulário de Endereço -->
+        <div class="endereco-entrega">
+            <h2>Endereço de Entrega</h2>
+            <form id="address-form" action="/processa-endereco" method="POST">
+                <div class="input-group">
+                    <label for="address-name">Nome do Destinatário</label>
+                    <input type="text" id="address-name" name="address-name" placeholder="Nome completo" required>
+                </div>
+                <div class="input-group">
+                    <label for="address">Endereço</label>
+                    <input type="text" id="address" name="address" placeholder="Rua, número, complemento" required>
+                </div>
+                <div class="input-group">
+                    <label for="city">Cidade</label>
+                    <input type="text" id="city" name="city" placeholder="Cidade" required>
+                </div>
+                <div class="input-group">
+                    <label for="state">Estado</label>
+                    <input type="text" id="state" name="state" placeholder="Estado" required>
+                </div>
+                <div class="input-group">
+                    <label for="zip">CEP</label>
+                    <input type="text" id="zip" name="zip" placeholder="XXXXX-XXX" pattern="\d{5}-\d{3}" required>
+                </div>
+                <button type="submit" class="address-button">Salvar Endereço</button>
+            </form>
         </div>
-
-
-        <!-- Data de Validade -->
-        <div class="input-group">
-            <label for="expiry-date">Data de Validade</label>
-            <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/AAAA" pattern="\d{2}/\d{4}" required>
-        </div>
-
-        <!-- CVV -->
-        <div class="input-group">
-            <label for="cvv">CVV</label>
-            <input type="text" id="cvv" name="cvv" placeholder="XXX" maxlength="3" pattern="\d{3}" required>
-        </div>
-
-
-        <!-- Botão de pagamento -->
-        <button type="submit" class="payment-button">Pagar Agora</button>
-    </form>
+    </div>
     <script>
      //js para aceitar apenas numero e a quantidade correta de um numero de cartao 
        document.getElementById('card-number').addEventListener('input', function (e) {
@@ -73,100 +95,7 @@
         e.target.value = value;
     });
 </script>
-
-    <div class="form-endereco">
-    
-    <div class="row mb-3">
-      <div class="col-md-6">
-        <label for="logradouro" class="form-label">Logradouro</label>
-        <input type="text" class="form-control" id="logradouro" >
-      </div>  
-    </div>
-
-    <!-- Número -->
-    <div class="row mb-3">
-      <div class="col-md-6">
-        <label for="numero" class="form-label">Número</label>
-        <input type="number" class="form-control" id="numero" >
-      </div>  
-    </div>
-
-    <!-- Bairro -->
-    <div class="row mb-3">
-      <div class="col-md-6">
-        <label for="bairro" class="form-label">Bairro</label>
-        <input type="text" class="form-control" id="bairro" >
-      </div>  
-    </div>
-
-    <!-- Cidade -->
-    <div class="row mb-3">
-      <div class="col-md-6">
-        <label for="cidade" class="form-label">Cidade</label>
-        <input type="text" class="form-control" id="cidade" >
-      </div>  
-    </div>
-
-    <!-- Estado -->
-    <div class="row mb-3">
-      <div class="col-md-6">
-      <label for="estado" class="form-label">Estado</label>
-        <select class="form-control">
-          <option>AC</option>
-          <option>AL</option>
-          <option>AP</option>
-          <option>AM</option>
-          <option>BA</option>
-          <option>CE</option>
-          <option>DF</option>
-          <option>ES</option>
-          <option>GO</option>
-          <option>MA</option>
-          <option>MT</option>
-          <option>MS</option>
-          <option>MG</option>
-          <option>PA</option>
-          <option>PB</option>
-          <option>PR</option>
-          <option>PE</option>
-          <option>PI</option>
-          <option>RJ</option>
-          <option>RN</option>
-          <option>RS</option>
-          <option>RO</option>
-          <option>RR</option>
-          <option>SC</option>
-          <option>SP</option>
-          <option>SE</option>
-          <option>TO</option>
-        </select>
-      </div>  
-    </div>
-
-    <!-- CEP -->
-    <div class="row mb-3">
-      <div class="col-md-6">
-        <label for="cep" class="form-label">CEP</label>
-        <input type="number" class="form-control" id="cep" >
-      </div>  
-    </div>
-
-    
-    <!-- Tipo -->
-    <div class="row mb-3">
-      <div class="col-md-6">
-      <label for="tipo" class="form-label">Tipo</label>
-        <select class="form-control">
-          <option>RES</option>
-          <option>COM</option>
-        </select>
-      </div>  
-    </div>
-    </div>
-</div>
-
-<br>
-<?php include ("rodape.php") ?>
-
+    <br>
+    <?php include("rodape.php") ?>
 </body>
 </html>
