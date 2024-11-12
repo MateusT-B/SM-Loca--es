@@ -1,3 +1,15 @@
+<?php
+// arquivo de conexão com o banco
+include 'banco/connect.php';
+
+//consulta para filtrar os dados
+
+//$id = $_GET['id'];
+///$informacaoproduto = $conn->query("select * from produtos where id =$id");
+//$informacaoproduto = $informacaoproduto->fetch_assoc();
+//$numinformacaoproduto = $
+//?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -18,29 +30,28 @@
 <?php include ("cabecalho.php") ?>
 
 
-<div id="container-compras"  class="container bg-white flex  p-2 ">
-    <div class="d-flex flex-row">
-        <div class="p-2">
-            <div class="d-flex justify-content-center"> 
-                <img src="img/produtos/suqueira/suqueira.jpg" alt="" class="img-fluid w-100 mb-3">
-            </div>
+<div id="container-compras"  class="col-sm-6 col-md-4 bg-white flex mx-auto p-2">
+        <div class="d-flex justify-content-center">
+            <img src="img/produtos/suqueira/suqueira.jpg" alt="suqueira" class="img-fluid w-75">
+        </div>
+        <div class="d-flex justify-content-center my-3"> 
+            <h3>
+                Nome do produto
+            </h3>
+        </div>
+        <div class="d-flex justify-content-center my-3">
+            <p class=" fs-5">
+                Pode ser usado para degustar qualquer tipo de bebida
+            </p> 
+        </div>  
+        <div>
             <div class="d-flex flex-row">
-                <div class="mt-2"><label for="quantidade" class="form-label">Quantidade</label></div>
-                <input type="number" class="form-control w-25 mb-1 me-1" id="quantidade" name="Quantidade" min="1" step="1">
-                <button type="button" class="btn btn-success w-25">Alugar</button>
+                <label for="quantidade" class="form-label mt-2">Quantidade</label>
+                <input type="number" id="seletorqnt-compras" class="form-control mb-1 me-1" id="quantidade" name="Quantidade" min="1" step="1">   
+                <button type="button" class="btn btn-success  ">Alugar</button>
             </div>
-        </div>
-        <div class="p-2">
-            <div class="my-5"><h1>Nome do produto</h1></div>                
-            <div class="">
-                <p class=" mb-5 fs-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit
-                    Vero, magnam natus accusantium aspernatur,quis quibusdam autem mollitia 
-                    fugiat hic ducimus quod. Numquam ex corporis repellat in? Ea earum consequatur 
-                </p> 
-            </div>
-        </div>
-    </div>     
-</div>
+        </div> 
+ </div>   
 
 <!-- inclusão do rodapé -->
 <?php include ("rodape.php") ?>
