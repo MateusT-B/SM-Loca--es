@@ -8,7 +8,7 @@
                     <img id="logo" src="../img/logo.png" alt="Logo">
                 </a>
             </ul>
-            <li><a href="../index.php" class="nav-link px-2 text-dark">Página Inicial</a></li>
+            <li><a href="../cliente/index.php" class="nav-link px-2 text-dark">Página Inicial</a></li>
             <li><a href="../quemsomos.php" class="nav-link px-2 text-dark">Quem Somos</a></li>
             <li><a href="../produtos.php" class="nav-link px-2 text-dark">Produtos</a></li>
 
@@ -27,7 +27,7 @@
                     
                     <!-- Menu suspenso (Dropdown) -->
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
-                        <li><a class="dropdown-item" href="../cliente/cliente_config.php">Dados pessoais</a></li>
+                        <li><a class="dropdown-item" href="../cliente/cliente_config.php">Atualizar dados</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item text-danger" href="#">Sair</a></li>
                     </ul>

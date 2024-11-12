@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/estilo.css">
     <link rel="shortcut icon" href="img/favicon1.png" type="image/png">
     <title>SMLocações</title>
 </head>
@@ -25,16 +25,16 @@
                     <div class="block-content">
                         <ul class="cd-accordion-menu animated">
                             <li><img src="https://rentalfesta.com.br/icones/icone_copos-e-tacas.png" class="icone"><a href="produtos.php">Copos e Taças</a></li>
-                            <li><img src="https://rentalfesta.com.br/icones/icone_cristais.png" class="icone"><a href="pagina-cristais.php">Cristais</a></li>
-                            <li><img src="https://rentalfesta.com.br/icones/icone_inox.png" class="icone"><a href="pagina-inox.php">Inox</a></li>
-                            <li><img src="https://rentalfesta.com.br/icones/icone_mesas-e-cadeiras.png" class="icone"><a href="pagina-mesas.php">Mesas / Cadeiras / Pranchão</a></li>
-                            <li><img src="https://rentalfesta.com.br/icones/icone_prata.png" class="icone"><a href="pagina-Prata.php">Prata</a></li>
-                            <li><img src="https://rentalfesta.com.br/icones/icone_pratos.png" class="icone"><a href="pagina-Pratos.php">Pratos</a></li>
-                            <li><img src="https://rentalfesta.com.br/icones/icone_sous-plat.png" class="icone"><a href="pagina-Sousplat.php">Sousplat</a></li>
-                            <li><img src="https://rentalfesta.com.br/icones/icone_suqueiras.png" class="icone"><a href="pagina-Suqueiras.php">Suqueiras</a></li>
-                            <li><img src="https://rentalfesta.com.br/icones/icone_talheres-e-acessorios.png" class="icone"><a href="pagina-Talheres.php">Talheres</a></li>
-                            <li><img src="https://rentalfesta.com.br/icones/icone_utensilios.png" class="icone"><a href="pagina-Utensilios.php">Utensílios para Cozinha</a></li>
-                            <li><img src="https://rentalfesta.com.br/icones/icone_xicaras-e-canecas.png" class="icone"><a href="pagina-Xicaras.php">Xícaras e Canecas</a></li>            
+                            <li><img src="https://rentalfesta.com.br/icones/icone_cristais.png" class="icone"><a href="paginas-Produtos/pagina-cristais.php">Cristais</a></li>
+                            <li><img src="https://rentalfesta.com.br/icones/icone_inox.png" class="icone"><a href="paginas-Produtos/pagina-inox.php">Inox</a></li>
+                            <li><img src="https://rentalfesta.com.br/icones/icone_mesas-e-cadeiras.png" class="icone"><a href="paginas-Produtos/pagina-mesas.php">Mesas / Cadeiras / Pranchão</a></li>
+                            <li><img src="https://rentalfesta.com.br/icones/icone_prata.png" class="icone"><a href="paginas-Produtos/pagina-Prata.php">Prata</a></li>
+                            <li><img src="https://rentalfesta.com.br/icones/icone_pratos.png" class="icone"><a href="paginas-Produtos/pagina-Pratos.php">Pratos</a></li>
+                            <li><img src="https://rentalfesta.com.br/icones/icone_sous-plat.png" class="icone"><a href="paginas-Produtos/pagina-Sousplat.php">Sousplat</a></li>
+                            <li><img src="https://rentalfesta.com.br/icones/icone_suqueiras.png" class="icone"><a href="paginas-Produtos/pagina-Suqueiras.php">Suqueiras</a></li>
+                            <li><img src="https://rentalfesta.com.br/icones/icone_talheres-e-acessorios.png" class="icone"><a href="paginas-Produtos/pagina-Talheres.php">Talheres</a></li>
+                            <li><img src="https://rentalfesta.com.br/icones/icone_utensilios.png" class="icone"><a href="paginas-Produtos/pagina-Utensilios.php">Utensílios para Cozinha</a></li>
+                            <li><img src="https://rentalfesta.com.br/icones/icone_xicaras-e-canecas.png" class="icone"><a href="paginas-Produtos/pagina-Xicaras.php">Xícaras</a></li>            
                         </ul>
                     </div>
                 </div>
@@ -197,6 +197,8 @@
 
 <!-- inclusão do rodapé -->
 <?php include ("rodape.php") ?>
+
+
      
 </body>
 <script src="js/bootstrap.min.js"></script>
