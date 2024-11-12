@@ -42,28 +42,28 @@
         <!-- Formulário de Endereço -->
         <div class="endereco-entrega">
             <h2>Endereço de Entrega</h2>
-            <form id="address-form" action="/processa-endereco" method="POST">
+            <form id="endereco-form" action="/processa-endereco" method="POST">
                 <div class="input-group">
-                    <label for="address-name">Nome do Destinatário</label>
-                    <input type="text" id="address-name" name="address-name" placeholder="Nome completo" required>
+                    <label for="nome">Nome do Destinatário</label>
+                    <input type="text" id="nome" name="nome" placeholder="Nome completo" required>
                 </div>
                 <div class="input-group">
-                    <label for="address">Endereço</label>
-                    <input type="text" id="address" name="address" placeholder="Rua, número, complemento" required>
+                    <label for="endereco">Endereço</label>
+                    <input type="text" id="endereco" name="endereco" placeholder="Rua, número, complemento" required>
                 </div>
                 <div class="input-group">
-                    <label for="city">Cidade</label>
-                    <input type="text" id="city" name="city" placeholder="Cidade" required>
+                    <label for="cidade">Cidade</label>
+                    <input type="text" id="cidade" name="cidade" placeholder="Cidade" required>
                 </div>
                 <div class="input-group">
-                    <label for="state">Estado</label>
-                    <input type="text" id="state" name="state" placeholder="Estado" required>
+                    <label for="estado">Estado</label>
+                    <input type="text" id="estado" name="estado" placeholder="Estado" required>
                 </div>
                 <div class="input-group">
-                    <label for="zip">CEP</label>
-                    <input type="text" id="zip" name="zip" placeholder="XXXXX-XXX" pattern="\d{5}-\d{3}" required>
+                    <label for="cep">CEP</label>
+                    <input type="text" id="cep" name="cep" placeholder="XXXXX-XXX"  required>
                 </div>
-                <button type="submit" class="address-button">Salvar Endereço</button>
+                <button type="submit" class="endereco-button">Salvar Endereço</button>
             </form>
         </div>
     </div>
@@ -86,11 +86,19 @@
         e.target.value = value;
     });
     
-    //js para deixar cvv Garante que só serão aceitos 3 dígitos e que Remova tudo que não for número
+    //js para deixar cvv Garantindo que só serão aceitos 3 dígitos e que Remova tudo que não for número
     document.getElementById('cvv').addEventListener('input', function (e) {
         let value = e.target.value.replace(/\D/g, ''); 
         if (value.length > 3) {
             value = value.slice(0, 3); 
+        }
+        e.target.value = value;
+    });
+    //js para deixar cvv Garantindo que só serão aceitos 3 dígitos e que Remova tudo que não for número
+    document.getElementById('cep').addEventListener('input', function (e) {
+        let value = e.target.value.replace(/\D/g, ''); 
+        if (value.length > 8) {
+            value = value.slice( 8); 
         }
         e.target.value = value;
     });
