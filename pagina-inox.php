@@ -80,7 +80,7 @@
   </div>
 
   <div class="card">
-    <img src="img/produtos/rechaud/rechaud basculante.jpeg">
+    <img src="img/produtos/rechaud/rechaud-basculante.jpeg">
     <div>
       <h1>Rechaud Bascu.</h1>
       <span>R$ 50,00</span>

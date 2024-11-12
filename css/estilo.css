@@ -338,11 +338,9 @@ h4
 }
 
 
+/*CSS COMPRAS*/
+#container-compras{
+  margin-top: 8% !important;
+  margin-bottom: 20% !important;
 
-
-#imagem_teste_compras {
-  position: relative;
-  width: 10px;
-  height: 50px;
 }
-
