@@ -32,7 +32,7 @@
     <div class="row mb-3">
       <div class="col-md-6">
         <label for="cpf" class="form-label">CPF</label>
-        <input type="number" class="form-control" id="cpf">
+        <input type="text" class="form-control" id="cpf">
       </div>
     </div>
     
@@ -76,7 +76,7 @@
     <div class="row mb-3">
       <div class="col-md-6">
         <label for="numero" class="form-label">Número</label>
-        <input type="number" class="form-control" id="numero" >
+        <input type="text" class="form-control" id="numero" >
       </div>  
     </div>
 
@@ -136,7 +136,7 @@
     <div class="row mb-3">
       <div class="col-md-6">
         <label for="cep" class="form-label">CEP</label>
-        <input type="number" class="form-control" id="cep" >
+        <input type="text" class="form-control" id="cep" >
       </div>  
     </div>
 
