@@ -86,11 +86,7 @@
 </div> <!-- //! FIM DA DIV -->
 
 
-<!-- inclusão do rodapé -->
 <?php include ("rodape.php") ?>
     
 </body>
-
-
-
 </html>
