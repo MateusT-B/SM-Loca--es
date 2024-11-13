@@ -14,7 +14,7 @@
     <?php include("menu_cliente.php") ?>
 
     <!-- Contêiner Flexível para os Formulários -->
-    <div class="form-container">
+    <div id="form-container">
         <!-- Formulário de Pagamento -->
         <div class="payment-container">
             <h2>Forma De Pagamento</h2>

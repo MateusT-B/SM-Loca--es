@@ -360,7 +360,7 @@ h4
 /*pagamento.php*/
 
 /* Contêiner principal para os dois formulários */
-.form-container {
+#form-container {
   display: flex;
   justify-content: space-between;
   gap: 20px;
