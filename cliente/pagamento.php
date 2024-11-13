@@ -44,26 +44,70 @@
             <h2>Endereço de Entrega</h2>
             <form id="endereco-form" action="/processa-endereco" method="POST">
                 <div class="input-group">
-                    <label for="nome">Nome do Destinatário</label>
-                    <input type="text" id="nome" name="nome" placeholder="Nome completo" required>
+                    <label for="Rua">Rua</label>
+                    <input type="text" id="Rua" name="Rua" placeholder="Rua" required>
                 </div>
                 <div class="input-group">
-                    <label for="endereco">Endereço</label>
-                    <input type="text" id="endereco" name="endereco" placeholder="Rua, número, complemento" required>
+                    <label for="numero">Número</label>
+                    <input type="text" id="numero" name="numero" placeholder="número da casa/apartamento" required>
+                </div>
+                <div class="input-group">
+                    <label for="bairro">Bairro</label>
+                    <input type="text" id="bairro" name="bairro" placeholder="bairro" required>
                 </div>
                 <div class="input-group">
                     <label for="cidade">Cidade</label>
-                    <input type="text" id="cidade" name="cidade" placeholder="Cidade" required>
-                </div>
-                <div class="input-group">
-                    <label for="estado">Estado</label>
-                    <input type="text" id="estado" name="estado" placeholder="Estado" required>
+                    <input type="text" id="cidade" name="cidade" placeholder="cidade" required>
                 </div>
                 <div class="input-group">
                     <label for="cep">CEP</label>
                     <input type="text" id="cep" name="cep" placeholder="XXXXX-XXX"  required>
                 </div>
+                <div class="input-group">
+                    <label for="estado">Estado</label>
+                        <select id="estado" name="estado" required>
+                        <option value="" disabled selected>Selecione o estado</option>
+                        <option value="AC">AC</option>
+                        <option value="AL">AL</option>
+                        <option value="AP">AP</option>
+                        <option value="AM">AM</option>
+                        <option value="BA">BA</option>
+                        <option value="CE">CE</option>
+                        <option value="DF">DF</option>
+                        <option value="ES">ES</option>
+                        <option value="GO">GO</option>
+                        <option value="MA">MA</option>
+                        <option value="MT">MT</option>
+                        <option value="MS">MS</option>
+                        <option value="MG">MG</option>
+                        <option value="PA">PA</option>
+                        <option value="PB">PB</option>
+                        <option value="PR">PR</option>
+                        <option value="PE">PE</option>
+                        <option value="PI">PI</option>
+                        <option value="RJ">RJ</option>
+                        <option value="RN">RN</option>
+                        <option value="RS">RS</option>
+                        <option value="RO">RO</option>
+                        <option value="RR">RR</option>
+                        <option value="SC">SC</option>
+                        <option value="SP">SP</option>
+                        <option value="SE">SE</option>
+                        <option value="TO">TO</option>
+                 </select>
+            </div>
+         <div class="input-group">
+                    <label for="tipo_endereco">Tipo de Endereço</label>
+                    <select class="" name="tipo_endereco" required>
+                        <option value="" disabled selected>Selecione o tipo de endereço</option>
+                        <option value="RES">Residencial</option>
+                        <option value="COM">Comercial</option>
+                    </select>
+             
+
                 <button type="submit" class="endereco-button">Salvar Endereço</button>
+                </div>
+
             </form>
         </div>
     </div>
@@ -94,11 +138,11 @@
         }
         e.target.value = value;
     });
-    //js para deixar cvv Garantindo que só serão aceitos 3 dígitos e que Remova tudo que não for número
+    //js para deixar cvv Garantindo que só serão aceitos 8 dígitos e que Remova tudo que não for número
     document.getElementById('cep').addEventListener('input', function (e) {
         let value = e.target.value.replace(/\D/g, ''); 
-        if (value.length > 8) {
-            value = value.slice( 8); 
+        if (value.length >= 8) {
+            value = value.slice(0, 5)+'-' + value.slice(5, 8);
         }
         e.target.value = value;
     });
