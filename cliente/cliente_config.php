@@ -13,160 +13,123 @@
 <!-- inclusão do cabeçalho do cliente --> 
 <?php include ("menu_cliente.php") ?>
 
+<br>
+
 <form action="/salvar-dados" method="POST">
-  <div class="container">
+  <div class="container d-flex justify-content-center align-items-center min-vh-100" style="background-color: #f8f9fa;">
+    <div class="row w-100 p-4" style="background-color: white; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+      
+      <!-- Seção de Meus Dados Pessoais -->
+      <div class="col-12 mb-4">
+        <h1 class="text-center">Meus Dados Pessoais</h1>
 
-    <br>
-    <!-- Titulo meus dados pessoais -->
-    <h1>Meus Dados Pessoais</h1>
-    
-    <!-- Nome Completo -->
-    <div class="row mb-3">
-      <div class="col-md-6">
-        <label for="nomeCompleto" class="form-label">Nome Completo</label>
-        <input type="text" class="form-control" id="nomeCompleto">
+        <div class="mb-3">
+          <label for="nomeCompleto" class="form-label">Nome Completo</label>
+          <input type="text" class="form-control" id="nomeCompleto">
+        </div>
+
+        <div class="mb-3">
+          <label for="cpf" class="form-label">CPF</label>
+          <input type="text" class="form-control" id="cpf">
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label">E-mail</label>
+          <input type="email" class="form-control" id="email">
+        </div>
+
+        <div class="mb-3">
+          <label for="dataNascimento" class="form-label">Data de Nascimento</label>
+          <input type="date" class="form-control" id="dataNascimento">
+        </div>
+
+        <div class="mb-3">
+          <label for="telefone" class="form-label">Telefone</label>
+          <input type="tel" class="form-control" id="telefone">
+        </div>
+      </div>
+
+      <!-- Seção de Endereço -->
+      <div class="col-12 mb-4">
+        <h1 class="text-center">Endereço</h1>
+
+        <div class="mb-3">
+          <label for="logradouro" class="form-label">Logradouro</label>
+          <input type="text" class="form-control" id="logradouro">
+        </div>
+
+        <div class="mb-3">
+          <label for="numero" class="form-label">Número</label>
+          <input type="text" class="form-control" id="numero">
+        </div>
+
+        <div class="mb-3">
+          <label for="bairro" class="form-label">Bairro</label>
+          <input type="text" class="form-control" id="bairro">
+        </div>
+
+        <div class="mb-3">
+          <label for="cidade" class="form-label">Cidade</label>
+          <input type="text" class="form-control" id="cidade">
+        </div>
+
+        <div class="mb-3">
+          <label for="estado" class="form-label">Estado</label>
+          <select class="form-control" id="estado">
+            <option>AC</option>
+            <option>AL</option>
+            <option>AP</option>
+            <option>AM</option>
+            <option>BA</option>
+            <option>CE</option>
+            <option>DF</option>
+            <option>ES</option>
+            <option>GO</option>
+            <option>MA</option>
+            <option>MT</option>
+            <option>MS</option>
+            <option>MG</option>
+            <option>PA</option>
+            <option>PB</option>
+            <option>PR</option>
+            <option>PE</option>
+            <option>PI</option>
+            <option>RJ</option>
+            <option>RN</option>
+            <option>RS</option>
+            <option>RO</option>
+            <option>RR</option>
+            <option>SC</option>
+            <option>SP</option>
+            <option>SE</option>
+            <option>TO</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="cep" class="form-label">CEP</label>
+          <input type="text" class="form-control" id="cep">
+        </div>
+
+        <div class="mb-3">
+          <label for="tipo" class="form-label">Tipo</label>
+          <select class="form-control" id="tipo">
+            <option>RES</option>
+            <option>COM</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Botões -->
+      <div class="col-12 d-flex justify-content-between mt-3">
+        <button type="submit" class="btn btn-primary">Salvar Alterações</button>
+        <button type="reset" class="btn btn-secondary">Cancelar</button>
       </div>
     </div>
-
-    <!-- Nome Completo -->
-    <div class="row mb-3">
-      <div class="col-md-6">
-        <label for="cpf" class="form-label">CPF</label>
-        <input type="text" class="form-control" id="cpf">
-      </div>
-    </div>
-    
-    <!-- E-mail -->
-    <div class="row mb-3">
-      <div class="col-md-6">
-        <label for="email" class="form-label">E-mail</label>
-        <input type="email" class="form-control" id="email" >
-      </div>
-    </div>
-    
-    <!-- Data de Nascimento -->
-    <div class="row mb-3">
-      <div class="col-md-6">
-        <label for="dataNascimento" class="form-label">Data de Nascimento</label>
-        <input type="date" class="form-control" id="dataNascimento" >
-      </div>
-    </div>
-
-    <!-- Telefone -->
-   <div class="row mb-3">
-      <div class="col-md-6">
-        <label for="telefone" class="form-label">Telefone</label>
-        <input type="tel" class="form-control" id="telefone" >
-      </div>
-    </div>
-
-    <br>
-    <!-- Titulo H1 de endereço -->
-     <h1>Endereço</h1>
-
-    <!-- Logradouro -->
-    <div class="row mb-3">
-      <div class="col-md-6">
-        <label for="logradouro" class="form-label">Logradouro</label>
-        <input type="text" class="form-control" id="logradouro" >
-      </div>  
-    </div>
-
-    <!-- Número -->
-    <div class="row mb-3">
-      <div class="col-md-6">
-        <label for="numero" class="form-label">Número</label>
-        <input type="text" class="form-control" id="numero" >
-      </div>  
-    </div>
-
-    <!-- Bairro -->
-    <div class="row mb-3">
-      <div class="col-md-6">
-        <label for="bairro" class="form-label">Bairro</label>
-        <input type="text" class="form-control" id="bairro" >
-      </div>  
-    </div>
-
-    <!-- Cidade -->
-    <div class="row mb-3">
-      <div class="col-md-6">
-        <label for="cidade" class="form-label">Cidade</label>
-        <input type="text" class="form-control" id="cidade" >
-      </div>  
-    </div>
-
-    <!-- Estado -->
-    <div class="row mb-3">
-      <div class="col-md-6">
-      <label for="estado" class="form-label">Estado</label>
-        <select class="form-control">
-          <option>AC</option>
-          <option>AL</option>
-          <option>AP</option>
-          <option>AM</option>
-          <option>BA</option>
-          <option>CE</option>
-          <option>DF</option>
-          <option>ES</option>
-          <option>GO</option>
-          <option>MA</option>
-          <option>MT</option>
-          <option>MS</option>
-          <option>MG</option>
-          <option>PA</option>
-          <option>PB</option>
-          <option>PR</option>
-          <option>PE</option>
-          <option>PI</option>
-          <option>RJ</option>
-          <option>RN</option>
-          <option>RS</option>
-          <option>RO</option>
-          <option>RR</option>
-          <option>SC</option>
-          <option>SP</option>
-          <option>SE</option>
-          <option>TO</option>
-        </select>
-      </div>  
-    </div>
-
-    <!-- CEP -->
-    <div class="row mb-3">
-      <div class="col-md-6">
-        <label for="cep" class="form-label">CEP</label>
-        <input type="text" class="form-control" id="cep" >
-      </div>  
-    </div>
-
-    
-    <!-- Tipo -->
-    <div class="row mb-3">
-      <div class="col-md-6">
-      <label for="tipo" class="form-label">Tipo</label>
-        <select class="form-control">
-          <option>RES</option>
-          <option>COM</option>
-        </select>
-      </div>  
-    </div>
-
-
-    <!-- Botões -->
-    <div class="d-flex justify-content-between">
-      <button type="submit" class="btn btn-primary">Salvar Alterações</button>
-      <button type="reset" class="btn btn-secondary">Cancelar</button>
-    </div>
-    <br>
   </div>
-
-
-
-
-
 </form>
 
+<br>
 
 
 <?php include ("rodape.php") ?>
