@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -24,25 +26,25 @@
                     </div>
                     <div class="block-content">
                         <ul class="cd-accordion-menu animated">
-                            <li><img src="https://rentalfesta.com.br/icones/icone_copos-e-tacas.png" class="icone"><a href="produtos.php">Copos e Taças</a></li>
-                            <li><img src="https://rentalfesta.com.br/icones/icone_cristais.png" class="icone"><a href="paginas-Produtos/pagina-cristais.php">Cristais</a></li>
-                            <li><img src="https://rentalfesta.com.br/icones/icone_inox.png" class="icone"><a href="paginas-Produtos/pagina-inox.php">Inox</a></li>
-                            <li><img src="https://rentalfesta.com.br/icones/icone_mesas-e-cadeiras.png" class="icone"><a href="paginas-Produtos/pagina-mesas.php">Mesas / Cadeiras / Pranchão</a></li>
-                            <li><img src="https://rentalfesta.com.br/icones/icone_prata.png" class="icone"><a href="paginas-Produtos/pagina-Prata.php">Prata</a></li>
-                            <li><img src="https://rentalfesta.com.br/icones/icone_pratos.png" class="icone"><a href="paginas-Produtos/pagina-Pratos.php">Pratos</a></li>
-                            <li><img src="https://rentalfesta.com.br/icones/icone_sous-plat.png" class="icone"><a href="paginas-Produtos/pagina-Sousplat.php">Sousplat</a></li>
-                            <li><img src="https://rentalfesta.com.br/icones/icone_suqueiras.png" class="icone"><a href="paginas-Produtos/pagina-Suqueiras.php">Suqueiras</a></li>
-                            <li><img src="https://rentalfesta.com.br/icones/icone_talheres-e-acessorios.png" class="icone"><a href="paginas-Produtos/pagina-Talheres.php">Talheres</a></li>
-                            <li><img src="https://rentalfesta.com.br/icones/icone_utensilios.png" class="icone"><a href="paginas-Produtos/pagina-Utensilios.php">Utensílios para Cozinha</a></li>
-                            <li><img src="https://rentalfesta.com.br/icones/icone_xicaras-e-canecas.png" class="icone"><a href="paginas-Produtos/pagina-Xicaras.php">Xícaras</a></li>            
+                            <li><img src="icons/icone_copos-e-tacas.png" class="icone"><a href="produtos.php">Copos e Taças</a></li>
+                            <li><img src="icons/icone_cristais.png" class="icone"><a href="paginas-Produtos/pagina-cristais.php">Cristais</a></li>
+                            <li><img src="icons/icone_inox.png" class="icone"><a href="paginas-Produtos/pagina-inox.php">Inox</a></li>
+                            <li><img src="icons/icone_mesas-e-cadeiras.png" class="icone"><a href="paginas-Produtos/pagina-mesas.php">Mesas / Cadeiras / Pranchão</a></li>
+                            <li><img src="icons/icone_prata.png" class="icone"><a href="paginas-Produtos/pagina-Prata.php">Prata</a></li>
+                            <li><img src="icons/icone_pratos.png" class="icone"><a href="paginas-Produtos/pagina-Pratos.php">Pratos</a></li>
+                            <li><img src="icons/icone_sous-plat.png" class="icone"><a href="paginas-Produtos/pagina-Sousplat.php">Sousplat</a></li>
+                            <li><img src="icons/icone_suqueiras.png" class="icone"><a href="paginas-Produtos/pagina-Suqueiras.php">Suqueiras</a></li>
+                            <li><img src="icons/icone_talheres-e-acessorios.png" class="icone"><a href="paginas-Produtos/pagina-Talheres.php">Talheres</a></li>
+                            <li><img src="icons/icone_utensilios.png" class="icone"><a href="paginas-Produtos/pagina-Utensilios.php">Utensílios para Cozinha</a></li>
+                            <li><img src="icons/icone_xicaras-e-canecas.png" class="icone"><a href="paginas-Produtos/pagina-Xicaras.php">Xícaras</a></li>            
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
         
-        <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
-        
+
+    <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
      <div class="copos">
             <h1 class ="h1-eventos">Copos</h1>
               <div class="row row-cols-1 row-cols-md-3 g-4">

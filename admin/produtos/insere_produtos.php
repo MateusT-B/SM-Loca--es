@@ -1,13 +1,13 @@
 <?php 
-include 'acesso_com.php';
-include '../banco/connect.php';
+include '../acesso_com.php';
+include '../../banco/connect.php';
 if($_POST)
 {
     if(isset($_POST['enviar'])){
         $nome_img = $_FILES['imagemfile']['name'];
         $tmp_img = $_FILES['imagemfile']['tmp_name'];
         $rand = rand(100001,999999);
-        $dir_img = "../img/produtos/".$rand.$nome_img;
+        $dir_img = "../../img/produtos/".$rand.$nome_img;
         move_uploaded_file($tmp_img,$dir_img);
     }
 
@@ -41,12 +41,12 @@ $numLinhas = $listaTipo->num_rows;
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/bootstrap.css">
-    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
     <title>SM Locações - Inserir Produtos</title>
 </head>
 <body>
-<?php include "menu_adm_op.php";?>
+<?php include "../menu_adm_op.php";?>
 <main class="container-inserir mx-auto">
     <div class="mx-auto">
         <div class="col-xs-12 col-sm-offset-2 col-sm-6  col-md-8 mx-auto">
