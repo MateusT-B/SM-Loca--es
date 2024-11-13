@@ -34,14 +34,14 @@
             <div class="row mb-3">
                 <div class="col-md-6">
                     <div class="form-floating">
-                        <input type="text" class="form-control" id="floatingCPF" placeholder="Digite seu CPF" pattern="\d{11}" maxlength="11" required>
+                        <input type="text" class="form-control" id="floatingCPF" placeholder="Digite seu CPF" pattern="\d{11}" maxlength="14" required oninput="formatCPF(this)">
                         <label for="floatingCPF">CPF</label>
                         <small class="form-text text-muted">Somente números, sem pontos ou traços.</small>
-                    </div>
+                </div>
                 </div>
                 <div class="col-md-6">
                     <div class="form-floating">
-                        <input type="tel" class="form-control" id="floatingTelefone" placeholder="Digite seu telefone" pattern="\d{10,11}" required>
+                        <input type="text" class="form-control" id="floatingTelefone" placeholder="Digite seu telefone" pattern="\d{10,11}" required oninput="formatTelefone(this)" maxlength="15">
                         <label for="floatingTelefone">Telefone</label>
                         <small class="form-text text-muted">Apenas números (10 ou 11 dígitos).</small>
                     </div>
@@ -57,4 +57,33 @@
     </main>
     <!-- fim do formulário de registro -->
 </body>
+
+<script>
+    function formatTelefone(input) {
+        // Remove qualquer caractere que não seja número
+        let value = input.value.replace(/\D/g, '');
+
+        // Formata o telefone no padrão (XX) XXXXX-XXXX
+        if (value.length <= 11) {
+            value = value.replace(/^(\d{2})(\d{5})(\d{4})$/, '($1) $2-$3');
+        }
+
+        // Atualiza o campo com a formatação
+        input.value = value;
+    }
+
+
+    function formatCPF(input) {
+        // Remove qualquer caractere que não seja número
+        let value = input.value.replace(/\D/g, '');
+        
+        // Formata o CPF: "XXX.XXX.XXX-XX"
+        if (value.length <= 11) {
+            value = value.replace(/^(\d{3})(\d{3})(\d{3})(\d{1,2})$/, '$1.$2.$3-$4');
+        }
+        
+        // Atualiza o campo com a formatação
+        input.value = value;
+    }   
+</script>
 </html>
