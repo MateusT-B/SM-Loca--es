@@ -800,13 +800,22 @@ h4
     font-size: 24px;
   }
 }
-thead {
-  background-color: #d7e2dd;
+thead{
+  background-color: #e0e0e0 ;
   border-bottom: 2px solid #333;
 }
+
+
 th, td {
   padding: 12px; /* Ajuste o valor conforme desejado */
 }
+
+.tabela-categoria{
+  width: 80% !important;
+  height: 80% !important;
+  justify-self: center;
+}
+
 
 
 /*se alguem ler isso pfv me socorra*/

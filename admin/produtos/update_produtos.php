@@ -1,13 +1,13 @@
 <?php 
-include 'acesso_com.php';
-include '../banco/connect.php';
+include '../acesso_com.php';
+include '../../banco/connect.php';
 if($_POST){ // se o usuário clicou no botão atualizar
     if ($_FILES['imagemfile']['name']) {// se o usuario escolher uma imagem
-        unlink("../img/produtos/".$_POST['imagem_atual']); // apaga a imagem atual do servidor de arquivos
+        unlink("../../img/produtos/".$_POST['imagem_atual']); // apaga a imagem atual do servidor de arquivos
         $nome_img = $_FILES['imagemfile']['name']; 
         $tmp_img = $_FILES['imagemfile']['tmp_name'];
         $rand = rand(100001,999999); // gera um número aleatório pra imagem
-        $dir_img = "../img/produtos/".$rand.$nome_img;
+        $dir_img = "../../img/produtos/".$rand.$nome_img;
         move_uploaded_file($tmp_img,$dir_img); // transfere a imagem para a pasta 
         $nome_img = $rand.$nome_img;
     }else{
@@ -56,12 +56,12 @@ $numLinhas = $listaTipo->num_rows;
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/bootstrap.css">
-    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
     <title>SM Locações Produtos</title>
 </head>
 <body>
-<?php include "menu_adm_op.php";?>
+<?php include "../menu_adm_op.php";?>
 <main class="container-inserir mx-auto">
     <div class="mx-auto">
         <div class="col-xs-12 col-sm-offset-2 col-sm-6  col-md-8 mx-auto">
@@ -157,10 +157,10 @@ $numLinhas = $listaTipo->num_rows;
                         </div>
 
                         <label for="imagem_atual">Imagem Atual:</label> 
-                        <img src="../img/produtos/<?php echo $row['imagem']; ?>" alt="" width="150" height="150">
+                        <img src="../../img/produtos/<?php echo $row['imagem']; ?>" alt="" width="150" height="150">
                         <input type="hidden" name="imagem_atual" id="imagem_atual" value="<?php echo $row['imagem']; ?>" >
                         <br>
-
+                                            
                         <label for="imagem">Imagem Nova:</label>    
                         <div class="input-group-text">
                             <span class="input-group-addon">
