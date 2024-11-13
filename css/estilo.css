@@ -338,19 +338,23 @@ h4
 }
 
 
-/*CSS COMPRAS*/
+/*INÍCIO DO CSS DA PÁGINA DE COMPRAS*/
 #container-compras{
   margin-top: 2% !important;
-  margin-bottom: 20% !important;
+  margin-bottom: 25% !important;
 }
 
+#lblquantidade
+{
+ margin-left: 32%;
+}
 
 #seletorqnt-compras 
 {
-  margin-left: 30% !important;
   width: 10% !important;
 }
 
+/*FIM DO CSS DA PÁGINA DE COMPRAS*/
 
 
 /*pagamento.php*/

@@ -1,6 +1,6 @@
 <?php
 // arquivo de conexão com o banco
-include 'banco/connect.php';
+//include 'banco/connect.php';
 
 //consulta para filtrar os dados
 
@@ -62,23 +62,23 @@ include 'banco/connect.php';
 
 <div id="container-compras"  class="col-sm-6 col-md-4 bg-white flex mx-auto p-2">
         <div class="d-flex justify-content-center">
-            <img src="img/produtos/suqueira/suqueira.jpg" alt="suqueira" class="img-fluid w-75">
+            <img src="../img/produtos/suqueira-lisa.jpg" alt="suqueira" class="img-fluid w-75">
         </div>
         <div class="d-flex justify-content-center my-3"> 
             <h3>
                 Nome do produto
             </h3>
         </div>
-        <div class="d-flex justify-content-center my-3">
+        <div class="d-flex justify-content-center my-1">
             <p class=" fs-5">
                 Pode ser usado para degustar qualquer tipo de bebida
             </p> 
         </div>  
         <div>
-            <div class="d-flex flex-row">
-                <label for="quantidade" class="form-label mt-2">Quantidade</label>
-                <input type="number" id="seletorqnt-compras" class="form-control mb-1 me-1" id="quantidade" name="Quantidade" min="1" step="1">   
-                <button type="button" class="btn btn-success  ">Alugar</button>
+            <div class="d-flex flex-row ">
+                <label id="lblquantidade" for="quantidade" class="form-label mt-2 me-1">Quantidade</label>
+                <input type="number" id="seletorqnt-compras" class="form-control mb-1 me-2" id="quantidade" name="Quantidade" min="1" step="1">   
+                <button type="button" class="btn btn-success btn-sm mb-1">Alugar</button>
             </div>
         </div> 
  </div>   
