@@ -117,6 +117,15 @@
     </div>
 </div>
 
+
+
+
+<!-- inclusão do rodapé -->
+<?php include ("rodape.php") ?>
+    
+
+</body>
+
 <script>
     // Função para alterar a quantidade e recalcular o subtotal e total
     function alterarQuantidade(quantidadeAlterada, produtoId) {
@@ -153,9 +162,4 @@
     }
 </script>
 
-
-<!-- inclusão do rodapé -->
-<?php include ("rodape.php") ?>
-    
-</body>
 </html>
