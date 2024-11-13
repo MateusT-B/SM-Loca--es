@@ -472,11 +472,14 @@ h4
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin-top: 10px !important;
 }
 
-.endereco-entrega .endereco-button:hover {
+.endereco-entrega .endereco-button:hover 
+{
   background-color: #2527a8;
 }
+
 
 /* Responsividade: exibe os formulários um embaixo do outro em telas menores */
 @media (max-width: 768px) {
@@ -615,11 +618,7 @@ h4
   background-color: #e0a800;
 }
 
-.body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
-}
+
 
 /* Responsividade */
 @media (max-width: 768px) {
@@ -632,6 +631,7 @@ h4
     margin-bottom: 20px;
   }
 }
+/*final pagina pagamento.php*/
 
 /*Lista ADM*/
 /* Estilo global */
