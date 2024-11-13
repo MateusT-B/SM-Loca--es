@@ -15,6 +15,7 @@
     <link rel="shortcut icon" href="img/favicon1.png" type="image/png">
 </head>
 <body>
+  
 
 <!-- inclusão do cabeçalho -->
 <?php include ("cabecalho.php") ?>
@@ -25,89 +26,51 @@
   <h1 class="h1-eventos">Eventos<h1>
 
   <div class = "img_eventos">
-  <img class ="img_eventos" src="img/produtos/mesas/decorada 1.jfif" width = "22%" >
-  <img class ="img_eventos" src="img/produtos/mesas/decorada 2.jfif" width = "22%">
-  <img class = "img_eventos"src="img/produtos/mesas/decorada 4.jfif" width = "22%">
+  <img class ="img_eventos" src="img/produtos/decorada 1.jfif" width = "22%" >
+  <img class ="img_eventos" src="img/produtos/decorada 2.jfif" width = "22%">
+  <img class = "img_eventos"src="img/produtos/decorada 4.jfif" width = "22%">
 
 </div>
-
-
-
 </div>
 
-    <div class = "produtos-destaques">
-      <h1 class ="h1-eventos"> Destaques </h1>
-    </div>
+<?php 
+include 'banco/connect.php';
+$lista = $conn->query("select * from vw_produtos where destaque = 'Sim'");
+$row_produtos = $lista->fetch_assoc();
+$num_linhas = $lista->num_rows;
+?>
 
-      <div class ="destaques">
+
+
+<?php if($num_linhas ==0){ ?>
+  <h2 class="breadcrumb alert-danger"> 
+    Não há produtos em destaque!
+  </h2>
+<?php }?>
+
+
+<?php if($num_linhas > 0){ ?>
+  <h1 class ="h1-eventos"> 
+    Destaques 
+  </h1>
+    <div class ="destaques">
+      <?php do{?>
         <div class="card">
-          <img  src="img/produtos/copos/copo-long-drink.jpg">
+          <img  src="img/produtos/<?php echo $row_produtos['imagem'] ?>" alt=""  class="img-fluid">
           <div>
-            <h1>Copo long drink</h1>
+            <h1>
+              <strong><?php echo $row_produtos['nome_produto']?></strong>
+            </h1>
             <button class="btn btn-secondary" onclick="window.location.href='produtos.php'">saiba mais</button>
           </div>
-      </div>
-                
-                <div class="card">
-                    <img src="img/produtos/copos/copo-whisky.jpg">
-                  <div>
-                    <h1>Copo Whisky</h1>
-                    <button class="btn btn-secondary" onclick="window.location.href='produtos.php'">saiba mais</button>
-                  </div>
-                </div>
-              
-                <div class="card">
-                  <img src="img/produtos/cristais/prato-para-bolo.jpg">
-                  <div>
-                    <h1>Prato para bolo</h1>
-                    <button class="btn btn-secondary" onclick="window.location.href='Paginas-Produtos/pagina-cristais.php'">saiba mais</button>
-                  </div>
-                </div>
-                
-              <div class="card">
-                <img src="img/produtos/prata/samovar.jpg">
-                <div>
-                  <h1>Samovar</h1>
-                  <button class="btn btn-secondary" onclick="window.location.href='Paginas-Produtos/pagina-Prata.php'">saiba mais</button>
-                </div>
-              </div>
-                
-                <div class="card">
-                  <img src="img/produtos/pratos/prato-wave.jpg">
-                  <div>
-                    <h1>Prato Wave</h1>
-                    <button class="btn btn-secondary" onclick="window.location.href='Paginas-Produtos/pagina-Pratos.php'">saiba mais</button>
-                  </div>
-                </div>
-
-                <div class="card">
-                  <img  src="img/produtos/utensilios cozinha/garrafa-termica-cafe.png">
-                  <div>
-                    <h1>Garrafa Termica</h1>
-                    <button class="btn btn-secondary" onclick="window.location.href='Paginas-Produtos/pagina-inox.php'">saiba mais</button>
-                  </div>
-                </div>
-
-                <div class="card">
-                  <img  src="img/produtos/talheres/garfo-sobremesa-dourado.png">
-                  <div>
-                    <h1>Garfo Dourado</h1>
-                    <button class="btn btn-secondary" onclick="window.location.href='Paginas-Produtos/pagina-Talheres.php'">saiba mais</button>
-                  </div>
-                </div>
-
-                <div class="card">
-                  <img src="img/produtos/taças/taça-vinho.png">
-                  <div>
-                    <h1>Taça Vinho</h1>
-                    <button class="btn btn-secondary" onclick="window.location.href='produtos.php'">saiba mais</button>
-                  </div>
-                </div>
-
-<a href="produtos.php" class="btn btn-secondary ">Veja nosso Catalogo</a>
+          </div>  
+        <?php } while($row_produtos = $lista->fetch_assoc());?>            
+    </div>
+  <?php } ?>
 </div>
-
-
+<div>
+  <a href="produtos.php" class="btn btn-secondary ">Veja nosso Catalogo</a>   
+</div>
 
 
 
