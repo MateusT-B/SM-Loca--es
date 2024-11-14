@@ -4,7 +4,7 @@
             
             <!-- Barra de navegação com Página Inicial etc -->
             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                <a href="../index.php" class="navbar-brand">
+                <a href="../cliente/index.php" class="navbar-brand">
                     <img id="logo" src="../img/logo.png" alt="Logo">
                 </a>
             </ul>
