@@ -19,7 +19,7 @@
   <h1 class="h1-eventos">Eventos<h1>
 
   <div class = "img_eventos">
-  <img class ="/img_eventos" src="../img/produtos/decorada 1.jfif" width = "22%" >
+  <img class ="img_eventos" src="../img/produtos/decorada 1.jfif" width = "22%" >
   <img class ="img_eventos" src="../img/produtos/decorada 2.jfif" width = "22%">
   <img class = "img_eventos"src="../img/produtos/decorada 4.jfif" width = "22%">
 
