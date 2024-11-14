@@ -9,7 +9,7 @@
                 </a>
             </ul>
             <li><a href="../cliente/index.php" class="nav-link px-2 text-dark">Página Inicial</a></li>
-            <li><a href="../quemsomos.php" class="nav-link px-2 text-dark">Quem Somos</a></li>
+            <li><a href="cliente/quemsomos.php" class="nav-link px-2 text-dark">Quem Somos</a></li>
             <li><a href="../produtos.php" class="nav-link px-2 text-dark">Produtos</a></li>
 
             <!-- Barra de pesquisa -->
