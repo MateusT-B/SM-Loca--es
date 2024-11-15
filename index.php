@@ -61,7 +61,7 @@ $num_linhas = $lista->num_rows;
             <h1>
               <strong><?php echo $row_produtos['nome_produto']?></strong>
             </h1>
-            <button class="btn btn-secondary" onclick="window.location.href='produtos.php'">saiba mais</button>
+            <button class="btn btn-secondary" onclick="window.location.href='produtos.php?=rotulo=<?php echo $row_produtos['rotulo']; ?>'">saiba mais</button>
           </div>
           </div>  
         <?php } while($row_produtos = $lista->fetch_assoc());?>            
@@ -72,19 +72,6 @@ $num_linhas = $lista->num_rows;
   <a href="produtos.php" class="btn btn-secondary ">Veja nosso Catalogo</a>   
 </div>
 
-<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
-     <div class="copos">
-            <h1 class ="h1-eventos">Copos</h1>
-              <div class="row row-cols-1 row-cols-md-3 g-4">
-             
-              <div class="card">
-                <img src="img/produtos/copos/copo-paulista.jpg">
-                <div>
-                  <h1>Copo Paulista</h1>
-                  <span>R$ 0,40</span>
-                  <button class="btn-comprar" onclick="window.location.href='Paginas-Produtos/pagina-compras.php'">Alugar</a></button>
-             </div>
-               </div>
              
 
 
@@ -99,5 +86,4 @@ $num_linhas = $lista->num_rows;
 
     
 </body>
-
 </html>
