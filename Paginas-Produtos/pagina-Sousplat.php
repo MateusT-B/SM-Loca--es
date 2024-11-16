@@ -72,53 +72,45 @@
   </div>
 </div>
 
+<?php 
+include '../banco/connect.php';
+$lista = $conn->query("select * from vw_produtos where rotulo ='sousplat'");
+$row_produtos = $lista->fetch_assoc();
+$num_linhas = $lista->num_rows;
+?>
 
+<?php if($num_linhas == 0){?>
+  <h2>
+    0 produtos cadastrados!
+  </h2>
+<?php }?> 
+
+
+<?php if($num_linhas > 0){?>
 <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
   <div class="printable">
     <div class="col-main">
-       <div class="topo-produtos">
-          <h1 class="h1-eventos">Sousplat</h1>
-          <div class="row row-cols-1 row-cols-md-3 g-4">
-          
-<div class="card">
-    <img src="img/produtos/sousplat/sousplat-aluminio.jpg">
-    <div>
-      <h1>Sousplat aluminio</h1>
-      <span>R$ 4,00</span>
-      <button a href="produtos.php" class="btn-comprar"  onclick="window.location.href='pagina-compras.php'">Alugar</a></button>
+      <div class="topo-produtos">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <?php do{ ?> 
+            <div class="card">
+              <img src="../img/produtos/<?php echo $row_produtos['imagem'] ?>">
+                <div>
+                  <h1><?php echo $row_produtos['nome_produto'] ?></h1>
+                    <span><?php echo "R$ ".number_format($row_produtos['valor'],2,',','.')?></span>
+                      <button a href="produtos.php" class="btn-comprar"  onclick="window.location.href='../Paginas-Produtos/pagina-compras.php?id=<?php echo $row_produtos['id_produto']; ?>'">Alugar</a></button>
+                   </div>
+                 </div>
+                <?php } while($row_produtos = $lista->fetch_assoc());?>
+              </div> <!-- Fim da div Sousplat -->
+            </div>            
+          </div>
+        <?php }?> 
+      </div>
     </div>
-  </div>
-
-<div class="card">
-    <img src="img/produtos/sousplat/sousplat-mdf.jpeg">
-    <div>
-      <h1>Sousplat mdf</h1>
-      <span>R$ 2,00</span>
-      <button a href="produtos.php" class="btn-comprar"  onclick="window.location.href='pagina-compras.php'">Alugar</a></button>
-    </div>
-  </div>
-
-
- 
-
-
-
-
-
-
-
-</div> <!-- Fim da div inox --->
-
-
-</div>
-            
-</div>
-    </div>
-</div>
-
-
-</div>
+  </div> 
 </div> <!-- //! FIM DA DIV -->
+
 
 
 <!-- inclusão do rodapé -->

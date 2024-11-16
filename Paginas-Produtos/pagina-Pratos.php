@@ -72,82 +72,47 @@
   </div>
 </div>
 
+<?php 
+include '../banco/connect.php';
+$lista = $conn->query("select * from vw_produtos where rotulo ='pratos'");
+$row_produtos = $lista->fetch_assoc();
+$num_linhas = $lista->num_rows;
+?>
 
+<?php if($num_linhas == 0){?>
+  <h2>
+    0 produtos cadastrados!
+  </h2>
+<?php }?> 
+
+
+<?php if($num_linhas > 0){?>
 <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
   <div class="printable">
     <div class="col-main">
-       <div class="topo-produtos">
-          <h1 class="h1-eventos">Pratos</h1>
-          <div class="row row-cols-1 row-cols-md-3 g-4">
-          
-<div class="card">
-    <img src="img/produtos/pratos/prato-petala.jpg">
-    <div>
-      <h1>Prato Petala</h1>
-      <span>R$ 0,40</span>
-      <button a href="produtos.php" class="btn-comprar"  onclick="window.location.href='pagina-compras.php'">Alugar</a></button>
+      <div class="topo-produtos">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <?php do{ ?> 
+            <div class="card">
+              <img src="../img/produtos/<?php echo $row_produtos['imagem'] ?>">
+                <div>
+                  <h1><?php echo $row_produtos['nome_produto'] ?></h1>
+                    <span><?php echo "R$ ".number_format($row_produtos['valor'],2,',','.')?></span>
+                      <button a href="produtos.php" class="btn-comprar"  onclick="window.location.href='../Paginas-Produtos/pagina-compras.php?id=<?php echo $row_produtos['id_produto']; ?>'">Alugar</a></button>
+                   </div>
+                 </div>
+                <?php } while($row_produtos = $lista->fetch_assoc());?>
+              </div> <!-- Fim da div Inox -->
+            </div>            
+          </div>
+        <?php }?> 
+      </div>
     </div>
-  </div>
-
-<div class="card">
-    <img src="img/produtos/pratos/prato-filetado-porcelana.jpg">
-    <div>
-      <h1>Prato Filetado</h1>
-      <span>R$ 0,60</span>
-      <button a href="produtos.php" class="btn-comprar"  onclick="window.location.href='pagina-compras.php'">Alugar</a></button>
-    </div>
-  </div>
-
-  <div class="card">
-    <img src="img/produtos/pratos/prato-germer.jpg">
-    <div>
-      <h1>Prato Germer</h1>
-      <span>R$ 0,40</span>
-      <button a href="produtos.php" class="btn-comprar"  onclick="window.location.href='pagina-compras.php'">Alugar</a></button>
-    </div>
-  </div>
-
-  <div class="card">
-    <img src="img/produtos/pratos/prato-pomerode.jpg">
-    <div>
-      <h1>Prato Pomerode</h1>
-      <span>R$ 0,50</span>
-      <button a href="produtos.php" class="btn-comprar"  onclick="window.location.href='pagina-compras.php'">Alugar</a></button>
-    </div>
-  </div>
-  
-  <div class="card">
-    <img src="img/produtos/pratos/prato-wave.jpg">
-    <div>
-      <h1>Prato Wave</h1>
-      <span>R$ 0,70</span>
-      <button a href="produtos.php" class="btn-comprar"  onclick="window.location.href='pagina-compras.php'">Alugar</a></button>
-    </div>
-  </div>
- 
-
-
-
-
-
-
-
-</div> <!-- Fim da div inox --->
-
-
-</div>
-            
-</div>
-    </div>
-</div>
-
-
-</div>
+  </div> 
 </div> <!-- //! FIM DA DIV -->
 
 
 <!-- inclusão do rodapé -->
-<?php include ("rodape.php") ?>
 <!-- Rodapé com link para redes sociais -->
 <footer class="w-100 footer bg-dark  d-flex flex-wrap justify-content-center align-items-center py-3 my-0 border-top">
     <!-- Área de Conteúdo Centralizado -->
@@ -214,9 +179,9 @@
 
             </div>
         </div>
+er>
     </div>
-</footer>
-
+</foot
     
 </body>
 

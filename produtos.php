@@ -44,7 +44,7 @@
 
 <?php 
 include 'banco/connect.php';
-$lista = $conn->query("SELECT * FROM vw_produtos WHERE rotulo IN ('copo', 'tacas')");
+$lista = $conn->query("select * from vw_produtos where rotulo in ('copo', 'tacas')");
 $row_produtos = $lista->fetch_assoc();
 $num_linhas = $lista->num_rows;
 
@@ -55,7 +55,7 @@ $num_linhas = $lista->num_rows;
   <h2>
     0 produtos cadastrados!
   </h2>
-  <?php }?>  
+<?php }?>  
   
 
   <?php if($num_linhas > 0){?>
