@@ -74,7 +74,7 @@
 
 <?php 
 include '../banco/connect.php';
-$lista = $conn->query("select * from vw_produtos where rotulo =''");
+$lista = $conn->query("select * from vw_produtos where rotulo ='xicaras'");
 $row_produtos = $lista->fetch_assoc();
 $num_linhas = $lista->num_rows;
 ?>
