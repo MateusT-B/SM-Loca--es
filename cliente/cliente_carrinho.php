@@ -11,12 +11,12 @@
 </head>
 <body>
 
-<!--- inclusão do cabeçalho --->
+<!--- inclusão do cabeçalho ---> 
 <?php include ("menu_cliente.php")?>
 
 <br>
 
-<!-- Titulo do carrinho de compras com o icone -->
+<!-- Titulo do carrinho de compras com o ícone -->
 <div class="container">
     <div class="row">
         <div class="col">
@@ -27,8 +27,10 @@
 
 <br>
 
-<!-- Tabela com itens no carrinho -->
-<div class="container">
+<!-- Div branca com todos os conteúdos -->
+<div class="container" style="background-color: white; padding: 20px; border-radius: 5px;">
+
+    <!-- Tabela com itens no carrinho -->
     <div class="row">
         <!-- Descrição -->
         <div class="col">
@@ -117,12 +119,10 @@
     </div>
 </div>
 
-
-
+<br>
 
 <!-- inclusão do rodapé -->
 <?php include ("rodape.php") ?>
-    
 
 </body>
 
