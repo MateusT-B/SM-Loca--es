@@ -76,11 +76,13 @@ $num_linhas = $lista->num_rows;
       </div>
     </div>
   <?php }?>
+
   
 
 
 <!-- inclusão do rodapé -->
 <?php include ("rodape.php") ?>
+
 
 
    <script src="js/bootstrap.min.js"></script>  

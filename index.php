@@ -32,6 +32,7 @@
 
 </div>
 </div>
+<br>
 
 <?php 
 include 'banco/connect.php';
@@ -48,7 +49,7 @@ $num_linhas = $lista->num_rows;
   </h2>
 <?php }?>
 
-
+<br>
 <?php if($num_linhas > 0){ ?>
   <h1 class ="h1-eventos"> 
     Destaques 
