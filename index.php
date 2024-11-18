@@ -62,19 +62,18 @@ $num_linhas = $lista->num_rows;
             <h1>
               <strong><?php echo $row_produtos['nome_produto']?></strong>
             </h1>
-            <button class="btn btn-secondary" onclick="window.location.href='produtos.php?=rotulo=<?php echo $row_produtos['rotulo']; ?>'">saiba mais</button>
+            
           </div>
           </div>  
         <?php } while($row_produtos = $lista->fetch_assoc());?>            
     </div>
   <?php } ?>
 </div>
-<div class="d-flex justify-content-center mt-3">
-  <a href="produtos.php" class="btn btn-secondary ">Veja nosso Catalogo</a>   
+
+
+<div class="d-flex justify-content-center">
+  <button class="btn btn-secondary" onclick="window.location.href='paginas-Produtos/pagina-Copos-Tacas.php'">Veja nosso catálogo</button>
 </div>
-
-             
-
 
 
 <br>

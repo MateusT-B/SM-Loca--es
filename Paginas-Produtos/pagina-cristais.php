@@ -26,7 +26,7 @@
         </ul>
         <li><a href="../index.php" class="nav-link px-2 text-dark">Página Inicial</a></li>
           <li><a href="../quemsomos.php" class="nav-link px-2 text-dark">Quem Somos</a></li>
-          <li><a href="../produtos.php" class="nav-link px-2 text-dark">Produtos</a></li>
+          <li><a href="../paginas-Produtos/pagina-Copos-Tacas.php" class="nav-link px-2 text-dark">Produtos</a></li>
           <form id="pesquisa"  class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
           <input type="search" class="form-control form-control-dark" placeholder="Pesquisa..." aria-label="Search">
         </form>    
@@ -54,7 +54,7 @@
       </div>
       <div class="block-content">
         <ul class="cd-accordion-menu animated">
-        <li><img src="../icons/icone_copos-e-tacas.png" class="icone"><a href="../produtos.php">Copos e Taças</a></li>
+                            <li><img src="../icons/icone_copos-e-tacas.png" class="icone"><a href="../paginas-Produtos/pagina-Copos-Tacas.php">Copos e Taças</a></li>
                             <li><img src="../icons/icone_cristais.png" class="icone"><a href="../paginas-Produtos/pagina-cristais.php">Cristais</a></li>
                             <li><img src="../icons/icone_inox.png" class="icone"><a href="../paginas-Produtos/pagina-inox.php">Inox</a></li>
                             <li><img src="../icons/icone_mesas-e-cadeiras.png" class="icone"><a href="../paginas-Produtos/pagina-mesas.php">Mesas / Cadeiras / Pranchão</a></li>
