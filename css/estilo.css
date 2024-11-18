@@ -118,7 +118,6 @@ body
 .h1-eventos{
   font-family: "Parisienne";
   font-size: 80px;
-  margin-top: 10%;
 }
 
 
@@ -205,6 +204,8 @@ h1, h2 {
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
   }
+
+
 
   .card div 
   {
