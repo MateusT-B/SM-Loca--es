@@ -55,8 +55,10 @@ $num_linhas = $lista->num_rows;
   <h2>
     0 produtos cadastrados!
   </h2>
-<?php }?>  
-  
+<?php }?> 
+
+
+
 
   <?php if($num_linhas > 0){?>
     <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9"> 
@@ -72,8 +74,11 @@ $num_linhas = $lista->num_rows;
              </div>
             </div>
           <?php } while($row_produtos = $lista->fetch_assoc());?>
+          
         </div>
       </div>
+    </div>
+    </div>
     </div>
   <?php }?>
 
