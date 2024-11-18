@@ -610,16 +610,24 @@ h4
   background-color: #138496;
 }
 
-.btn-usuarios {
+.btn-usuarios-fun {
   background-color: #ffc107;
   display: flex;
 }
 
-.btn-usuarios:hover {
+.btn-usuarios-fun:hover {
   background-color: #e0a800;
 }
 
+.btn-usuarios-cli {
+  background-color: #9e9e9e;
+  border-color: #4d4d4d;
+}
 
+.btn-usuarios-cli:hover {
+  background-color: #747474;
+  border-color: #000000;
+}
 
 /* Responsividade */
 @media (max-width: 768px) {
@@ -727,6 +735,7 @@ h4
   background-color: #c82333;
   border-color: #c82333;
 }
+
 
 /* Card de cada produto */
 .card-produto-lista {
