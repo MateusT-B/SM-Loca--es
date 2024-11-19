@@ -10,7 +10,7 @@
         </ul>
         <li><a href="index.php" class="nav-link px-2 text-dark">Página Inicial</a></li>
           <li><a href="quemsomos.php" class="nav-link px-2 text-dark">Quem Somos</a></li>
-          <li><a href="paginas-Produtos/pagina-Copos-Tacas.php" class="nav-link px-2 text-dark">Produtos</a></li>
+          <li><a href="produtos.php" class="nav-link px-2 text-dark">Produtos</a></li>
           <form id="pesquisa"  class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
           <input type="search" class="form-control form-control-dark" placeholder="Pesquisa..." aria-label="Search">
         </form>    

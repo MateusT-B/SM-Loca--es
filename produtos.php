@@ -13,7 +13,7 @@
      
 <!-- inclusão do cabeçalho -->
 <?php include ("cabecalho.php") ?>
-
+ 
 <div class="main">
     <div class="row">
         <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 hidden-xs">
@@ -40,31 +40,31 @@
                 </div>
             </div>
         </div>
-        
-
-<?php 
+       
+ 
+<?php
 include 'banco/connect.php';
 $lista = $conn->query("select * from vw_produtos where rotulo in ('copo', 'tacas')");
 $row_produtos = $lista->fetch_assoc();
 $num_linhas = $lista->num_rows;
-
+ 
 ?>
-
-
+ 
+ 
 <?php if($num_linhas == 0){?>
   <h2>
     0 produtos cadastrados!
   </h2>
-<?php }?> 
-
-
-
-
+<?php }?>
+ 
+ 
+ 
+ 
   <?php if($num_linhas > 0){?>
-    <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9"> 
+    <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
       <div class="copos">
         <div class="row row-cols-1 row-cols-md-3 g-4">
-          <?php do{ ?> 
+          <?php do{ ?>
             <div class="card">
               <img src="img/produtos/<?php echo $row_produtos['imagem'] ?>">
                 <div>
@@ -74,22 +74,24 @@ $num_linhas = $lista->num_rows;
              </div>
             </div>
           <?php } while($row_produtos = $lista->fetch_assoc());?>
-          
+         
         </div>
       </div>
     </div>
     </div>
     </div>
   <?php }?>
-
-  
-
-
+ 
+ 
+ 
+ 
 <!-- inclusão do rodapé -->
 <?php include ("rodape.php") ?>
-
-
-
+ 
+ 
+ 
    <script src="js/bootstrap.min.js"></script>  
 </body>
 </html>
+ 
+ 
