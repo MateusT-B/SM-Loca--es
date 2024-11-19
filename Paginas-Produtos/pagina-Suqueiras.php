@@ -25,7 +25,7 @@
         </ul>
         <li><a href="../index.php" class="nav-link px-2 text-dark">Página Inicial</a></li>
           <li><a href="../quemsomos.php" class="nav-link px-2 text-dark">Quem Somos</a></li>
-          <li><a href="../produtos.php" class="nav-link px-2 text-dark">Produtos</a></li>
+          <li><a href="../paginas-Produtos/pagina-Copos-Tacas.php" class="nav-link px-2 text-dark">Produtos</a></li>
           <form id="pesquisa"  class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
           <input type="search" class="form-control form-control-dark" placeholder="Pesquisa..." aria-label="Search">
         </form>    
@@ -53,7 +53,7 @@
       </div>
       <div class="block-content">
         <ul class="cd-accordion-menu animated">
-        <li><img src="../icons/icone_copos-e-tacas.png" class="icone"><a href="../produtos.php">Copos e Taças</a></li>
+        <li><img src="../icons/icone_copos-e-tacas.png" class="icone"><a href="../paginas-Produtos/pagina-Copos-Tacas.php">Copos e Taças</a></li>
                             <li><img src="../icons/icone_cristais.png" class="icone"><a href=../paginas-Produtos/pagina-cristais.php">Cristais</a></li>
                             <li><img src="../icons/icone_inox.png" class="icone"><a href="../paginas-Produtos/pagina-inox.php">Inox</a></li>
                             <li><img src="../icons/icone_mesas-e-cadeiras.png" class="icone"><a href="../paginas-Produtos/pagina-mesas.php">Mesas / Cadeiras / Pranchão</a></li>
@@ -72,41 +72,45 @@
   </div>
 </div>
 
+<?php 
+include '../banco/connect.php';
+$lista = $conn->query("select * from vw_produtos where rotulo ='suqueira'");
+$row_produtos = $lista->fetch_assoc();
+$num_linhas = $lista->num_rows;
+?>
 
+<?php if($num_linhas == 0){?>
+  <h2>
+    0 produtos cadastrados!
+  </h2>
+<?php }?> 
+
+
+<?php if($num_linhas > 0){?>
 <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
   <div class="printable">
     <div class="col-main">
-       <div class="topo-produtos">
-          <h1 class="h1-eventos">Suqueira</h1>
-          <div class="row row-cols-1 row-cols-md-3 g-4">
-          
-<div class="card">
-    <img src="img/produtos/suqueira/suqueira-lisa.jpg">
-    <div>
-      <h1>Suqueira Lisa</h1>
-      <span>R$ 25,00</span>
-      <button a href="produtos.php" class="btn-comprar"  onclick="window.location.href='pagina-compras.php'">Alugar</a></button>
+      <div class="topo-produtos">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <?php do{ ?> 
+            <div class="card">
+              <img src="../img/produtos/<?php echo $row_produtos['imagem'] ?>">
+                <div>
+                  <h1><?php echo $row_produtos['nome_produto'] ?></h1>
+                    <span><?php echo "R$ ".number_format($row_produtos['valor'],2,',','.')?></span>
+                      <button a href="produtos.php" class="btn-comprar"  onclick="window.location.href='../Paginas-Produtos/pagina-compras.php?id=<?php echo $row_produtos['id_produto']; ?>'">Alugar</a></button>
+                   </div>
+                 </div>
+                <?php } while($row_produtos = $lista->fetch_assoc());?>
+              </div> <!-- Fim da div Suqueira -->
+            </div>            
+          </div>
+        <?php }?> 
+      </div>
     </div>
-  </div>
-
-<div class="card">
-    <img src="img/produtos/suqueira/suqueira.jpg">
-    <div>
-      <h1>Suqueira</h1>
-      <span>R$ 25,00</span>
-      <button a href="produtos.php" class="btn-comprar"  onclick="window.location.href='pagina-compras.php'">Alugar</a></button>
-    </div>
-  </div>
-
-</div> <!-- Fim da div suqueira --->
-</div>       
-</div>
-</div>
-</div>
-
-
-</div>
+  </div> 
 </div> <!-- //! FIM DA DIV -->
+
 
 
 <!-- inclusão do rodapé -->

@@ -1,14 +1,4 @@
-<?php
-// arquivo de conexão com o banco
-//include 'banco/connect.php';
 
-//consulta para filtrar os dados
-
-//$id = $_GET['id'];
-///$informacaoproduto = $conn->query("select * from produtos where id =$id");
-//$informacaoproduto = $informacaoproduto->fetch_assoc();
-//$numinformacaoproduto = $
-//?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -59,19 +49,34 @@
     </div>
 </header>
 
+<?php
+include '../banco/connect.php';
+$id = $_GET['id'];
+$lista = $conn->query("select * from  vw_produtos where id_produto = $id");
+$row_produtos = $lista->fetch_assoc();
+$num_linhas = $lista->num_rows;
+?>
 
-<div id="container-compras"  class="col-sm-6 col-md-4 bg-white flex mx-auto p-2">
-        <div class="d-flex justify-content-center">
-            <img src="../img/produtos/suqueira-lisa.jpg" alt="suqueira" class="img-fluid w-75">
+<?php if($num_linhas ==0){ ?>
+    <h2 class="breadcrumb alert-danger"> 
+        0 produtos cadastrados!
+    </h2>
+<?php }?>  
+
+<?php if($num_linhas > 0){?> 
+    <div id="container-compras"  class="col-sm-6 col-md-4 bg-white flex mx-auto p-2">
+    <?php do{ ?>    
+    <div class="d-flex justify-content-center">
+            <img src="../img/produtos/<?php echo $row_produtos['imagem']?>" alt="" class="img-fluid w-75">
         </div>
         <div class="d-flex justify-content-center my-3"> 
             <h3>
-                Nome do produto
+               <?php echo $row_produtos['nome_produto'] ?> 
             </h3>
         </div>
         <div class="d-flex justify-content-center my-1">
             <p class=" fs-5">
-                Pode ser usado para degustar qualquer tipo de bebida
+            <?php echo $row_produtos['descricao'] ?>
             </p> 
         </div>  
         <div>
@@ -81,7 +86,9 @@
                 <button type="button" class="btn btn-success btn-sm mb-1">Alugar</button>
             </div>
         </div> 
- </div>   
+        <?php } while($row_produtos = $lista->fetch_assoc());?>
+ </div>
+ <?php }?>   
 
 <!-- inclusão do rodapé -->
 

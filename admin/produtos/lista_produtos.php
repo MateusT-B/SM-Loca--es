@@ -46,7 +46,7 @@ $rows = $lista -> num_rows;
             <tbody>
                 <?php do { ?>
                     <tr>
-                        <td class="d-none"><?php echo $row['produto_id']; ?></td>
+                        <td class="d-none"><?php echo $row['id_produto']; ?></td>
                         <td><?php echo $row['rotulo']; ?></td>
                         <td>
                             <?php
@@ -69,7 +69,7 @@ $rows = $lista -> num_rows;
                         </td>
                         <td>
                             <a
-                                href="update_produtos.php?id=<?php echo $row['produto_id'] ?>" 
+                                href="update_produtos.php?id=<?php echo $row['id_produto'] ?>" 
                                 role="button" 
                                 class="btn btn-warning btn-block btn-xs"
                             >
@@ -84,7 +84,7 @@ $rows = $lista -> num_rows;
                             <!-- Botão excluir -->
                             <button 
                                 data-nome="<?php echo $row['nome_produto']; ?>"
-                                data-id="<?php echo $row['produto_id']; ?>"
+                                data-id="<?php echo $row['id_produto']; ?>"
                                 class="delete btn btn-xs btn-block btn-danger
                                 <?php echo $regraRow['destaque']=='Sim'?'hidden':'' ?>
                                 "     
