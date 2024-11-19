@@ -813,7 +813,7 @@ th, td {
 .tabela-categoria{
   width: 80% !important;
   height: 80% !important;
-  justify-self: center;
+  justify-self: center !important;
 }
 
 
