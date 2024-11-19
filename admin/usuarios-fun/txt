@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <title>SMLocações - Inserir Cliente</title>
+</head>
+<body>
+<?php include "../menu_adm_op.php";?>
+<main class="container-inserir mx-auto">
+    <div class="mx-auto">
+        <div class="col-xs-12 col-sm-offset-2 col-sm-6  col-md-8 mx-auto">
+            <h2 class="breadcrumb-insere alert text-secondary">
+                <a href="lista_clientes.php">
+                    <button class="btn btn-secondary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-return-left" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5"/>
+                        </svg>
+                    </button>
+                </a>
+                Inserir Cliente
+            </h2>
+            <div class="thumbnail-insere">
+                <div class="alert alert-secondary" role="alert">
+                    <form action="processa_cliente.php" method="post" 
+                    name="form_insere" enctype="multipart/form-data"
+                    id="form_insere">
+                        
+                        <!-- Dados do Cliente -->
+                        <h3>Dados do Cliente</h3>
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" id="nome" class="form-control" placeholder="Digite o nome do cliente" required>
+                        
+                        <label for="cpf">CPF:</label>
+                        <input type="text" name="cpf" id="cpf" class="form-control" placeholder="Digite o CPF do cliente" required>
+
+                        <label for="data_nascimento">Data de Nascimento:</label>
+                        <input type="date" name="data_nascimento" id="data_nascimento" class="form-control" required>
+
+                        <!-- Telefone -->
+                        <h3>Telefone</h3>
+                        <label for="telefone">Telefone:</label>
+                        <input type="text" name="telefone" id="telefone" class="form-control" placeholder="Digite o telefone do cliente" required>
+
+                        <label for="tipo_telefone">Tipo de Telefone:</label>
+                        <select name="tipo_telefone" id="tipo_telefone" class="form-control" required>
+                            <option value="Casa">Casa</option>
+                            <option value="Celular">Celular</option>
+                            <option value="Comercial">Comercial</option>
+                        </select>
+
+                        <!-- Endereço -->
+                        <h3>Endereço</h3>
+                        <label for="logradouro">Logradouro:</label>
+                        <input type="text" name="logradouro" id="logradouro" class="form-control" placeholder="Digite o logradouro" required>
+
+                        <label for="numero">Número:</label>
+                        <input type="number" name="numero" id="numero" class="form-control" placeholder="Número do endereço" required>
+
+                        <label for="bairro">Bairro:</label>
+                        <input type="text" name="bairro" id="bairro" class="form-control" placeholder="Digite o bairro" required>
+
+                        <label for="cidade">Cidade:</label>
+                        <input type="text" name="cidade" id="cidade" class="form-control" placeholder="Digite a cidade" required>
+
+                        <label for="uf">Estado (UF):</label>
+                        <input type="text" name="uf" id="uf" class="form-control" placeholder="Digite o estado (UF)" required>
+
+                        <label for="cep">CEP:</label>
+                        <input type="text" name="cep" id="cep" class="form-control" placeholder="Digite o CEP" required>
+
+                        <label for="tipo_endereco">Tipo de Endereço:</label>
+                        <select name="tipo_endereco" id="tipo_endereco" class="form-control" required>
+                            <option value="Residencial">Residencial</option>
+                            <option value="Comercial">Comercial</option>
+                            <option value="Entrega">Entrega</option>
+                        </select>
+
+                        <!-- Email -->
+                        <h3>Email</h3>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" class="form-control" placeholder="Digite o email do cliente" required>
+
+                        <br>
+                        <input type="submit" name="enviar" id="enviar" class="btn btn-secondary btn-block" value="Cadastrar Cliente">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>

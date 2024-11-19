@@ -1,55 +1,37 @@
-<?php
+<?php 
 include '../banco/connect.php';
-session_start(); // Inicia a sessão
 
-// if ($_POST) {
-//     $login = $_POST['login'];
-//     $senha = md5($_POST['senha']); // Usa md5 para criptografar a senha
-//     $loginRes = $conn->query("SELECT * FROM usuarios_web WHERE login = '$login' AND senha = '$senha'");
-//     $rowLogin = $loginRes->fetch_assoc();
-//     $numRow = $loginRes->num_rows;
+// inicia a verificação do login
+if($_POST){
+    $usuario  = $_POST['usuario'];
+    $senha = md5($_POST['senha']);
+    $emailRes = $conexao->query("select * from usuarios_clientes_web where usuario = '$usuario' and senha  = '$senha'");
+    $rowEmail = $emailRes->fetch_assoc();
+    $numRow  = $emailRes->num_rows;
 
-//     // Verifica se o login foi bem-sucedido
-//     if ($numRow > 0) {
-//         $_SESSION['login_usuario'] = $login;
-//         $_SESSION['nivel_usuario'] = $rowLogin['nivel'];
-        
-//         // Redireciona de acordo com o nível do usuário
-//         if ($rowLogin['nivel'] == 'ger') {
-//             header('Location: ..index.php'); // Redireciona para index
-//             exit();
-//         } else {
-//             header('Location: ../index.php?cliente=' . urlencode($login)); // Redireciona para Cliente
-//             exit();
-//         }
-//     } else {
-//         // Se o login falhar, você pode adicionar uma mensagem de erro aqui
-//         $erro = "Usuário ou senha inválidos.";
-//     }
-// }
-
-if ($_POST) {
-    $login = $_POST['login'];
-    $senha = $_POST['senha'];
-
-    // Simulação de credenciais fixas
-    $usuarioCorreto = "admin";
-    $senhaCorreta = "senha123"; // Substitua por uma senha fictícia
-
-    // Verifica se as credenciais estão corretas
-    if ($login === $usuarioCorreto && $senha === $senhaCorreta) {
-        $_SESSION['login_usuario'] = $login;
-        $_SESSION['nivel_usuario'] = 'ger'; // Definindo nível como 'ger' para o exemplo
-        
-        // Redireciona para a área administrativa
-        header('Location: index.php');
-        exit();
-    } else {
-        // Mensagem de erro
-        $erro = "Usuário ou senha inválidos.";
+    // se a sessão não existir
+    if(!isset($_SESSION)){
+        $sessaoAntiga = session_name('smlocacoesdb');
+        session_start();
+        $session_name_new = session_name();
+    }
+    if($numRow>0){
+        $_SESSION['email_usuario'] = $email;
+        $_SESSION['cpf_usuario'] = $rowemail['cpf'];
+        $_SESSION['clinicanekodb'] = session_name();
+        if($rowEmail['cpf']=='sup'){
+            echo "<script>window.open('../../view_adm/index_adm.php?','_self')</script>";
+        }
+        else{
+            echo "<script>window.open('login.php?=".$usuario."','_self')</script>";
+        }
+    }
+    else{
+       echo "<script>window.open('logout.php','_self')</script>";
     }
 }
 ?>
+
 
 <!DOCTYPE html>
 <html class="h-100" lang="pt-br">

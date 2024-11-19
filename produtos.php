@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -15,7 +13,7 @@
      
 <!-- inclusão do cabeçalho -->
 <?php include ("cabecalho.php") ?>
-
+ 
 <div class="main">
     <div class="row">
         <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 hidden-xs">
@@ -42,166 +40,59 @@
                 </div>
             </div>
         </div>
-        
+       
+ 
 
+<?php
+include 'banco/connect.php';
+$lista = $conn->query("select * from vw_produtos where rotulo in ('copo', 'tacas')");
+$row_produtos = $lista->fetch_assoc();
+$num_linhas = $lista->num_rows;
+ 
+?>
+ 
+ 
+<?php if($num_linhas == 0){?>
+  <h2>
+    0 produtos cadastrados!
+  </h2>
+<?php }?>
+ 
+ 
+ 
+ 
+  <?php if($num_linhas > 0){?>
     <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
-     <div class="copos">
-            <h1 class ="h1-eventos">Copos</h1>
-              <div class="row row-cols-1 row-cols-md-3 g-4">
-              
-              <div class="card">
-                <img src="img/produtos/copos/copo-paulista.jpg">
+      <div class="copos">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <?php do{ ?>
+            <div class="card">
+              <img src="img/produtos/<?php echo $row_produtos['imagem'] ?>">
                 <div>
-                  <h1>Copo Paulista</h1>
-                  <span>R$ 0,40</span>
-                  <button class="btn-comprar" onclick="window.location.href='Paginas-Produtos/pagina-compras.php'">Alugar</a></button>
+                  <h1><?php echo $row_produtos['nome_produto'] ?></h1>
+                  <span><?php echo "R$ ".number_format($row_produtos['valor'],2,',','.')?></span>
+                  <button class="btn-comprar" onclick="window.location.href='Paginas-Produtos/pagina-compras.php?id=<?php echo $row_produtos['id_produto']; ?>'">Alugar</button>
              </div>
-               </div>
-              
-
-			<div class="card">
-  <img src="img/produtos/copos/copo-stylo.jpg">
-    <div>
-      <h1>Copo Stylo</h1>
-      <span>R$ 0,40</span>
-      <button class="btn-comprar"  onclick="window.location.href='Paginas-Produtos/pagina-compras.php'">Alugar</a></button>
-    </div>
-  </div>
- 
-  <div class="card">
-  <img src="img/produtos/copos/copo-whisky.jpg">
-    <div>
-      <h1>Copo Whisky</h1>
-      <span>R$ 0,40</span>
-      <button class="btn-comprar"  onclick="window.location.href='Paginas-Produtos/pagina-compras.php'">Alugar</a></button>
-    </div>
-  </div>
- 
-  <div class="card">
-  <img src="img/produtos/copos/copo-chopp.jpg">
-    <div>
-      <h1>Copo Chopp</h1>
-      <span>R$ 0,40</span>
-      <button class="btn-comprar"  onclick="window.location.href='Paginas-Produtos/pagina-compras.php'">Alugar</a></button>
-    </div>
-  </div>
- 
-  <div class="card">
-  <img src="img/produtos/copos/copo-long-drink.jpg">
-    <div>
-      <h1>Copo Long drink</h1>
-      <span>R$ 0,40</span>
-      <button class="btn-comprar"  onclick="window.location.href='Paginas-Produtos/pagina-compras.php'">Alugar</a></button>
-    </div>
-  </div>
-</div>
-
-
-    <div class="printable">
-      <div class="col-main">
-        <div class="topo-produtos">
-          <h1 class="h1-eventos">Taças</h1>
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-              <div class="card">
-                <img src="img/produtos/taças/taça-diamante.png">
-              <div>
-                          <h1>Taça Diamante</h1>
-                              <span>R$ 0,70</span>
-                              <button class="btn-comprar"  onclick="window.location.href='Paginas-Produtos/pagina-compras.php'">Alugar</a></button>
-          </div>
-      </div>
-
-  <div class="card">
-  <img src="img/produtos/taças/taça-champanhe.jpg">
-    <div>
-      <h1>Taça Champanhe</h1>
-      <span>R$ 0,50</span>
-      <button class="btn-comprar"  onclick="window.location.href='Paginas-Produtos/pagina-compras.php'">Alugar</a></button>
-    </div>
-  </div>         
-
- 
-<div class="card">
-  <img src="img/produtos/taças/taça-vinho.png">
-    <div>
-      <h1>Taça Vinho</h1>
-      <span>R$ 0,80</span>
-      <button class="btn-comprar"  onclick="window.location.href='Paginas-Produtos/pagina-compras.php'">Alugar</a></button>
-    </div>
-  </div>
- 
-  <div class="card">
-  <img src="img/produtos/taças/taça-bico-de-jaca.jpg">
-    <div>
-      <h1>Taça Bico de J</h1>
-      <span>R$ 0,70</span>
-      <button class="btn-comprar"  onclick="window.location.href='Paginas-Produtos/pagina-compras.php'">Alugar</a></button>
-    </div>
-  </div>
- 
-  <div class="card">
-  <img src="img/produtos/taças/taça-bico-de-jaca-rosa.jpg">
-    <div>
-      <h1>Taça rosa</h1>
-      <span>R$ 0,70</span>
-      <button class="btn-comprar"  onclick="window.location.href='Paginas-Produtos/pagina-compras.php'">Alugar</a></button>
-    </div>
-  </div>
- 
-
-  <div class="card">
-  <img src="img/produtos/taças/taça-bico-de-jaca-verde.png">
-    <div>
-      <h1>Taça verde</h1>
-      <span>R$ 0,70</span>
-      <button class="btn-comprar"  onclick="window.location.href='Paginas-Produtos/pagina-compras.php'">Alugar</a></button>
-    </div>
-  </div>
- 
-  <div class="card">
-  <img src="img/produtos/taças/taça-bico-de-jaca-dourada.png">
-    <div>
-      <h1>Taça dourado</h1>
-      <span>R$ 0,70</span>
-      <button class="btn-comprar"  onclick="window.location.href='Paginas-Produtos/pagina-compras.php'">Alugar</a></button>
-    </div>
-  </div>
- 
-  <div class="card">
-  <img src="img/produtos/taças/taça-bico-de-jaca-vermelha.jpg">
-    <div>
-      <h1>Taça vermelha</h1>
-      <span>R$ 0,70</span>
-      <button class="btn-comprar"  onclick="window.location.href='Paginas-Produtos/pagina-compras.php'">Alugar</a></button>
-    </div>
-  </div>
- 
-  <div class="card">
-  <img src="img/produtos/taças/taça-bico-de-jaca-azul.png">
-    <div>
-      <h1>Taça azul</h1>
-      <span>R$ 0,70</span>
-      <button class="btn-comprar"  onclick="window.location.href='Paginas-Produtos/pagina-compras.php'">Alugar</a></button>
-    </div>
-  </div>
-			
-</div> <!-- Fim da div Taças -->
-   
-	
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
+          <?php } while($row_produtos = $lista->fetch_assoc());?>
+         
         </div>
-    </div> <!-- //! FIM DA DIV -->
-</div>
-
+      </div>
+    </div>
+    </div>
+    </div>
+  <?php }?>
+ 
+ 
+ 
+ 
 <!-- inclusão do rodapé -->
 <?php include ("rodape.php") ?>
-
-
-     
+ 
+ 
+ 
+   <script src="js/bootstrap.min.js"></script>  
 </body>
-<script src="js/bootstrap.min.js"></script>
 </html>
+ 
+ 

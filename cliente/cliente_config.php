@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/estilo.css">
     <script src="../js/bootstrap.min.js"></script>
     <link rel="shortcut icon" href="../img/favicon1.png" type="image/x-icon">
-    <title>Atualizar dados</title>
+    <title>Meus dados</title>
 </head> 
 <body>
 <!-- inclusão do cabeçalho do cliente --> 
@@ -16,7 +16,7 @@
 <br>
 
 <form action="/salvar-dados" method="POST">
-  <div class="container d-flex justify-content-center align-items-center min-vh-100" style="background-color: #f8f9fa;">
+  <div class="container d-flex justify-content-center align-items-center min-vh-100">
     <div class="row w-100 p-4" style="background-color: white; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); max-width: 900px;">
         
       <!-- Seção de Meus Dados Pessoais -->

@@ -11,12 +11,12 @@
 </head>
 <body>
 
-<!--- inclusão do cabeçalho --->
+<!--- inclusão do cabeçalho ---> 
 <?php include ("menu_cliente.php")?>
 
 <br>
 
-<!-- Titulo do carrinho de compras com o icone -->
+<!-- Titulo do carrinho de compras com o ícone -->
 <div class="container">
     <div class="row">
         <div class="col">
@@ -27,8 +27,10 @@
 
 <br>
 
-<!-- Tabela com itens no carrinho -->
-<div class="container">
+<!-- Div branca com todos os conteúdos -->
+<div class="container" style="background-color: white; padding: 20px; border-radius: 5px;">
+
+    <!-- Tabela com itens no carrinho -->
     <div class="row">
         <!-- Descrição -->
         <div class="col">
@@ -67,25 +69,6 @@
         </div>
     </div>
 
-    <!-- Produto 2 -->
-    <div class="row">
-        <div class="col">
-            <p>Produto B</p>
-        </div>
-        <div class="col">
-            <!-- Botões de quantidade -->
-            <button class="btn btn-outline-secondary" onclick="alterarQuantidade(-1, 2)">-</button>
-            <span id="qtdProduto2">2</span>
-            <button class="btn btn-outline-secondary" onclick="alterarQuantidade(1, 2)">+</button>
-        </div>
-        <div class="col">
-            <p id="precoProduto2">R$ 30,00</p>
-        </div>
-        <div class="col">
-            <p id="subtotalProduto2">R$ 60,00</p>
-        </div>
-    </div>
-
     <br>
 
     <!-- Total geral -->
@@ -106,7 +89,7 @@
     <div class="row">
         <div class="col">
             <a href="../produtos.php">
-                <button class="btn btn-secondary">Continuar Comprando</button> 
+                <button class="btn btn-primary">Continuar Comprando</button> 
             </a>
         </div>
         <div class="col">
@@ -117,12 +100,10 @@
     </div>
 </div>
 
-
-
+<br>
 
 <!-- inclusão do rodapé -->
 <?php include ("rodape.php") ?>
-    
 
 </body>
 

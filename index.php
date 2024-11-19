@@ -32,6 +32,7 @@
 
 </div>
 </div>
+<br>
 
 <?php 
 include 'banco/connect.php';
@@ -48,7 +49,7 @@ $num_linhas = $lista->num_rows;
   </h2>
 <?php }?>
 
-
+<br>
 <?php if($num_linhas > 0){ ?>
   <h1 class ="h1-eventos"> 
     Destaques 
@@ -61,19 +62,18 @@ $num_linhas = $lista->num_rows;
             <h1>
               <strong><?php echo $row_produtos['nome_produto']?></strong>
             </h1>
-            <button class="btn btn-secondary" onclick="window.location.href='produtos.php'">saiba mais</button>
+            
           </div>
           </div>  
         <?php } while($row_produtos = $lista->fetch_assoc());?>            
     </div>
   <?php } ?>
 </div>
-<div>
-  <a href="produtos.php" class="btn btn-secondary ">Veja nosso Catalogo</a>   
+
+
+<div class="d-flex justify-content-center mt-5">
+  <button class="btn btn-secondary" onclick="window.location.href='produtos.php'">Veja nosso catálogo</button>
 </div>
-
-
-
 
 
 <br>
@@ -86,5 +86,4 @@ $num_linhas = $lista->num_rows;
 
     
 </body>
-
 </html>
