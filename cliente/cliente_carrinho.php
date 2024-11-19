@@ -69,25 +69,6 @@
         </div>
     </div>
 
-    <!-- Produto 2 -->
-    <div class="row">
-        <div class="col">
-            <p>Produto B</p>
-        </div>
-        <div class="col">
-            <!-- Botões de quantidade -->
-            <button class="btn btn-outline-secondary" onclick="alterarQuantidade(-1, 2)">-</button>
-            <span id="qtdProduto2">2</span>
-            <button class="btn btn-outline-secondary" onclick="alterarQuantidade(1, 2)">+</button>
-        </div>
-        <div class="col">
-            <p id="precoProduto2">R$ 30,00</p>
-        </div>
-        <div class="col">
-            <p id="subtotalProduto2">R$ 60,00</p>
-        </div>
-    </div>
-
     <br>
 
     <!-- Total geral -->
@@ -108,7 +89,7 @@
     <div class="row">
         <div class="col">
             <a href="../produtos.php">
-                <button class="btn btn-secondary">Continuar Comprando</button> 
+                <button class="btn btn-primary">Continuar Comprando</button> 
             </a>
         </div>
         <div class="col">
