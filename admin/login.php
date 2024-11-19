@@ -11,7 +11,7 @@ if($_POST){
 
     // se a sessão não existir
     if(!isset($_SESSION)){
-        $sessaoAntiga = session_name('clinicanekodb');
+        $sessaoAntiga = session_name('smlocacoesdb');
         session_start();
         $session_name_new = session_name();
     }
@@ -23,7 +23,7 @@ if($_POST){
             echo "<script>window.open('../../view_adm/index_adm.php?','_self')</script>";
         }
         else{
-            echo "<script>window.open('login.php?=".$email."','_self')</script>";
+            echo "<script>window.open('login.php?=".$usuario."','_self')</script>";
         }
     }
     else{
