@@ -12,8 +12,8 @@
         </ul>
         <li><a href="../produtos/lista_produtos.php" class="nav-link px-2 text-dark">Produtos</a></li>
           <li><a href="../categorias/lista_categorias.php" class="nav-link px-2 text-dark">Categoria</a></li>
-          <li><a href="../usuarios/lista_usuarios-cli.php" class="nav-link px-2 text-dark">Clientes</a></li>  
-          <li><a href="../usuarios/lista_usuarios-fun.php" class="nav-link px-2 text-dark">Funcionários</a></li>  
+          <li><a href="../usuarios-cli/lista_usuarios-cli.php" class="nav-link px-2 text-dark">Clientes</a></li>  
+          <li><a href="../usuarios-fun/lista_usuarios-fun.php" class="nav-link px-2 text-dark">Funcionários</a></li>  
         <!-- Botões de login e cadastro -->
         <div class="text-end">
           <a href="../index.php">

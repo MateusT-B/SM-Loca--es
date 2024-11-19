@@ -3,7 +3,7 @@
 include '../acesso_com.php';
 include '../../banco/connect.php';
 
-$lista = $conn -> query("select * from usuarios_funcionarios_web");
+$lista = $conn -> query("select * from vw_dados_funcionarios");
 $row = $lista -> fetch_assoc();
 $rows = $lista -> num_rows;
 ?>
@@ -21,18 +21,22 @@ $rows = $lista -> num_rows;
     <?php include '../menu_adm_op.php'; ?>
 
     <main class="container-lista">
-        <h2 class="breadcrumb-lista alert alert-warning">Lista de Usuários</h2>
+        <h2 class="breadcrumb-lista alert alert-secondary">Lista de Funcionários</h2>
 
         <table class="table-lista table-hover-lista table-condensed-lista tb-opacidade-lista bg-warning-lista">
             <thead class="thead-prod">
                 <tr>
                     <th class="d-none">ID</th>
-                    <th class="d-none">ID_FUNC ou ID_CLI</th>
                     <th>USUÁRIO</th>
-                    <th>ATIVO</th>
-                    <th>TIPO</th>
+                    <th>NOME</th>
+                    <th>CPF</th>
+                    <th>EMAIL</th>
+                    <th>TELEFONE</th>
+                    <th>ENDEREÇO</th>
+                    <th>TIPO ENDEREÇO</th>
+                    <th>CONTA WEB ATIVA</th>
                     <th>
-                        <a href="insere_usuarios-cli.php" class="btn btn-primary btn-xs">
+                        <a href="insere_usuarios-fun.php" class="btn btn-primary btn-xs">
                             <span class="add">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
                                 <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
@@ -45,20 +49,18 @@ $rows = $lista -> num_rows;
             <tbody>
                 <?php do { ?>
                     <tr>
-                        <td class="d-none"><?php echo $row['id']; ?></td>
-                        <td class="d-none">
-                            <?php
-                                if ($row['tipo_func'] == 'fun') {
-                                    echo '<td class="d-none">' . $row['id_funcionario'] . '</td>';
-                                } else {
-                                    echo '<td class="d-none">' . $row['id_cliente'] . '</td>';
-                                }
-                                ?> 
-                        </td>
-                        <td class="d-none"><?php echo $row['usuario']; ?></td>
+                        <td class="d-none"><?php echo $row['id_cliente']; ?></td>
+                        <td><?php echo $row['usuario_web']; ?></td>
+                        <td><?php echo $row['nome_funcionario']; ?></td>
+                        <td><?php echo $row['cpf']; ?></td>
+                        <td><?php echo $row['email']; ?></td>
+                        <td><?php echo $row['telefone']?></td>
+                        <td><?php echo $row['logradouro'] . ", " . $row['numero'] . ", " . $row['bairro'] . ", " . $row['cidade'] . ", " . $row['uf'] . ", " . $row['cep']?></td>
+                        <td><?php echo $row['tipo_endereco']?></td>
+
                         <td>
                             <?php
-                                if($row['ativo'] == 'Sim') {
+                                if($row['conta_web_ativa'] == 'Sim') {
                                     echo '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
                                     <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z"/>
                                     </svg>';
@@ -68,10 +70,10 @@ $rows = $lista -> num_rows;
                                     </svg>';
                                 }
                                 ?>
-                        <td class="d-none"><?php echo $row['tipo']; ?></td>
                         </td>
+                        <td>
                             <a
-                                href="update_usuarios.php?id=<?php echo $row['id'] ?>" 
+                                href="update_usuarios-fun.php?id=<?php echo $row['id_funcionario'] ?>" 
                                 role="button" 
                                 class="btn btn-warning btn-block btn-xs"
                             >
