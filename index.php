@@ -71,8 +71,8 @@ $num_linhas = $lista->num_rows;
 </div>
 
 
-<div class="d-flex justify-content-center">
-  <button class="btn btn-secondary" onclick="window.location.href='paginas-Produtos/pagina-Copos-Tacas.php'">Veja nosso catálogo</button>
+<div class="d-flex justify-content-center mt-5">
+  <button class="btn btn-secondary" onclick="window.location.href='produtos.php'">Veja nosso catálogo</button>
 </div>
 
 

@@ -110,6 +110,8 @@ body
 
 /* css para deixar todos os elementos alinhado */
 
+
+
 .eventos {
   margin-top: 50px;
   font-family: "Parisienne";
@@ -165,6 +167,7 @@ h1, h2 {
     box-sizing: border-box;
     max-width: 70%; /* Limite para que as divs não fiquem muito grandes */
     margin-left: 15%;
+    
   }
   
 

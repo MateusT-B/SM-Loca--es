@@ -42,6 +42,7 @@
         </div>
        
  
+
 <?php
 include 'banco/connect.php';
 $lista = $conn->query("select * from vw_produtos where rotulo in ('copo', 'tacas')");
