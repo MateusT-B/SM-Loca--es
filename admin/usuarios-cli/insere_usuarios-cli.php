@@ -4,11 +4,11 @@ include '../../banco/connect.php';
 
 if ($_POST) {
     $nome = $_POST['nome'];
-    $cpf = $_POST['cpf'];
+    $cpf = preg_replace('/[.\-]/', '', $_POST['cpf']);
     $data_nascimento = $_POST['data_nascimento'];
     $data_cad = date('Y-m-d H:i:s'); // Data atual para cadastro
 
-    $telefone = $_POST['telefone'];
+    $telefone = preg_replace('/[()\s-]/', '', $_POST['telefone']);
     $tipo_telefone = $_POST['tipo_telefone'];
 
     $logradouro = $_POST['logradouro'];
@@ -96,7 +96,7 @@ if ($_POST) {
         mysqli_commit($conn);
 
         // Redireciona em caso de sucesso
-        header('Location: sucesso.php');
+        header('Location: lista_usuarios-cli.php');
     } catch (Exception $e) {
         // Reverter a transação em caso de erro
         mysqli_rollback($conn);
@@ -119,46 +119,56 @@ if ($_POST) {
 <main class="container-inserir mx-auto">
     <div class="mx-auto">
         <div class="col-xs-12 col-sm-offset-2 col-sm-6 col-md-8 mx-auto">
-            <h2 class="breadcrumb-insere alert text-secondary">
-                <a href="lista_clientes.php">
-                    <button class="btn btn-secondary">
+            <h2 class="breadcrumb-insere alert text-warning">
+                <a href="lista_usuarios-cli.php">
+                    <button class="btn btn-warning">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-return-left" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5"/>
                         </svg>
                     </button>
                 </a>
-                Inserir Cliente
+                Inserindo Cliente
             </h2>
             <div class="thumbnail-insere">
-                <div class="alert alert-secondary" role="alert">
+                <div class="alert alert-warning" role="alert">
                     <form action="processa_cliente.php" method="post" name="form_insere" enctype="multipart/form-data" id="form_insere">
 
                         <!-- Dados do Cliente -->
                         <label for="nome">Nome:</label>
-                        <div class="input-group-text">
-                            <span class="input-group-addon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
-                                    <path d="M8 0a3 3 0 0 1 3 3 3 3 0 0 1-3 3 3 3 0 0 1-3-3 3 3 0 0 1 3-3zm0 1a2 2 0 1 0 0 4 2 2 0 0 0 0-4zM1 12a7 7 0 0 1 7-7 7 7 0 0 1 7 7v1h-2v-1a5 5 0 0 0-10 0v1H1v-1z"/>
+                        <div class="input-group">
+                        <span class="input-group-text">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
                                 </svg>
                             </span>
                             <input type="text" name="nome" id="nome" class="form-control" placeholder="Digite o nome do cliente" required>
                         </div>
 
-                        <label for="cpf">CPF:</label>
-                        <div class="input-group-text">
-                            <span class="input-group-addon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-person" viewBox="0 0 16 16">
-                                    <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM4 1h8a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"/>
-                                </svg>
-                            </span>
-                            <input type="text" name="cpf" id="cpf" class="form-control" placeholder="Digite o CPF" required>
+                        <div class="mb-3">
+                            <label for="cpf" class="form-label">CPF:</label>
+                            <div class="input-group">
+                            <span class="input-group-text">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                        </svg>
+                                    </span>
+                                    <input type="text" class="form-control" id="cpf" name="cpf" placeholder="000.000.000-00" required>
+                                </div>
                         </div>
+                        <!-- Máscara para o campo de CPF -->
+                        <script>
+                            $(document).ready(function() {
+                                $('#cpf').mask('000.000.000-00');
+                            });
+                        </script>
 
                         <label for="data_nascimento">Data de Nascimento:</label>
-                        <div class="input-group-text">
-                            <span class="input-group-addon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16">
-                                    <path d="M3 0a1 1 0 0 1 1 1v1h8V1a1 1 0 0 1 2 0v1h1a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h1V1a1 1 0 0 1 1-1zM2 4v12h12V4H2z"/>
+                        <div class="input-group">
+                        <span class="input-group-text">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-event" viewBox="0 0 16 16">
+                                    <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z"/>
+                                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
                                 </svg>
                             </span>
                             <input type="date" name="data_nascimento" id="data_nascimento" class="form-control" required>
@@ -166,37 +176,76 @@ if ($_POST) {
 
                         <!-- Telefone -->
                         <label for="telefone">Telefone:</label>
-                        <div class="input-group-text">
-                            <span class="input-group-addon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
-                                    <path d="M1.885 1.56A1.62 1.62 0 0 1 2.698 1h10.604a1.62 1.62 0 0 1 1.558 1.56l.097 11.78a1.62 1.62 0 0 1-1.56 1.558l-2.6-.207a1.62 1.62 0 0 1-1.554-1.48v-1.3a.62.62 0 0 0-.62-.62h-5.6a.62.62 0 0 0-.62.62v1.3a1.62 1.62 0 0 1-1.554 1.48l-2.6.207a1.62 1.62 0 0 1-1.56-1.558l.097-11.78z"/>
+                        <div class="input-group">
+                        <span class="input-group-text">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
                                 </svg>
                             </span>
                             <input type="text" name="telefone" id="telefone" class="form-control" placeholder="Digite o telefone" required>
                         </div>
+                        <!-- Adicione jQuery -->
+                        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+                        <!-- Adicione o jQuery Mask Plugin -->
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+                        <script>
+                            $(document).ready(function() {
+                                $('#telefone').mask('(00) 00000-0000');
+                            });
+                        </script>
 
                         <label for="tipo_telefone">Tipo de Telefone:</label>
-                        <div class="input-group-text">
+                        <div class="input-group">
                             <select name="tipo_telefone" id="tipo_telefone" class="form-control" required>
                                 <option value="Casa">Casa</option>
                                 <option value="Celular">Celular</option>
                                 <option value="Comercial">Comercial</option>
                             </select>
                         </div>
+                        
+                        <label for="telefone">Endereço:</label>
 
-                        <!-- Nível do Funcionário -->
-                        <label for="nivel_funcionario">Nível do Funcionário:</label>
-                        <div class="input-group-text">
-                            <select name="nivel_funcionario" id="nivel_funcionario" class="form-control" required>
-                            <?php do{ ?>
-                                    <option value="<?php echo $rowTipo['id']; ?>">
-                                    <?php echo $rowTipo['niveis']; ?>
-                                    </option>
-                                <?php }while($rowTipo = $listaTipo->fetch_assoc()); ?>
-                            </select>
+                        <label for="telefone">Logradouro:</label>
+                        <div class="input-group">
+                        <span class="input-group-text">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                                </svg>
+                            </span>
+                            <input type="text" name="telefone" id="telefone" class="form-control" placeholder="Digite o telefone" required>
                         </div>
+                        
+                        <br>
+                        <button type="submit" class="btn btn-warning">Cadastrar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                        <button type="submit" class="btn btn-primary">Cadastrar</button>
+    <div class="mx-auto">
+        <div class="col-xs-12 col-sm-offset-2 col-sm-6 col-md-8 mx-auto">
+            <h2 class="breadcrumb-insere alert text-warning">
+                Inserindo Endereço
+            </h2>
+            <div class="thumbnail-insere">
+                <div class="alert alert-warning" role="alert">
+                    <form action="insere_usuario-cli.php" method="post" name="form_insere" enctype="multipart/form-data" id="form_insere">
+
+                        <label for="telefone">Logradouro:</label>
+                        <div class="input-group">
+                        <span class="input-group-text">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                                </svg>
+                            </span>
+                            <input type="text" name="telefone" id="telefone" class="form-control" placeholder="Digite o telefone" required>
+                        </div>
+                        
+                        <br>
+                        <button type="submit" class="btn btn-warning">Cadastrar</button>
                     </form>
                 </div>
             </div>
