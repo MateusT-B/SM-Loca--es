@@ -1,57 +1,57 @@
-<?php
-// Inclui a conexão com o banco de dados
-include '../banco/connect.php';
+    <?php
+    // Inclui a conexão com o banco de dados
+    include '../banco/connect.php';
 
-// Variável de erro, caso o login falhe
-$erro = '';
+    // Variável de erro, caso o login falhe
+    $erro = '';
 
-// Inicia a verificação do login, se o formulário foi enviado via POST
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Verifica se os dados de usuário e senha foram enviados
-    if (isset($_POST['usuario']) && isset($_POST['senha'])) {
-        // Obtém os dados do formulário
-        $usuario = $_POST['usuario'];
-        $senha = $_POST['senha'];
+    // Inicia a verificação do login, se o formulário foi enviado via POST
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        // Verifica se os dados de usuário e senha foram enviados
+        if (isset($_POST['usuario']) && isset($_POST['senha'])) {
+            // Obtém os dados do formulário
+            $usuario = $_POST['usuario'];
+            $senha = $_POST['senha'];
 
-        // Criptografa a senha utilizando MD5
-        $senhaMD5 = md5($senha);
+            // Criptografa a senha utilizando MD5
+            $senhaMD5 = md5($senha);
 
-        // Prepara a consulta no banco
-        $stmt = $conn->prepare("SELECT * FROM usuarios_clientes_web WHERE usuario = ? AND senha = ?");
-        $stmt->bind_param("ss", $usuario, $senhaMD5); // Passa a senha criptografada com MD5
-        $stmt->execute();
-        $result = $stmt->get_result();
-        $rowEmail = $result->fetch_assoc();
-        $numRow = $result->num_rows;
+            // Prepara a consulta no banco
+            $stmt = $conn->prepare("SELECT * FROM usuarios_clientes_web WHERE usuario = ? AND senha = ?");
+            $stmt->bind_param("ss", $usuario, $senhaMD5); // Passa a senha criptografada com MD5
+            $stmt->execute();
+            $result = $stmt->get_result();
+            $rowEmail = $result->fetch_assoc();
+            $numRow = $result->num_rows;
 
-        // Verifica se o usuário existe e a senha está correta
-        if ($numRow > 0) {
-            // Se a senha estiver correta, cria a sessão
-            session_start(); // Inicia a sessão
+            // Verifica se o usuário existe e a senha está correta
+            if ($numRow > 0) {
+                // Se a senha estiver correta, cria a sessão
+                session_start(); // Inicia a sessão
 
-            // Armazena os dados do usuário na sessão
-            $_SESSION['usuario_usuario'] = $rowEmail['usuario'];
-            $_SESSION['id_cliente_usuario'] = $rowEmail['id_cliente'];
-            $_SESSION['clinicanekodb'] = session_name();
+                // Armazena os dados do usuário na sessão
+                $_SESSION['usuario_usuario'] = $rowEmail['usuario'];
+                $_SESSION['id_cliente_usuario'] = $rowEmail['id_cliente'];
+                $_SESSION['clinicanekodb'] = session_name();
 
-            // Redireciona conforme o perfil do usuário
-            if ($rowEmail['id_cliente'] == 'sup') {
-                // Usuário de perfil 
-                echo "<script>window.open('../../view_adm/index_adm.php', '_self')</script>";
+                // Redireciona conforme o perfil do usuário
+                if ($rowEmail['id_cliente'] == 'sup') {
+                    // Usuário de perfil 
+                    echo "<script>window.open('../../view_adm/index_adm.php', '_self')</script>";
+                } else {
+                    // Usuário normal
+                    echo "<script>window.open('../cliente/index.php', '_self')</script>";
+                }
             } else {
-                // Usuário normal
-                echo "<script>window.open('../cliente/index.php', '_self')</script>";
+                // Se o usuário não for encontrado ou a senha estiver incorreta
+                $erro = 'Usuário ou senha incorretos!';
             }
-        } else {
-            // Se o usuário não for encontrado ou a senha estiver incorreta
-            $erro = 'Usuário ou senha incorretos!';
-        }
 
-        // Fecha a declaração e a conexão
-        $stmt->close();
-        $conn->close();
+            // Fecha a declaração e a conexão
+            $stmt->close();
+            $conn->close();
+        }
     }
-}
 ?>
 
 <!DOCTYPE html>
