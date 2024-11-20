@@ -1,57 +1,74 @@
-    <?php
-    // Inclui a conexão com o banco de dados
-    include '../banco/connect.php';
+<?php
+// Inclui a conexão com o banco de dados
+include '../banco/connect.php';
 
-    // Variável de erro, caso o login falhe
-    $erro = '';
+// Variável de erro, caso o login falhe
+$erro = '';
 
-    // Inicia a verificação do login, se o formulário foi enviado via POST
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        // Verifica se os dados de usuário e senha foram enviados
-        if (isset($_POST['usuario']) && isset($_POST['senha'])) {
-            // Obtém os dados do formulário
-            $usuario = $_POST['usuario'];
-            $senha = $_POST['senha'];
+// Inicia a verificação do login, se o formulário foi enviado via POST
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Verifica se os dados de usuário e senha foram enviados
+    if (isset($_POST['usuario']) && isset($_POST['senha'])) {
+        // Obtém os dados do formulário
+        $usuario = $_POST['usuario'];
+        $senha = $_POST['senha'];
 
-            // Criptografa a senha utilizando MD5
-            $senhaMD5 = md5($senha);
+        // Criptografa a senha utilizando MD5 (considere usar password_hash no futuro)
+        $senhaMD5 = md5($senha);
 
-            // Prepara a consulta no banco
-            $stmt = $conn->prepare("SELECT * FROM usuarios_clientes_web WHERE usuario = ? AND senha = ?");
-            $stmt->bind_param("ss", $usuario, $senhaMD5); // Passa a senha criptografada com MD5
-            $stmt->execute();
-            $result = $stmt->get_result();
-            $rowEmail = $result->fetch_assoc();
-            $numRow = $result->num_rows;
+        // Primeiro, tentamos autenticar como cliente
+        $stmt_cliente = $conn->prepare("SELECT * FROM usuarios_clientes_web WHERE usuario = ? AND senha = ?");
+        $stmt_cliente->bind_param("ss", $usuario, $senhaMD5);
+        $stmt_cliente->execute();
+        $result_cliente = $stmt_cliente->get_result();
+        $numRow_cliente = $result_cliente->num_rows;
 
-            // Verifica se o usuário existe e a senha está correta
-            if ($numRow > 0) {
-                // Se a senha estiver correta, cria a sessão
+        // Se o cliente for encontrado
+        if ($numRow_cliente > 0) {
+            $row_cliente = $result_cliente->fetch_assoc();
+            session_start(); // Inicia a sessão
+
+            // Armazena os dados do cliente na sessão
+            $_SESSION['usuario_usuario'] = $row_cliente['usuario'];
+            $_SESSION['id_cliente_usuario'] = $row_cliente['id_cliente'];
+            $_SESSION['clinicanekodb'] = session_name();
+
+            // Redireciona para a página do cliente
+            echo "<script>window.open('../cliente/index.php', '_self')</script>";
+
+        } else {
+            // Agora, tentamos autenticar como funcionário
+            $stmt_funcionario = $conn->prepare("SELECT * FROM usuarios_funcionarios_web WHERE usuario = ? AND senha = ?");
+            $stmt_funcionario->bind_param("ss", $usuario, $senhaMD5);
+            $stmt_funcionario->execute();
+            $result_funcionario = $stmt_funcionario->get_result();
+            $numRow_funcionario = $result_funcionario->num_rows;
+
+            // Se o funcionário for encontrado
+            if ($numRow_funcionario > 0) {
+                $row_funcionario = $result_funcionario->fetch_assoc();
                 session_start(); // Inicia a sessão
 
-                // Armazena os dados do usuário na sessão
-                $_SESSION['usuario_usuario'] = $rowEmail['usuario'];
-                $_SESSION['id_cliente_usuario'] = $rowEmail['id_cliente'];
+                // Armazena os dados do funcionário na sessão
+                $_SESSION['usuario_funcionario'] = $row_funcionario['usuario'];
+                $_SESSION['id_funcionario_usuario'] = $row_funcionario['id_funcionario'];
+                $_SESSION['id_nivel_usuario'] = $row_funcionario['id_nivel'];
                 $_SESSION['clinicanekodb'] = session_name();
 
-                // Redireciona conforme o perfil do usuário
-                if ($rowEmail['id_cliente'] == 'sup') {
-                    // Usuário de perfil 
-                    echo "<script>window.open('../../view_adm/index_adm.php', '_self')</script>";
-                } else {
-                    // Usuário normal
-                    echo "<script>window.open('../cliente/index.php', '_self')</script>";
-                }
+                // Redireciona para a página do administrador ou painel do funcionário
+                echo "<script>window.open('../admin/index.php', '_self')</script>";
             } else {
-                // Se o usuário não for encontrado ou a senha estiver incorreta
+                // Se não for encontrado nem cliente nem funcionário
                 $erro = 'Usuário ou senha incorretos!';
             }
-
-            // Fecha a declaração e a conexão
-            $stmt->close();
-            $conn->close();
         }
+
+        // Fecha a declaração e a conexão
+        $stmt_cliente->close();
+        $stmt_funcionario->close();
+        $conn->close();
     }
+}
 ?>
 
 <!DOCTYPE html>
