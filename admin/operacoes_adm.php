@@ -44,7 +44,7 @@
           <h1></h1>
           <div class="card-botão-adm">
             <a href="usuarios-cli/lista_usuarios-cli.php"  class="btn-adm btn-usuarios-fun">LISTAR</a>
-            <a href="usuarios-cli/insere_usuarios-cli.php" class="btn-adm btn-usuarios-fun">INSERIR</a>
+            <a href="usuarios-cli/insere_clientes.php" class="btn-adm btn-usuarios-fun">INSERIR</a>
           </div>
         </div>
       </div>
@@ -59,7 +59,7 @@
           <h1></h1>
           <div class="card-botão-adm">
             <a href="usuarios-fun/lista_usuarios-fun.php" class="btn-adm btn-usuarios-cli">LISTAR</a>
-            <a href="usuarios-fun/insere_usuarios-fun.php" class="btn-adm btn-usuarios-cli">INSERIR</a>
+            <a href="usuarios-fun/insere_funcionarios.php" class="btn-adm btn-usuarios-cli">INSERIR</a>
           </div>
         </div>
       </div>
