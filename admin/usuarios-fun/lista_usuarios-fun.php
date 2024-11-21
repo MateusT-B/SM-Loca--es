@@ -23,7 +23,7 @@ $rows = $lista -> num_rows;
     <main class="container-lista">
         <h2 class="breadcrumb-lista alert alert-secondary">Lista de Funcionários</h2>
 
-        <table class="table-lista table-hover-lista table-condensed-lista tb-opacidade-lista bg-warning-lista">
+        <table class="table-lista table-hover-lista table-condensed-lista tb-opacidade-lista bg-secondary-lista">
             <thead class="thead-prod">
                 <tr>
                     <th class="d-none">ID</th>
@@ -34,9 +34,9 @@ $rows = $lista -> num_rows;
                     <th>TELEFONE</th>
                     <th>ENDEREÇO</th>
                     <th>TIPO ENDEREÇO</th>
-                    <th>CONTA WEB ATIVA</th>
+                    <th>ATIVO</th>
                     <th>
-                        <a href="insere_usuarios-fun.php" class="btn btn-primary btn-xs">
+                        <a href="insere_funcionarios.php" class="btn btn-primary btn-xs">
                             <span class="add">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
                                 <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
@@ -49,7 +49,7 @@ $rows = $lista -> num_rows;
             <tbody>
                 <?php do { ?>
                     <tr>
-                        <td class="d-none"><?php echo $row['id_cliente']; ?></td>
+                        <td class="d-none"><?php echo $row['id_funcionario']; ?></td>
                         <td><?php echo $row['usuario_web']; ?></td>
                         <td><?php echo $row['nome_funcionario']; ?></td>
                         <td><?php echo $row['cpf']; ?></td>
@@ -57,7 +57,6 @@ $rows = $lista -> num_rows;
                         <td><?php echo $row['telefone']?></td>
                         <td><?php echo $row['logradouro'] . ", " . $row['numero'] . ", " . $row['bairro'] . ", " . $row['cidade'] . ", " . $row['uf'] . ", " . $row['cep']?></td>
                         <td><?php echo $row['tipo_endereco']?></td>
-
                         <td>
                             <?php
                                 if($row['conta_web_ativa'] == 'Sim') {
@@ -71,38 +70,10 @@ $rows = $lista -> num_rows;
                                 }
                                 ?>
                         </td>
-                        <td>
-                            <a
-                                href="update_usuarios-fun.php?id=<?php echo $row['id_funcionario'] ?>" 
-                                role="button" 
-                                class="btn btn-warning btn-block btn-xs"
-                            >
-                                <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2z"/>
-                                        <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466"/>
-                                    </svg>
-                                </span>
-                                <span class="hidden-xs">ALTERAR</span>    
-                            </a>
-                        </td>
                     </tr>
                 <?php } while ($row = $lista->fetch_assoc()); ?>
             </tbody>
         </table>
     </main>
-
-    <!-- Scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="../../js/bootstrap.min.js"></script>
-    <script type="text/javascript">
-        $('.delete').on('click', function() {
-            var nome = $(this).data('nome'); // busca o nome do produto
-            var id = $(this).data('id'); // busca o id do produto
-            $('span.nome').text(nome); // insere o nome no modal
-            $('a.delete-yes').attr('href', 'delete_produtos.php?id=' + id); // define o link de exclusão
-            $('#modalEdit').modal('show'); // exibe o modal
-        });
-    </script>
 </body>
 </html>
