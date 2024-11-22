@@ -53,7 +53,7 @@
       </div>
       <div class="block-content">
         <ul class="cd-accordion-menu animated">
-        <li><img src="../icons/icone_copos-e-tacas.png" class="icone"><a href="../paginas-Produtos/pagina-Copos-Tacas.php">Copos e Taças</a></li>
+        <li><img src="../icons/icone_copos-e-tacas.png" class="icone"><a href="../produtos.php">Copos e Taças</a></li>
                             <li><img src="../icons/icone_cristais.png" class="icone"><a href="../aginas-Produtos/pagina-cristais.php">Cristais</a></li>
                             <li><img src="../icons/icone_inox.png" class="icone"><a href="../paginas-Produtos/pagina-inox.php">Inox</a></li>
                             <li><img src="../icons/icone_mesas-e-cadeiras.png" class="icone"><a href="../paginas-Produtos/pagina-mesas.php">Mesas / Cadeiras / Pranchão</a></li>
