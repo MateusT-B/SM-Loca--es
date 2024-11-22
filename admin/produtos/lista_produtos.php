@@ -32,6 +32,7 @@ $rows = $lista -> num_rows;
                     <th>DESCRIÇÃO</th>
                     <th>RESUMO</th>
                     <th>VALOR</th>
+                    <th>UNIDADE</th>
                     <th>IMAGEM</th>
                     <th>
                         <a href="insere_produtos.php" class="btn btn-primary btn-xs">
@@ -65,6 +66,7 @@ $rows = $lista -> num_rows;
                         </td>
                         <td><?php echo $row['descricao']; ?></td>
                         <td><?php echo number_format($row['valor'], 2, ',', '.'); ?></td>
+                        <td><?php echo $row['unidade_venda']; ?></td>
                         <td>
                             <img src="../../img/produtos/<?php echo $row['imagem']; ?>" width="100px" alt="Imagem do produto">
                         </td>
