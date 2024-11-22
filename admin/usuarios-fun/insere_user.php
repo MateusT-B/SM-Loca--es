@@ -2,6 +2,7 @@
 include '../acesso_com.php'; // Verifica acesso
 include '../../banco/connect.php'; // Conecta ao banco de dados
 
+error_reporting(0); // Desativa a exibição de erros
 
 session_start();
 
