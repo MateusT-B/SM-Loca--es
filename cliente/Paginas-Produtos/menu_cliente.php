@@ -39,7 +39,7 @@
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
                         <li><a class="dropdown-item" href="../cliente/cliente_config.php">Atualizar dados</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item text-danger" href="../cliente/logout.php">Sair</a></li>
+                        <li><a class="dropdown-item text-danger" href="../../cliente/logout.php">Sair</a></li>
                     </ul>
                 </div>
 
