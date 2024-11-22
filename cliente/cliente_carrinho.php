@@ -88,7 +88,7 @@
     <!-- Botões de ação -->
     <div class="row">
         <div class="col">
-            <a href="../produtos.php">
+            <a href="produtos.php">
                 <button class="btn btn-primary">Continuar Comprando</button> 
             </a>
         </div>
