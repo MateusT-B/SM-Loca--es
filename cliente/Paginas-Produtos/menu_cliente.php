@@ -43,7 +43,7 @@
                     </ul>
                 </div>
 
-                <a href="../cliente/cliente_carrinho.php" class="text-dark">
+                <a href="../../cliente/cliente_carrinho.php" class="text-dark">
                     <img src="../../icons/market-car.png" alt="market-car" width="50">
                 </a>
             </div>

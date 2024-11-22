@@ -43,7 +43,7 @@ session_start();
                 </div>
 
                 <!-- Ícone do carrinho de compras -->
-                <a href="../cliente/cliente_carrinho.php" class="text-dark">
+                <a href="cliente_carrinho.php" class="text-dark">
                     <img src="../icons/market-car.png" alt="market-car" width="50">
                 </a>
                 
