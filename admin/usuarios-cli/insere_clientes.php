@@ -43,9 +43,9 @@ if($_POST)
 <main class="container-inserir mx-auto">
     <div class="mx-auto">
         <div class="col-xs-12 col-sm-offset-2 col-sm-6 col-md-8 mx-auto">
-            <h2 class="breadcrumb-insere alert text-secondary">
+            <h2 class="breadcrumb-insere alert text-warning">
                 <a href="lista_usuarios-cli.php">
-                    <button class="btn btn-secondary">
+                    <button class="btn btn-warning">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-return-left" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5"/>
                         </svg>
@@ -54,7 +54,7 @@ if($_POST)
                 Inserindo Cliente
             </h2>
             <div class="thumbnail-insere">
-                <div class="alert alert-secondary" role="alert">
+                <div class="alert alert-warning" role="alert">
                     <form action="insere_clientes.php" method="post" name="form_insere" enctype="multipart/form-data" id="form_insere">
 
                         <!-- Dados do Cliente -->
@@ -104,7 +104,7 @@ if($_POST)
                         </div>
 
                         <br>
-                        <button href="insere_contatos.php" type="submit" class="btn btn-secondary">Avançar</button>
+                        <button href="insere_contatos.php" type="submit" class="btn btn-warning">Avançar</button>
                     </form>
                 </div>
             </div>
