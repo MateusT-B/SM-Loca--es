@@ -18,4 +18,7 @@
     //         session_destroy();
     //         header('location: login.php');
     // }
+
+    //se o acesso com php funciona, o logout funciona 
+    //porém, para de encontrar todos os insets, listas, etc.
 ?>

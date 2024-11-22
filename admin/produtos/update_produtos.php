@@ -58,6 +58,7 @@ $numLinhas = $listaTipo->num_rows;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/bootstrap.css">
     <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="shortcut icon" href="../../img/favicon1.png" type="image/png">
     <title>SM Locações Produtos</title>
 </head>
 <body>

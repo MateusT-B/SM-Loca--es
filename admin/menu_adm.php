@@ -1,6 +1,8 @@
 <!--Cabeçalho -->
 <link rel="stylesheet" href="../css/bootstrap.css">
 <link rel="stylesheet" href="../css/estilo.css">
+<link rel="shortcut icon" href="img/favicon1.png" type="image/png">
+<link rel="shortcut icon" href="../img/favicon1.png" type="image/png">
 <header id="cabecalho" class="bg-light p-3 text-white">
     <div class="container">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">

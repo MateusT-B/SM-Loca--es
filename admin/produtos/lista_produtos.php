@@ -16,6 +16,7 @@ $rows = $lista -> num_rows;
     <title>Produtos - Lista</title>
     <link rel="stylesheet" href="../../css/bootstrap.css">
     <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="shortcut icon" href="../../img/favicon1.png" type="image/png">
 </head>
 <body class="corpo_lista"> 
     <?php include '../menu_adm_op.php'; ?>
