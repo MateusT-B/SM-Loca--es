@@ -129,9 +129,9 @@ if ($_POST) {
                             });
                         </script>
 
-                        <label for="tipo_telefone">Tipo de Telefone:</label>
+                        <label for="tipo">Tipo de Telefone:</label>
                         <div class="input-group">
-                            <select name="tipo_telefone" id="tipo_telefone" class="form-control" required>
+                            <select name="tipo" id="tipo" class="form-control" required>
                                 <option value="Casa">RES</option>
                                 <option value="Celular">CEL</option>
                                 <option value="Comercial">COM</option>
